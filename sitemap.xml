@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://iam-cj.github.io/hello-world/</loc>
+    <loc>https://iam-cj.github.io/%E4%BD%9C%E5%93%81%E9%9B%86-%E6%A8%A1%E6%93%AC%E9%9B%BB%E5%95%86%E7%B6%B2%E7%AB%99/</loc>
     
-    <lastmod>2023-04-18</lastmod>
+    <lastmod>2023-04-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,12 +13,26 @@
 
   <url>
     <loc>https://iam-cj.github.io/</loc>
-    <lastmod>2023-04-18</lastmod>
+    <lastmod>2023-04-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
+  <url>
+    <loc>https://iam-cj.github.io/tags/%E9%9B%BB%E5%95%86%E7%B6%B2%E7%AB%99-Vue-js/</loc>
+    <lastmod>2023-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://iam-cj.github.io/categories/%E4%BD%9C%E5%93%81%E9%9B%86/</loc>
+    <lastmod>2023-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
