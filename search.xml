@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>MarkDown常用語法</title>
+    <url>/MarkDown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>畢竟這個部落格是以 MarkDown 語法寫成的，那就必須要了解一些常用的才能寫出<del>炫炮(X</del>有用又清楚的文章啊！以下的筆記是我看了官方文件以及其他大大的文章整理而成的，有常見的、也有可能用不到的，但沒關係先寫下來再說 ∠( ᐛ 」∠)＿</p>
+<h1 id="區塊元素"><a href="#區塊元素" class="headerlink" title="區塊元素"></a>區塊元素</h1><ul>
+<li><h2 id="標題"><a href="#標題" class="headerlink" title="標題"></a>標題</h2><ul>
+<li>語法：井字符號<code>#</code>加空格</li>
+<li>說明：井字符號<code>#</code>數量對應 html tag 的 <code>h1 ~ h6</code></li>
+<li>實例：<blockquote>
+<h3 id="h3-標題示範"><a href="#h3-標題示範" class="headerlink" title="h3 標題示範"></a>h3 標題示範</h3><h4 id="h4-標題示範"><a href="#h4-標題示範" class="headerlink" title="h4 標題示範"></a>h4 標題示範</h4><h5 id="h5-標題示範"><a href="#h5-標題示範" class="headerlink" title="h5 標題示範"></a>h5 標題示範</h5></blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="section">### h3 標題示範</span></span><br><span class="line"><span class="section">#### h4 標題示範</span></span><br><span class="line"><span class="section">##### h5 標題示範</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<!--show-->
+
+<ul>
+<li><h2 id="引用、階層"><a href="#引用、階層" class="headerlink" title="引用、階層"></a>引用、階層</h2><ul>
+<li>語法：大於符號<code>&gt;</code>加空格</li>
+<li>說明：大於符號<code>&gt;</code>的數量越多，階層數量就越多</li>
+<li>實例：<br>第一層<blockquote>
+<p>第二層</p>
+<blockquote>
+<p>第三層</p>
+<blockquote>
+<p>第四層</p>
+<blockquote>
+<p>第五層</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">第一層</span><br><span class="line"><span class="quote">&gt; 第二層</span></span><br><span class="line"><span class="quote">&gt; &gt; 第三層</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 第四層</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; &gt; 第五層</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="清單"><a href="#清單" class="headerlink" title="清單"></a>清單</h2><ol>
+<li><h3 id="有數字序位的"><a href="#有數字序位的" class="headerlink" title="有數字序位的"></a>有數字序位的</h3></li>
+</ol>
+<ul>
+<li>語法：數字<code>123</code>加點<code>.</code>加空格</li>
+<li>說明：可以依照你想要的序位開始寫，不強迫以 1 作為開頭</li>
+<li>實例：<blockquote>
+<ol start="3">
+<li>這是排第一個的第三點</li>
+<li>這是排第二個的第四點</li>
+<li>這是排第三個的第五點</li>
+</ol>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">3.</span> 這是排第一個的第三點</span><br><span class="line"><span class="bullet">4.</span> 這是排第二個的第四點</span><br><span class="line"><span class="bullet">5.</span> 這是排第三個的第五點</span><br></pre></td></tr></table></figure></li>
+<li>補充：如果有需要寫出數字加點<code>.</code>的組合，但不想要他變成清單的話，可以在數字與點<code>.</code>之間加上反斜線<code>/</code></li>
+</ul>
+<ol start="2">
+<li><h3 id="沒有數字序位的"><a href="#沒有數字序位的" class="headerlink" title="沒有數字序位的"></a>沒有數字序位的</h3></li>
+</ol>
+<ul>
+<li>語法：減號<code>-</code>&#x2F;加號<code>+</code>&#x2F;米字號<code>*</code>加空格</li>
+<li>說明：減號<code>-</code>、加號<code>+</code>、米字號<code>*</code>擇一都可以，不過我的 VScode 有裝自動排版（Auto Format）的插件，打加號或米字號它會自動幫我改成減號 XD</li>
+<li>實例：<blockquote>
+<ul>
+<li>這是沒有數字的列點</li>
+</ul>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 減號</span><br><span class="line"><span class="bullet">+</span> 加號</span><br><span class="line"><span class="bullet">*</span> 米字號</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="程式碼區塊"><a href="#程式碼區塊" class="headerlink" title="程式碼區塊"></a>程式碼區塊</h2><ul>
+<li>語法：在程式碼的前後各用三個反引號<code>```</code>包住</li>
+<li>說明：在第一個反引號旁，視情況可以選擇註明使用的語言（可以顯示該語言的 highlight）、該程式碼區塊的說明文字、網址、超連結顯示的文字，需依照此順序寫</li>
+<li>實例：<blockquote>
+<figure class="highlight css"><figcaption><span>說明文字會顯示在這邊</span><a href="https://iam-cj.github.io/">西噘的不專業筆記</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attribute">color</span>:red;</span><br><span class="line"><span class="attribute">background-color</span>:black;</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="code">```CSS 說明文字會顯示在這邊 https://iam-cj.github.io/ 西噘的不專業筆記</span></span><br><span class="line"><span class="code">color:red;</span></span><br><span class="line"><span class="code">background-color:black;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="分隔線"><a href="#分隔線" class="headerlink" title="分隔線"></a>分隔線</h2><ul>
+<li>語法：三個減號<code>---</code>或三個米字號<code>***</code></li>
+<li>說明：這次我打三個減號，我的 Auto Format 會把減號轉成米字號 XD</li>
+<li>實例：<blockquote>
+<p>下面這條就是分隔線</p>
+<hr>
+<p>上面這條就是分隔線</p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="strong">**<span class="emphasis">*</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h1 id="行內元素"><a href="#行內元素" class="headerlink" title="行內元素"></a>行內元素</h1><ul>
+<li><h2 id="各種文字效果"><a href="#各種文字效果" class="headerlink" title="各種文字效果"></a>各種文字效果</h2><ol>
+<li><h3 id="斜體"><a href="#斜體" class="headerlink" title="斜體"></a>斜體</h3></li>
+</ol>
+<ul>
+<li>語法：在文字前後加上米字號<code>*</code>或底線<code>_</code></li>
+<li>實例：<blockquote>
+<p><em>斜體文字</em></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*斜體文字*</span></span><br><span class="line"><span class="emphasis">_斜體文字_</span></span><br></pre></td></tr></table></figure></li>
+<li>補充：如果單純想要顯示<code>*</code>或<code>_</code>，在符號前後加空格即可</li>
+</ul>
+<ol start="2">
+<li><h3 id="粗體、強調"><a href="#粗體、強調" class="headerlink" title="粗體、強調"></a>粗體、強調</h3></li>
+</ol>
+<ul>
+<li>語法：在文字前後加上兩個米字號<code>**</code>或兩個底線<code>__</code></li>
+<li>實例：<blockquote>
+<p><strong>粗體文字</strong></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="strong">**粗體文字**</span></span><br><span class="line"><span class="strong">__粗體文字__</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="3">
+<li><h3 id="刪除線"><a href="#刪除線" class="headerlink" title="刪除線"></a>刪除線</h3></li>
+</ol>
+<ul>
+<li>語法：在文字前後加上兩個波浪號<code>~~</code></li>
+<li>實例：<blockquote>
+<p><del>被刪除了</del></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">~~被刪除了~~</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol start="4">
+<li><h3 id="文字顏色及大小"><a href="#文字顏色及大小" class="headerlink" title="文字顏色及大小"></a>文字顏色及大小</h3></li>
+</ol>
+<ul>
+<li>語法：在文字前後加上兩個波浪號<code>~~</code></li>
+<li>實例：<blockquote>
+<p><font style="color:green;font-size:15px;">這是一段大小為 15px 的綠色文字</font></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span>=<span class="string">&quot;color:green;font-size:15px;&quot;</span>&gt;</span></span>這是一段大小為15px的綠色文字<span class="language-xml"><span class="tag">&lt;/<span class="name">font</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="行內程式碼"><a href="#行內程式碼" class="headerlink" title="行內程式碼"></a>行內程式碼</h2><ul>
+<li>語法：在程式碼前後加上反引號<code>`</code></li>
+<li>實例：<blockquote>
+<p><code>&lt;hr/&gt;</code></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="code">`&lt;hr/&gt;`</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><ul>
+<li>語法：用這個符號<code>|</code>手動畫表格，在文字前後加冒號<code>:</code>可以更改文字對齊方向</li>
+<li>說明：冒號<code>:</code>加在哪邊，就表示往哪個方向靠齊，都加的話表示置中。<br>另外小碎念個，我隨手搜尋一下沒有找到<code>|</code>中文的名稱，只找到英文叫做 vertical bar</li>
+<li>實例：<blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th align="center">時間</th>
+<th align="right">事件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">4&#x2F;25</td>
+<td align="center">18:00</td>
+<td align="right">吃晚餐</td>
+</tr>
+</tbody></table>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">| 日期 | 時間  |   事件 |</span><br><span class="line">| :--- | :---: | -----: | //似乎需要有這段才會被網頁辨識成表格</span><br><span class="line">| 4/25 | 18:00 | 吃晚餐 |</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="超連結"><a href="#超連結" class="headerlink" title="超連結"></a>超連結</h2><ul>
+<li>語法：<code>[想要顯示的文字](網址路徑)</code></li>
+<li>說明：使用中括號<code>[]</code>將想要顯示的文字（例如網站名稱）包起來，後面用括號<code>()</code>將想要插入的連結放進去，中括號與括號間不要有空格</li>
+<li>實例：<blockquote>
+<p><a href="https://iam-cj.github.io/">西噘的不專業筆記</a></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">[<span class="string">西噘的不專業筆記</span>](<span class="link">https://iam-cj.github.io/</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><h2 id="插入圖片"><a href="#插入圖片" class="headerlink" title="插入圖片"></a>插入圖片</h2><ul>
+<li>語法：<code>![圖片名稱](圖片路徑)</code></li>
+<li>說明：跟超連結的語法相似，但不同的是最前方有驚嘆號<code>!</code>，中括號<code>[]</code>內放圖片名稱，後面括號<code>()</code>放入圖片連結，符號之間不要有空格</li>
+<li>實例：<blockquote>
+<p><img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="這是一張程式碼的圖片"><br>圖片來源為免費圖庫<a href="https://www.pexels.com/zh-tw/">Pexels</a></p>
+</blockquote>
+</li>
+<li>程式碼：<figure class="highlight md"><table><tr><td class="code"><pre><span class="line">![<span class="string">這是一張程式碼的圖片</span>](<span class="link">https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1</span>)</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+<h1 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h1><ul>
+<li><a href="https://markdown.tw/">Markdown 文件</a></li>
+<li><a href="https://www.casper.tw/development/2019/11/23/ten-mins-learn-markdown/">十分鐘快速掌握 Markdown</a></li>
+<li><a href="https://jimmywei01.github.io/2019/05/09/MarkDown%E3%80%81Hexo%E3%80%81NexT-%E5%B8%B8%E7%94%A8%E5%AF%AB%E6%B3%95/">MarkDown、Hexo、NexT 常用寫法</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>MarkDown</category>
+      </categories>
+      <tags>
+        <tag>MarkDown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【作品集】就。很。Pro | Procreate 中文筆刷資源網</title>
+    <url>/%E4%BD%9C%E5%93%81%E9%9B%86-%E6%A8%A1%E6%93%AC%E9%9B%BB%E5%95%86%E7%B6%B2%E7%AB%99/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>一個以 Procreate（ios 系統知名付費繪圖軟體）筆刷為主要商品的模擬電商網站。<br>如需參照原始碼（Vue 框架），可以移至 <a href="https://github.com/iam-CJ/SideProject_1_Vue-structure">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_1/">就。很。Pro | Procreate 中文筆刷資源網</a></p>
+</blockquote>
+<img alt="homepage-preview" width="500" height="500" src="https://raw.githubusercontent.com/iam-CJ/SideProject_1/e4dfbe7a3cfbbb54df5bd4d9b15cd87d7f762656/%E9%A6%96%E9%A0%81%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化，目前主要以螢幕寬為 390px(像素)、768px、1440px 是最適合瀏覽之尺寸。</li>
+<li><strong>收藏商品：</strong>可於各類商品頁對喜愛的商品點擊【♡】愛心圖示將其加入收藏，並且可以在螢幕右上角的【我的收藏】（使用手機者則是【🖤】愛心圖示）內瀏覽或移除收藏項目。</li>
+<li><strong>會員登入：</strong>第一次從首頁要跳轉至其他頁時，會需要登入（帳號密碼皆為 123），但此功能尚不完善，登入後不會有變化也無法登出。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><p><strong>目前無繁體中文平台、網路上的資源分散：</strong><br>本身作為此繪畫 app 使用者，在尋找筆刷及紙質參考的資源時會感到有些麻煩，因為沒有繁中的平台集結，多是英文、簡體中文的平台；另外也有很多都是分享在個人的部落格，資源到處分散，會覺得看到眼花撩亂。</p>
+</li>
+<li><p><strong>對於其他網站的疑慮：</strong><br>有很多時候用中文會找不到想要的筆刷，需要改成打英文關鍵字才能找到，但找到後又會擔心是詐騙網站，下載後電腦或平板可能會中毒或洩漏個資。</p>
+</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>HTML、CSS、JavaScript：</strong>最初我僅使用最基本的三大語言將網站架構起來，並且多數樣式是自己手刻的，直到需要寫的 CSS 樣式以及網站結構規模變大、變複雜時，才加入 SCSS 及 Vue 框架等工具。</li>
+<li><strong>CSS 預處理器－SCSS：</strong>選擇使用 SCSS 的原因是，它提供了巢狀結構的寫法，並且可以透過變數來統一管理高重複性的樣式。對我而言，這樣做可以方便的查找和調整樣式，並且快速套用固定元素的樣式，大大減少了上下翻找確認樣式的時間。</li>
+<li><strong>Vue 框架－Vue Cli、Vue Router：</strong>加入 Vue 框架是因為我想要新增收藏商品以及會員登入功能。選擇 Vue 框架是因為它在處理資料與畫面很直覺易懂；此外，以各商品類別頁為例，透過 router 控制傳遞的參數，我可以輕鬆的改變網頁內容（改變顯示的商品類別），不用像之前只使用三大語言，每一個商品類別都需要建立一個頁面。</li>
+</ul>
+<h1 id="未來待新增的功能"><a href="#未來待新增的功能" class="headerlink" title="未來待新增的功能"></a>未來待新增的功能</h1><ul>
+<li>會員登入後，增加可見資訊（如放入購物車的商品、及會員資料等）</li>
+<li>購物車功能，可計算所有放入購物車商品的累計金額</li>
+<li>搜尋功能，輸入關鍵字後列出符合的商品清單，並且可以透過點擊跳轉至該商品介紹頁</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【作品集】新竹市違規照相桿地圖</title>
+    <url>/%E4%BD%9C%E5%93%81%E9%9B%86-%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
+</blockquote>
+<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
+<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
+<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
+<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
+<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
+<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
+<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
+<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
+<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+</search>
