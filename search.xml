@@ -243,8 +243,139 @@
       </tags>
   </entry>
   <entry>
-    <title>【跟著大大一起從頭學Vue】Re Vue重頭說起之筆記－1</title>
-    <url>/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/</url>
+    <title>【作品集】新竹市違規照相桿地圖</title>
+    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
+</blockquote>
+<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
+<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
+<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
+<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
+<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
+<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
+<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
+<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
+<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>其實我在上完職訓課程之後一直有個困擾，除了沒學到框架以外，就是我 JS 的程度停留在能夠基礎操作，好像都會但深入問就被問倒，也抓不太清楚自己還不會的範圍。<br>然而，我在苦惱之際突然靈光一閃，想到在臉書社團看過阿川大大在宣傳自己的課程，點開介紹後了解課程設計是以寫小專案的方式學 JS，而我喜歡邊做邊學，印象更深刻也比較有趣，就這樣開啟了學習的旅程 ∠( ᐛ 」∠)＿<br><font style="font-size:15px;color:grey;">p.s.本系列標題是來自站長阿川大大將這份教材取名為自學網頁の嬰兒教材</font></p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－基本的函數操作、onclick-事件"><a href="#第一課－基本的函數操作、onclick-事件" class="headerlink" title="第一課－基本的函數操作、onclick 事件"></a>第一課－基本的函數操作、onclick 事件</h2><ul>
+<li>課程概要：介紹 onclick<blockquote>
+<p>作業說明：在 html tag 中，加入 onclick 事件，寫出一個點擊按鈕後跳出 alert 的功能<br><a href="https://jsfiddle.net/iamCJ/135yh0pv/">https://jsfiddle.net/iamCJ/135yh0pv/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－基本的變數操作、從-html-取得內容"><a href="#第二課－基本的變數操作、從-html-取得內容" class="headerlink" title="第二課－基本的變數操作、從 html 取得內容"></a>第二課－基本的變數操作、從 html 取得內容</h2><ul>
+<li>課程概要：教導如何使用<code>getElementById</code>抓取 html 的內容</li>
+<li>作業心得：最近都在寫 Vue，忘記宣告變數要放在 function 裡面，才會重新抓 input 裡的值<blockquote>
+<p>作業說明：透過<code>getElementById().value</code>抓取 input 內容，用變數存取並使用<br><a href="https://jsfiddle.net/iamCJ/ewy6bak2/">https://jsfiddle.net/iamCJ/ewy6bak2/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－修改-html-的內容"><a href="#第三課－修改-html-的內容" class="headerlink" title="第三課－修改 html 的內容"></a>第三課－修改 html 的內容</h2><ul>
+<li>課程概要：用選取器選取元素後，可以使用<code>.textContent</code>在 tag 裡新增內容</li>
+<li>自己補充：這個方式會直接覆蓋 tag 原有的內容<blockquote>
+<p>作業說明：使用<code>.textContent</code>讓某個區塊的內容可以隨著 input 裡的值做更動<br><a href="https://jsfiddle.net/iamCJ/bm6xovej/">https://jsfiddle.net/iamCJ/bm6xovej/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－基本的陣列操作"><a href="#第四課－基本的陣列操作" class="headerlink" title="第四課－基本的陣列操作"></a>第四課－基本的陣列操作</h2><ul>
+<li>課程概要：<ol>
+<li>陣列的長相<code>[]</code>、索引的使用<code>array[index]</code></li>
+<li>選單元素會有以下屬性可以使用：<ol>
+<li><code>.selectedIndex</code>：可以讓我們取得<strong>被選取到</strong>的選項索引</li>
+<li><code>.options</code>：會以陣列型態列出所有<code>&lt;option&gt;</code>，而單一個<code>&lt;option&gt;</code>又會是物件型態<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">options = [&#123; option1 &#125;, &#123; option2 &#125;, &#123; option3 &#125;];</span><br></pre></td></tr></table></figure></li>
+<li><code>.value</code>、<code>.text</code>：單一個<code>&lt;option&gt;</code>可以透過這兩個屬性來進一步取得他的 value 以及打在選項上的字</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>作業心得：對我來說，把樣式弄漂亮比較麻煩 XD，所以我想先以寫好功能為重點<blockquote>
+<p>作業說明：透過<code>.selectedIndex</code>及<code>option.text</code>的屬性，將使用者選擇的選項顯示在下面的表單中<br><a href="https://jsfiddle.net/iamCJ/cdw6k4us/">https://jsfiddle.net/iamCJ/cdw6k4us/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－基本的-if-x2F-else-條件流程控制"><a href="#第五課－基本的-if-x2F-else-條件流程控制" class="headerlink" title="第五課－基本的 if&#x2F;else 條件流程控制"></a>第五課－基本的 if&#x2F;else 條件流程控制</h2><ul>
+<li>課程概要：<ol>
+<li>介紹流程控制 if&#x2F;else</li>
+<li>變數賦值是一個等號<code>=</code>、真正的等於是兩個等號<code>==</code></li>
+</ol>
+</li>
+<li>自己補充：之後還有一個全等於是三個等號<code>===</code><blockquote>
+<p>作業說明：透過 if&#x2F;else 判斷使用者選取的選項，進而 alert 相對應的內容<br><a href="https://jsfiddle.net/iamCJ/9qmya12j/">https://jsfiddle.net/iamCJ/9qmya12j/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－認識資料型態與轉換"><a href="#第六課－認識資料型態與轉換" class="headerlink" title="第六課－認識資料型態與轉換"></a>第六課－認識資料型態與轉換</h2><ul>
+<li>課程概要：<ol>
+<li>認識<strong>數字</strong>資料型態<ol>
+<li>數字可以做加減乘除運算</li>
+<li>要分清楚資料型態是<strong>字串</strong>還是<strong>數字</strong>，雖然仍可做運算、不會報錯，但不鼓勵這樣混用，建議將資料轉型</li>
+</ol>
+</li>
+<li>轉換資料型態<ol>
+<li><strong>數值</strong>轉<strong>字串</strong>可以用<code>.toString()</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;100&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> c = a + b.<span class="title function_">toString</span>();</span><br></pre></td></tr></table></figure></li>
+<li><strong>字串</strong>轉<strong>數值</strong>可以用<code>parseInt()</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;100&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> c = <span class="built_in">parseInt</span>(a) + b;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>我們在 JS 透過<code>getElementByXX</code>或<code>querySelector</code>抓取使用者在 html 輸入的內容（例如表單的 input），一律是<strong>字串</strong>型態，如果需要資料是數字型態、需要做數值運算的話，需要資料轉型</li>
+</ol>
+</li>
+<li>作業心得：在做訂購數量的 input 時，學到了可以用<code>max=&quot;&quot;</code>、<code>min=&quot;&quot;</code>設最大最小值，甚至 type 是日期的也可以設定<blockquote>
+<p>作業說明：抓取使用者填入的訂購數量，將資料轉型為數字後計算價錢，顯示於下面的表單<br><a href="https://jsfiddle.net/iamCJ/r3ogam4j/">https://jsfiddle.net/iamCJ/r3ogam4j/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－認識巢狀結構"><a href="#第七課－認識巢狀結構" class="headerlink" title="第七課－認識巢狀結構"></a>第七課－認識巢狀結構</h2><ul>
+<li>課程概要：<ol>
+<li>了解<strong>數字</strong>資料型態的比較：大於<code>&gt;</code>、小於<code>&lt;</code>、大於等於<code>&gt;=</code>、小於等於<code>&lt;=</code>、不等於<code>!=</code></li>
+<li>認識<code>else if</code>：<ol>
+<li>當<code>if</code>條件不成立時，會往下到<code>else if</code>條件判斷，如果仍不成立，才會到 else</li>
+<li><code>else if</code>可以有多個，當前面的<code>else if</code>條件不成立時，才會接著往下一個<code>else if</code>判斷</li>
+</ol>
+</li>
+<li>巢狀結構是什麼？<br>就是<code>if</code>裡面又包了一層<code>if</code>，可以再繼續包下去，不過不建議，程式會變得不易閱讀，可以在條件的部分多琢磨一點，例如使用 and<code>&amp;&amp;</code>、or<code>||</code>將條件串起來<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//巢狀結構</span></span><br><span class="line"><span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且大於100&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且小於等於100&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，但大於100&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，且小於等於100&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用 &amp;&amp; 修改條件</span></span><br><span class="line"><span class="keyword">if</span> (a &gt; b &amp;&amp; a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且大於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &gt; b &amp;&amp; a &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且小於等於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &lt;= b &amp;&amp; a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，但大於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，且小於等於100&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：忘記<code>else if</code>的 else 跟 if 要分開，難怪 JSFiddle 一直報錯 XD<blockquote>
+<p>作業說明：透過<code>if</code>、<code>else if</code>及<code>else</code>判斷使用者填寫表單的狀況，並依需要跳出 alert 提示<br><a href="https://jsfiddle.net/iamCJ/hrc9pv3g/">https://jsfiddle.net/iamCJ/hrc9pv3g/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>因為我本來就有些 JS 的基礎，所以這個系列的概念以及實作對我來說沒什麼問題，只是在要寫的功能越來越多時，對於切分功能、整理程式碼會有些苦惱，還有把樣式整理成能看的樣子花了好多時間 XD</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/l3j5xk">自學網頁の嬰兒教材：JavaScript（一）—— 幫衣服工廠做個好用表單</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1</title>
+    <url>/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>最近在觀看 Alex 大的 ReVue 系列影片從頭學 Vue，但發現如果沒有做筆記的話，很快就會對學過的東西印象模糊，加上 Alex 大的教學影片都長達一兩小時，要重新找影片來回憶也是有點困難又耗費時間，因此決定要做學習筆記並上傳於此以便日後查詢，不過我還算是初學者，並且所記下來的都是我主觀覺得需要注意的點，如果內容有誤、用詞不精準，或是寫得很廢根本不需要紀錄的部分就麻煩各位看官多多見諒了(｡･ω･｡)ﾉ<br><font style="font-size:15px;color:grey;">p.s.因為我是看到第一季的最後一集才突然意識到要做筆記，因此第一篇會直接從 Day 9 開始，更之前的會找時間補，但什麼時候會補完就隨緣了 ∠( ᐛ 」∠)＿</font></p>
 <h1 id="本篇主題：基礎模組化"><a href="#本篇主題：基礎模組化" class="headerlink" title="本篇主題：基礎模組化"></a>本篇主題：基礎模組化</h1><h2 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h2><ul>
 <li><p>為什麼要模組化？<br>1. 為了重複使用<br>2. 為了分類管理，將多個功能切割後每份模組只有單一功能</p>
@@ -288,40 +419,6 @@
       </categories>
       <tags>
         <tag>跟著大大一起從頭學Vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【作品集】新竹市違規照相桿地圖</title>
-    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
-    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
-<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
-</blockquote>
-<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
-
-<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
-<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
-<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
-<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
-<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
-<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
-</ul>
-<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
-<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
-<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
-</ol>
-<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
-<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
-<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
-<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
-<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>作品集</category>
-      </categories>
-      <tags>
-        <tag>作品集</tag>
       </tags>
   </entry>
 </search>
