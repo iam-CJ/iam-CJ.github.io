@@ -205,78 +205,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【作品集】就。很。Pro | Procreate 中文筆刷資源網</title>
-    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%B0%B1%E3%80%82%E5%BE%88%E3%80%82Pro%20Procreate%20%E4%B8%AD%E6%96%87%E7%AD%86%E5%88%B7%E8%B3%87%E6%BA%90%E7%B6%B2/</url>
-    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>一個以 Procreate（ios 系統知名付費繪圖軟體）筆刷為主要商品的模擬電商網站。<br>如需參照原始碼（Vue 框架），可以移至 <a href="https://github.com/iam-CJ/SideProject_1_Vue-structure">我的 GitHub</a> 瀏覽。</p>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
-<p><a href="https://iam-cj.github.io/SideProject_1/">就。很。Pro | Procreate 中文筆刷資源網</a></p>
-</blockquote>
-<img alt="homepage-preview" width="500" height="500" src="https://raw.githubusercontent.com/iam-CJ/SideProject_1/e4dfbe7a3cfbbb54df5bd4d9b15cd87d7f762656/%E9%A6%96%E9%A0%81%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
-
-<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
-<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化，目前主要以螢幕寬為 390px(像素)、768px、1440px 是最適合瀏覽之尺寸。</li>
-<li><strong>收藏商品：</strong>可於各類商品頁對喜愛的商品點擊【♡】愛心圖示將其加入收藏，並且可以在螢幕右上角的【我的收藏】（使用手機者則是【🖤】愛心圖示）內瀏覽或移除收藏項目。</li>
-<li><strong>會員登入：</strong>第一次從首頁要跳轉至其他頁時，會需要登入（帳號密碼皆為 123），但此功能尚不完善，登入後不會有變化也無法登出。</li>
-</ul>
-<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
-<li><p><strong>目前無繁體中文平台、網路上的資源分散：</strong><br>本身作為此繪畫 app 使用者，在尋找筆刷及紙質參考的資源時會感到有些麻煩，因為沒有繁中的平台集結，多是英文、簡體中文的平台；另外也有很多都是分享在個人的部落格，資源到處分散，會覺得看到眼花撩亂。</p>
-</li>
-<li><p><strong>對於其他網站的疑慮：</strong><br>有很多時候用中文會找不到想要的筆刷，需要改成打英文關鍵字才能找到，但找到後又會擔心是詐騙網站，下載後電腦或平板可能會中毒或洩漏個資。</p>
-</li>
-</ol>
-<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
-<li><strong>HTML、CSS、JavaScript：</strong>最初我僅使用最基本的三大語言將網站架構起來，並且多數樣式是自己手刻的，直到需要寫的 CSS 樣式以及網站結構規模變大、變複雜時，才加入 SCSS 及 Vue 框架等工具。</li>
-<li><strong>CSS 預處理器－SCSS：</strong>選擇使用 SCSS 的原因是，它提供了巢狀結構的寫法，並且可以透過變數來統一管理高重複性的樣式。對我而言，這樣做可以方便的查找和調整樣式，並且快速套用固定元素的樣式，大大減少了上下翻找確認樣式的時間。</li>
-<li><strong>Vue 框架－Vue Cli、Vue Router：</strong>加入 Vue 框架是因為我想要新增收藏商品以及會員登入功能。選擇 Vue 框架是因為它在處理資料與畫面很直覺易懂；此外，以各商品類別頁為例，透過 router 控制傳遞的參數，我可以輕鬆的改變網頁內容（改變顯示的商品類別），不用像之前只使用三大語言，每一個商品類別都需要建立一個頁面。</li>
-</ul>
-<h1 id="未來待新增的功能"><a href="#未來待新增的功能" class="headerlink" title="未來待新增的功能"></a>未來待新增的功能</h1><ul>
-<li>會員登入後，增加可見資訊（如放入購物車的商品、及會員資料等）</li>
-<li>購物車功能，可計算所有放入購物車商品的累計金額</li>
-<li>搜尋功能，輸入關鍵字後列出符合的商品清單，並且可以透過點擊跳轉至該商品介紹頁</li>
-</ul>
-]]></content>
-      <categories>
-        <category>作品集</category>
-      </categories>
-      <tags>
-        <tag>作品集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【作品集】新竹市違規照相桿地圖</title>
-    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
-    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
-<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
-</blockquote>
-<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
-
-<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
-<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
-<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
-<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
-<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
-<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
-</ul>
-<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
-<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
-<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
-</ol>
-<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
-<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
-<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
-<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
-<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>作品集</category>
-      </categories>
-      <tags>
-        <tag>作品集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</title>
     <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>其實我在上完職訓課程之後一直有個困擾，除了沒學到框架以外，就是我 JS 的程度停留在能夠基礎操作，好像都會但深入問就被問倒，也抓不太清楚自己還不會的範圍。<br>然而，我在苦惱之際突然靈光一閃，想到在臉書社團看過阿川大大在宣傳自己的課程，點開介紹後了解課程設計是以寫小專案的方式學 JS，而我喜歡邊做邊學，印象更深刻也比較有趣，就這樣開啟了學習的旅程 ∠( ᐛ 」∠)＿<br><font style="font-size:15px;color:grey;">p.s.本系列標題是來自站長阿川大大將這份教材取名為自學網頁の嬰兒教材</font></p>
@@ -365,6 +293,176 @@
 </ul>
 <h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>因為我本來就有些 JS 的基礎，所以這個系列的概念以及實作對我來說沒什麼問題，只是在要寫的功能越來越多時，對於切分功能、整理程式碼會有些苦惱，還有把樣式整理成能看的樣子花了好多時間 XD</p>
 <h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/l3j5xk">自學網頁の嬰兒教材：JavaScript（一）—— 幫衣服工廠做個好用表單</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【作品集】就。很。Pro | Procreate 中文筆刷資源網</title>
+    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%B0%B1%E3%80%82%E5%BE%88%E3%80%82Pro%20Procreate%20%E4%B8%AD%E6%96%87%E7%AD%86%E5%88%B7%E8%B3%87%E6%BA%90%E7%B6%B2/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>一個以 Procreate（ios 系統知名付費繪圖軟體）筆刷為主要商品的模擬電商網站。<br>如需參照原始碼（Vue 框架），可以移至 <a href="https://github.com/iam-CJ/SideProject_1_Vue-structure">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_1/">就。很。Pro | Procreate 中文筆刷資源網</a></p>
+</blockquote>
+<img alt="homepage-preview" width="500" height="500" src="https://raw.githubusercontent.com/iam-CJ/SideProject_1/e4dfbe7a3cfbbb54df5bd4d9b15cd87d7f762656/%E9%A6%96%E9%A0%81%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化，目前主要以螢幕寬為 390px(像素)、768px、1440px 是最適合瀏覽之尺寸。</li>
+<li><strong>收藏商品：</strong>可於各類商品頁對喜愛的商品點擊【♡】愛心圖示將其加入收藏，並且可以在螢幕右上角的【我的收藏】（使用手機者則是【🖤】愛心圖示）內瀏覽或移除收藏項目。</li>
+<li><strong>會員登入：</strong>第一次從首頁要跳轉至其他頁時，會需要登入（帳號密碼皆為 123），但此功能尚不完善，登入後不會有變化也無法登出。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><p><strong>目前無繁體中文平台、網路上的資源分散：</strong><br>本身作為此繪畫 app 使用者，在尋找筆刷及紙質參考的資源時會感到有些麻煩，因為沒有繁中的平台集結，多是英文、簡體中文的平台；另外也有很多都是分享在個人的部落格，資源到處分散，會覺得看到眼花撩亂。</p>
+</li>
+<li><p><strong>對於其他網站的疑慮：</strong><br>有很多時候用中文會找不到想要的筆刷，需要改成打英文關鍵字才能找到，但找到後又會擔心是詐騙網站，下載後電腦或平板可能會中毒或洩漏個資。</p>
+</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>HTML、CSS、JavaScript：</strong>最初我僅使用最基本的三大語言將網站架構起來，並且多數樣式是自己手刻的，直到需要寫的 CSS 樣式以及網站結構規模變大、變複雜時，才加入 SCSS 及 Vue 框架等工具。</li>
+<li><strong>CSS 預處理器－SCSS：</strong>選擇使用 SCSS 的原因是，它提供了巢狀結構的寫法，並且可以透過變數來統一管理高重複性的樣式。對我而言，這樣做可以方便的查找和調整樣式，並且快速套用固定元素的樣式，大大減少了上下翻找確認樣式的時間。</li>
+<li><strong>Vue 框架－Vue Cli、Vue Router：</strong>加入 Vue 框架是因為我想要新增收藏商品以及會員登入功能。選擇 Vue 框架是因為它在處理資料與畫面很直覺易懂；此外，以各商品類別頁為例，透過 router 控制傳遞的參數，我可以輕鬆的改變網頁內容（改變顯示的商品類別），不用像之前只使用三大語言，每一個商品類別都需要建立一個頁面。</li>
+</ul>
+<h1 id="未來待新增的功能"><a href="#未來待新增的功能" class="headerlink" title="未來待新增的功能"></a>未來待新增的功能</h1><ul>
+<li>會員登入後，增加可見資訊（如放入購物車的商品、及會員資料等）</li>
+<li>購物車功能，可計算所有放入購物車商品的累計金額</li>
+<li>搜尋功能，輸入關鍵字後列出符合的商品清單，並且可以透過點擊跳轉至該商品介紹頁</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【作品集】新竹市違規照相桿地圖</title>
+    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
+</blockquote>
+<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
+<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
+<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
+<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
+<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
+<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
+<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
+<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
+<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-DOM-樹、新增元素"><a href="#第一課－認識-DOM-樹、新增元素" class="headerlink" title="第一課－認識 DOM 樹、新增元素"></a>第一課－認識 DOM 樹、新增元素</h2><ul>
+<li>課程概要：<ol>
+<li>認識 DOM tree、子元素、父元素的概念</li>
+<li>使用 JS 操作 DOM tree：<ol>
+<li><code>.createElement()</code>：在括弧內填入元素名稱，例如：<code>p</code>、<code>h1</code>，就可以動態新增元素</li>
+<li><code>.append()</code>：可以用此方法將某個元素變為自己的子元素<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> newElement = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;p&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> exampleDiv = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">exampleDiv.<span class="title function_">append</span>(newElement);</span><br><span class="line"><span class="comment">//html結構會是這樣</span></span><br><span class="line"><span class="comment">//&lt;div&gt;</span></span><br><span class="line"><span class="comment">//  &lt;p&gt;&lt;/p&gt;</span></span><br><span class="line"><span class="comment">//&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>使用<code>alert</code>、<code>console.log()</code>來除錯</li>
+</ol>
+</li>
+<li>作業心得：這次依然是 CSS 比較花費時間 XD。<blockquote>
+<p>作業說明：按下按鈕後，在下方表單新增使用者在 input 輸入的事項，會用到<code>.createElement()</code>及<code>.append()</code>。<br><a href="https://jsfiddle.net/iamCJ/j17Lq0om/">https://jsfiddle.net/iamCJ/j17Lq0om/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－從-DOM-樹移除元素、動態加上-onclick-事件"><a href="#第二課－從-DOM-樹移除元素、動態加上-onclick-事件" class="headerlink" title="第二課－從 DOM 樹移除元素、動態加上 onclick 事件"></a>第二課－從 DOM 樹移除元素、動態加上 onclick 事件</h2><ul>
+<li>課程概要：<ol>
+<li>動態加入 onclick 事件：在 JS 內使用變數綁定事件，而非在 html tag 內加事件</li>
+<li>使用<code>.children</code>、<code>.parentElement</code>可以列出元素的所有子元素及父元素，而所有子元素會以<strong>陣列</strong>型態列出</li>
+<li>使用<code>.remove()</code>可以刪除該元素</li>
+<li>了解<code>document</code>物件、<code>event</code>物件：前者是 JS 在瀏覽器內建的<strong>物件</strong>，代表網頁<strong>當下的狀態</strong>；後者也是<strong>物件</strong>，代表網頁<strong>當下正在發生的事件</strong>，使用<code>event.target</code>可以找到當前發生事件的元素</li>
+</ol>
+</li>
+<li>作業心得：我覺得這次比較困擾我的部分是：想要把<strong>新增</strong>及<strong>刪除</strong>的功能切開，希望新增的 function 就放新增的東西，刪除的 function 也一樣，但由於刪除的按鈕需要在新增 function 的部分跟著<code>inputValue</code>一起長出來（只是我的想法而已），所以最後刪除的 function 裡就只放刪除的行為而已<blockquote>
+<p>作業說明：在每一個事項旁新增刪除的按鈕，運用<code>event.target</code>找到被觸發的<code>button</code>元素，再使用<code>.parentElement</code>指定整個<code>&lt;li&gt;</code>及其子元素，並用<code>.remove()</code>將指定的整個結構刪除<br><a href="https://jsfiddle.net/iamCJ/y6fLjr9o/">https://jsfiddle.net/iamCJ/y6fLjr9o/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－認識-for-迴圈"><a href="#第三課－認識-for-迴圈" class="headerlink" title="第三課－認識 for 迴圈"></a>第三課－認識 for 迴圈</h2><ul>
+<li>課程概要：認識<code>for of</code>的寫法，這個方法會將<code>of</code>後面接的陣列內容依序一筆一筆跑程式<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;cat&quot;</span>, <span class="string">&quot;dog&quot;</span>, <span class="string">&quot;bird&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> text = <span class="string">&quot;I am a &quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> animal <span class="keyword">of</span> array1) &#123;</span><br><span class="line">  text += animal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(text);</span><br></pre></td></tr></table></figure></li>
+<li>自己補充：我想要在 JS 新增的刪除按鈕加上 id，原本只知道加 class 的方式是<code>.classList.add()</code>，後來查到<code>.setAttribute()</code>這個方法，可以新增 id、class、style 等等</li>
+<li>作業心得：一直卡在要怎麼取到 span 的值，偷偷看其他人的作業才發現，原來取到<code>list.children</code>之後，再用<code>.children[0]</code>指向第一個子元素的<code>&lt;span&gt;</code>就可以了<blockquote>
+<p>作業說明：新增一個可以將所有事項 alert 出來的按鈕，使用<code>for of</code>並結合<code>.children.textContent</code>將每一筆事項列出<br><a href="https://jsfiddle.net/iamCJ/Ldbx2u4o/">https://jsfiddle.net/iamCJ/Ldbx2u4o/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－讀取與修改-DOM-元素的-class"><a href="#第四課－讀取與修改-DOM-元素的-class" class="headerlink" title="第四課－讀取與修改 DOM 元素的 class"></a>第四課－讀取與修改 DOM 元素的 class</h2><ul>
+<li>課程概要：<ol>
+<li>動態在 DOM tree<strong>存取</strong>元素的 class：使用<code>.className</code>的屬性就能取到元素的 class</li>
+<li>動態在 DOM tree<strong>修改</strong>元素的 class：直接修改<code>.className</code>屬性</li>
+</ol>
+</li>
+<li>作業心得：不太喜歡重複的程式出現太多次，例如在 if 判斷裡，不同條件下要呈現的內容只有些微差異，卻要一直重複相似的程式碼，但目前想到的辦法就只能將重複會用到的設為變數，至少畫面看起來比較簡潔了一點<blockquote>
+<p>作業說明：增加選單，依照不同選項給予所輸入的事項對應的 class，並且輸出到 alert 的內容也要依據不同選項而有所差異<br><a href="https://jsfiddle.net/iamCJ/5mok4eq1/">https://jsfiddle.net/iamCJ/5mok4eq1/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－認識-onchange-事件"><a href="#第五課－認識-onchange-事件" class="headerlink" title="第五課－認識 onchange 事件"></a>第五課－認識 onchange 事件</h2><ul>
+<li>課程概要：<br>認識<code>onchange</code>方法：被綁上這個方法的元素有變化就會觸發事件。不過不同的 html 元素對於觸發<code>onchange</code>的定義有點不同，取得<strong>變化後的新值</strong>的方式也會有不同</li>
+<li>作業心得：今天的作業沒有問題，做得很順利(&#96;･∀･)b<blockquote>
+<p>作業說明：使用<code>onchange</code>來偵測選單的變動，當使用者點選不同選項時，給予 input 樣式的變化<br><a href="https://jsfiddle.net/iamCJ/pLj9xsdr/">https://jsfiddle.net/iamCJ/pLj9xsdr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－讀取與修改-DOM-元素的-style"><a href="#第六課－讀取與修改-DOM-元素的-style" class="headerlink" title="第六課－讀取與修改 DOM 元素的 style"></a>第六課－讀取與修改 DOM 元素的 style</h2><ul>
+<li>課程概要：修改<code>.style.display</code>屬性，讓元素顯示或消失</li>
+<li>作業心得：<ol>
+<li>這堂課的作業應該是想要我們運用<code>.style.display</code>去設計樣式的切換，但我想要的樣式若使用<code>display:none</code>的話會跑版，因此我選擇改用<code>visibility</code>去控制元素的顯示或消失</li>
+<li>另外在寫完程式後，列出多個事項來測試才發現，我原本的寫法－<strong>先抓好要控制的元素，在符合條件時修改其 style</strong>，會變成不管勾選哪個事項，只有第一個事項會觸發，所以我後來改成用<code>event.target.parentElement.children[2]</code>去抓被觸發的<code>&lt;span&gt;</code>，就沒問題了</li>
+</ol>
+</li>
+<li><font style="color:grey;">這行是為了排版好看 ∠( ᐛ 」∠)＿</font><blockquote>
+<p>作業說明：使用<code>.style.display</code>屬性控制元素，在被勾選起來的事項旁顯示元素，沒有被勾選的則隱藏，我自己還加入了 class，將被勾起的事項文字加上刪除線（<code>text-decoration:line-through</code>）<br><a href="https://jsfiddle.net/iamCJ/mw581v70/">https://jsfiddle.net/iamCJ/mw581v70/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－用-Selector-API-選取元素"><a href="#第七課－用-Selector-API-選取元素" class="headerlink" title="第七課－用 Selector API 選取元素"></a>第七課－用 Selector API 選取元素</h2><ul>
+<li>課程概要：<ol>
+<li>認識<code>.querySelector()</code>、<code>.querySelectorAll()</code><ol>
+<li><code>.querySelector()</code>：於括號內填入要存取的元素名稱、id、或是 class，如果有多個符合的元素，<strong>只會回傳第一個</strong></li>
+<li><code>.querySelectorAll()</code>：使用方式跟<code>.querySelector()</code>一樣，不同的是，如果有多個符合的元素，將<strong>以陣列形式全部列出</strong></li>
+<li>兩者與<code>.getElementById()</code>的差別是：<code>.getElementById()</code>只能存取有設置<code>id</code>的元素，而<code>.querySelector()</code>及<code>.querySelectorAll()</code>可以直接存取 DOM 元素（可以當作是 html tag），並且可以用類似於 css 指定元素的方式設定要找的目標，例如：<code>document.querySelector(&#39;div ul li p&#39;)</code></li>
+</ol>
+</li>
+<li>認識<code>.closest()</code>：於括號內填入要存取的元素名稱、id、或是 class，他會從目前位置往上層找，父層找不到就再往祖父層找，直到找到第一個符合的元素，但這個方法只能找祖先（？，與目前位置在同一層的元素不會回傳結果</li>
+</ol>
+</li>
+<li>作業心得：相較於之前教的，我更喜歡用這一課用<code>.closest()</code>及<code>.querySelector()</code>的方法來找父元素、子元素，因為可以更明確指定，比較不會因為架構的順序調整與變動而影響，若像是使用索引的方式指定的話，如：<code>children[0]</code>，在換順序以後索引就需要跟著更換<blockquote>
+<p>作業說明：作業進行重構程式碼，將<code>.getElementById()</code>、<code>.parentElement</code>、<code>.children</code>全部改為這一課教的語法<br><a href="https://jsfiddle.net/iamCJ/6k38qar4/">https://jsfiddle.net/iamCJ/6k38qar4/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>我覺得這系列的課還在我有學過的範圍裡，只是有幾個語法沒有用過，或是更習慣使用另一種相似功能的語法，難度還不高，期待後面的課程可以更有挑戰性 ٩(｡・ω・｡)﻿و</p>
+<p>原本預期兩～三天可以完成一個系列的課程，但沒想到實作起來還是挺花時間的，要再加把勁！趕快把接下來的課學完吧！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/vx8gqZ">自學網頁の嬰兒教材：JavaScript（二）—— 親手做個待辦事項小工具</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>

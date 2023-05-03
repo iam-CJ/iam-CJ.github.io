@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="google-site-verification" content="S5x9Jy1l3lcXQX0hqQcLU42_636ewC2SpCe1wQfGEQ8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-cj.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-cj.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-cj.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iam-cj.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0KTV79M9Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0KTV79M9Q');
+</script>
+
+  <meta name="description" content="前言小廢話今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧ 課程開始第一課－認識 DOM 樹、新增元素">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【用嬰兒都學得會的教材學JS】學習筆記－系列（二）">
+<meta property="og:url" content="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/">
+<meta property="og:site_name" content="西噘的不專業筆記">
+<meta property="og:description" content="前言小廢話今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧ 課程開始第一課－認識 DOM 樹、新增元素">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2023-04-30T07:24:38.000Z">
+<meta property="article:modified_time" content="2023-05-03T16:44:31.783Z">
+<meta property="article:author" content="CJ Wu">
+<meta property="article:tag" content="用嬰兒都學得會的教材學JS">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（二） | 西噘的不專業筆記</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CYC62V0KT"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2CYC62V0KT');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">西噘的不專業筆記</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我是CJ，我不會亂丟貢丸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-cj.png">
+      <meta itemprop="name" content="CJ Wu">
+      <meta itemprop="description" content="24y / 肥宅 / 還不是前端工程師">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="西噘的不專業筆記">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【用嬰兒都學得會的教材學JS】學習筆記－系列（二）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-04-30 15:24:38" itemprop="dateCreated datePublished" datetime="2023-04-30T15:24:38+08:00">2023-04-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-05-04 00:44:31" itemprop="dateModified" datetime="2023-05-04T00:44:31+08:00">2023-05-04</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-DOM-樹、新增元素"><a href="#第一課－認識-DOM-樹、新增元素" class="headerlink" title="第一課－認識 DOM 樹、新增元素"></a>第一課－認識 DOM 樹、新增元素</h2><ul>
+<li>課程概要：<ol>
+<li>認識 DOM tree、子元素、父元素的概念</li>
+<li>使用 JS 操作 DOM tree：<ol>
+<li><code>.createElement()</code>：在括弧內填入元素名稱，例如：<code>p</code>、<code>h1</code>，就可以動態新增元素</li>
+<li><code>.append()</code>：可以用此方法將某個元素變為自己的子元素<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> newElement = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;p&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> exampleDiv = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">exampleDiv.<span class="title function_">append</span>(newElement);</span><br><span class="line"><span class="comment">//html結構會是這樣</span></span><br><span class="line"><span class="comment">//&lt;div&gt;</span></span><br><span class="line"><span class="comment">//  &lt;p&gt;&lt;/p&gt;</span></span><br><span class="line"><span class="comment">//&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>使用<code>alert</code>、<code>console.log()</code>來除錯</li>
+</ol>
+</li>
+<li>作業心得：這次依然是 CSS 比較花費時間 XD。<blockquote>
+<p>作業說明：按下按鈕後，在下方表單新增使用者在 input 輸入的事項，會用到<code>.createElement()</code>及<code>.append()</code>。<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/j17Lq0om/">https://jsfiddle.net/iamCJ/j17Lq0om/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－從-DOM-樹移除元素、動態加上-onclick-事件"><a href="#第二課－從-DOM-樹移除元素、動態加上-onclick-事件" class="headerlink" title="第二課－從 DOM 樹移除元素、動態加上 onclick 事件"></a>第二課－從 DOM 樹移除元素、動態加上 onclick 事件</h2><ul>
+<li>課程概要：<ol>
+<li>動態加入 onclick 事件：在 JS 內使用變數綁定事件，而非在 html tag 內加事件</li>
+<li>使用<code>.children</code>、<code>.parentElement</code>可以列出元素的所有子元素及父元素，而所有子元素會以<strong>陣列</strong>型態列出</li>
+<li>使用<code>.remove()</code>可以刪除該元素</li>
+<li>了解<code>document</code>物件、<code>event</code>物件：前者是 JS 在瀏覽器內建的<strong>物件</strong>，代表網頁<strong>當下的狀態</strong>；後者也是<strong>物件</strong>，代表網頁<strong>當下正在發生的事件</strong>，使用<code>event.target</code>可以找到當前發生事件的元素</li>
+</ol>
+</li>
+<li>作業心得：我覺得這次比較困擾我的部分是：想要把<strong>新增</strong>及<strong>刪除</strong>的功能切開，希望新增的 function 就放新增的東西，刪除的 function 也一樣，但由於刪除的按鈕需要在新增 function 的部分跟著<code>inputValue</code>一起長出來（只是我的想法而已），所以最後刪除的 function 裡就只放刪除的行為而已<blockquote>
+<p>作業說明：在每一個事項旁新增刪除的按鈕，運用<code>event.target</code>找到被觸發的<code>button</code>元素，再使用<code>.parentElement</code>指定整個<code>&lt;li&gt;</code>及其子元素，並用<code>.remove()</code>將指定的整個結構刪除<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/y6fLjr9o/">https://jsfiddle.net/iamCJ/y6fLjr9o/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－認識-for-迴圈"><a href="#第三課－認識-for-迴圈" class="headerlink" title="第三課－認識 for 迴圈"></a>第三課－認識 for 迴圈</h2><ul>
+<li>課程概要：認識<code>for of</code>的寫法，這個方法會將<code>of</code>後面接的陣列內容依序一筆一筆跑程式<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;cat&quot;</span>, <span class="string">&quot;dog&quot;</span>, <span class="string">&quot;bird&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> text = <span class="string">&quot;I am a &quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> animal <span class="keyword">of</span> array1) &#123;</span><br><span class="line">  text += animal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(text);</span><br></pre></td></tr></table></figure></li>
+<li>自己補充：我想要在 JS 新增的刪除按鈕加上 id，原本只知道加 class 的方式是<code>.classList.add()</code>，後來查到<code>.setAttribute()</code>這個方法，可以新增 id、class、style 等等</li>
+<li>作業心得：一直卡在要怎麼取到 span 的值，偷偷看其他人的作業才發現，原來取到<code>list.children</code>之後，再用<code>.children[0]</code>指向第一個子元素的<code>&lt;span&gt;</code>就可以了<blockquote>
+<p>作業說明：新增一個可以將所有事項 alert 出來的按鈕，使用<code>for of</code>並結合<code>.children.textContent</code>將每一筆事項列出<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/Ldbx2u4o/">https://jsfiddle.net/iamCJ/Ldbx2u4o/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－讀取與修改-DOM-元素的-class"><a href="#第四課－讀取與修改-DOM-元素的-class" class="headerlink" title="第四課－讀取與修改 DOM 元素的 class"></a>第四課－讀取與修改 DOM 元素的 class</h2><ul>
+<li>課程概要：<ol>
+<li>動態在 DOM tree<strong>存取</strong>元素的 class：使用<code>.className</code>的屬性就能取到元素的 class</li>
+<li>動態在 DOM tree<strong>修改</strong>元素的 class：直接修改<code>.className</code>屬性</li>
+</ol>
+</li>
+<li>作業心得：不太喜歡重複的程式出現太多次，例如在 if 判斷裡，不同條件下要呈現的內容只有些微差異，卻要一直重複相似的程式碼，但目前想到的辦法就只能將重複會用到的設為變數，至少畫面看起來比較簡潔了一點<blockquote>
+<p>作業說明：增加選單，依照不同選項給予所輸入的事項對應的 class，並且輸出到 alert 的內容也要依據不同選項而有所差異<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/5mok4eq1/">https://jsfiddle.net/iamCJ/5mok4eq1/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－認識-onchange-事件"><a href="#第五課－認識-onchange-事件" class="headerlink" title="第五課－認識 onchange 事件"></a>第五課－認識 onchange 事件</h2><ul>
+<li>課程概要：<br>認識<code>onchange</code>方法：被綁上這個方法的元素有變化就會觸發事件。不過不同的 html 元素對於觸發<code>onchange</code>的定義有點不同，取得<strong>變化後的新值</strong>的方式也會有不同</li>
+<li>作業心得：今天的作業沒有問題，做得很順利(&#96;･∀･)b<blockquote>
+<p>作業說明：使用<code>onchange</code>來偵測選單的變動，當使用者點選不同選項時，給予 input 樣式的變化<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/pLj9xsdr/">https://jsfiddle.net/iamCJ/pLj9xsdr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－讀取與修改-DOM-元素的-style"><a href="#第六課－讀取與修改-DOM-元素的-style" class="headerlink" title="第六課－讀取與修改 DOM 元素的 style"></a>第六課－讀取與修改 DOM 元素的 style</h2><ul>
+<li>課程概要：修改<code>.style.display</code>屬性，讓元素顯示或消失</li>
+<li>作業心得：<ol>
+<li>這堂課的作業應該是想要我們運用<code>.style.display</code>去設計樣式的切換，但我想要的樣式若使用<code>display:none</code>的話會跑版，因此我選擇改用<code>visibility</code>去控制元素的顯示或消失</li>
+<li>另外在寫完程式後，列出多個事項來測試才發現，我原本的寫法－<strong>先抓好要控制的元素，在符合條件時修改其 style</strong>，會變成不管勾選哪個事項，只有第一個事項會觸發，所以我後來改成用<code>event.target.parentElement.children[2]</code>去抓被觸發的<code>&lt;span&gt;</code>，就沒問題了</li>
+</ol>
+</li>
+<li><font style="color:grey;">這行是為了排版好看 ∠( ᐛ 」∠)＿</font><blockquote>
+<p>作業說明：使用<code>.style.display</code>屬性控制元素，在被勾選起來的事項旁顯示元素，沒有被勾選的則隱藏，我自己還加入了 class，將被勾起的事項文字加上刪除線（<code>text-decoration:line-through</code>）<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/mw581v70/">https://jsfiddle.net/iamCJ/mw581v70/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－用-Selector-API-選取元素"><a href="#第七課－用-Selector-API-選取元素" class="headerlink" title="第七課－用 Selector API 選取元素"></a>第七課－用 Selector API 選取元素</h2><ul>
+<li>課程概要：<ol>
+<li>認識<code>.querySelector()</code>、<code>.querySelectorAll()</code><ol>
+<li><code>.querySelector()</code>：於括號內填入要存取的元素名稱、id、或是 class，如果有多個符合的元素，<strong>只會回傳第一個</strong></li>
+<li><code>.querySelectorAll()</code>：使用方式跟<code>.querySelector()</code>一樣，不同的是，如果有多個符合的元素，將<strong>以陣列形式全部列出</strong></li>
+<li>兩者與<code>.getElementById()</code>的差別是：<code>.getElementById()</code>只能存取有設置<code>id</code>的元素，而<code>.querySelector()</code>及<code>.querySelectorAll()</code>可以直接存取 DOM 元素（可以當作是 html tag），並且可以用類似於 css 指定元素的方式設定要找的目標，例如：<code>document.querySelector(&#39;div ul li p&#39;)</code></li>
+</ol>
+</li>
+<li>認識<code>.closest()</code>：於括號內填入要存取的元素名稱、id、或是 class，他會從目前位置往上層找，父層找不到就再往祖父層找，直到找到第一個符合的元素，但這個方法只能找祖先（？，與目前位置在同一層的元素不會回傳結果</li>
+</ol>
+</li>
+<li>作業心得：相較於之前教的，我更喜歡用這一課用<code>.closest()</code>及<code>.querySelector()</code>的方法來找父元素、子元素，因為可以更明確指定，比較不會因為架構的順序調整與變動而影響，若像是使用索引的方式指定的話，如：<code>children[0]</code>，在換順序以後索引就需要跟著更換<blockquote>
+<p>作業說明：作業進行重構程式碼，將<code>.getElementById()</code>、<code>.parentElement</code>、<code>.children</code>全部改為這一課教的語法<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/6k38qar4/">https://jsfiddle.net/iamCJ/6k38qar4/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>我覺得這系列的課還在我有學過的範圍裡，只是有幾個語法沒有用過，或是更習慣使用另一種相似功能的語法，難度還不高，期待後面的課程可以更有挑戰性 ٩(｡・ω・｡)﻿و</p>
+<p>原本預期兩～三天可以完成一個系列的課程，但沒想到實作起來還是挺花時間的，要再加把勁！趕快把接下來的課學完吧！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a target="_blank" rel="noopener" href="https://codelove.tw/@howtomakeaturn/course/vx8gqZ">自學網頁の嬰兒教材：JavaScript（二）—— 親手做個待辦事項小工具</a></p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（一）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a></div>
+    </li>
+  </ul>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS/" rel="tag"><i class="fa fa-tag"></i> 用嬰兒都學得會的教材學JS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/" rel="prev" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（一）">
+      <i class="fa fa-chevron-left"></i> 【用嬰兒都學得會的教材學JS】學習筆記－系列（一）
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%E5%B0%8F%E5%BB%A2%E8%A9%B1"><span class="nav-number">1.</span> <span class="nav-text">前言小廢話</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AA%B2%E7%A8%8B%E9%96%8B%E5%A7%8B"><span class="nav-number">2.</span> <span class="nav-text">課程開始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E8%AA%B2%EF%BC%8D%E8%AA%8D%E8%AD%98-DOM-%E6%A8%B9%E3%80%81%E6%96%B0%E5%A2%9E%E5%85%83%E7%B4%A0"><span class="nav-number">2.1.</span> <span class="nav-text">第一課－認識 DOM 樹、新增元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E8%AA%B2%EF%BC%8D%E5%BE%9E-DOM-%E6%A8%B9%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0%E3%80%81%E5%8B%95%E6%85%8B%E5%8A%A0%E4%B8%8A-onclick-%E4%BA%8B%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">第二課－從 DOM 樹移除元素、動態加上 onclick 事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E8%AA%B2%EF%BC%8D%E8%AA%8D%E8%AD%98-for-%E8%BF%B4%E5%9C%88"><span class="nav-number">2.3.</span> <span class="nav-text">第三課－認識 for 迴圈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E8%AA%B2%EF%BC%8D%E8%AE%80%E5%8F%96%E8%88%87%E4%BF%AE%E6%94%B9-DOM-%E5%85%83%E7%B4%A0%E7%9A%84-class"><span class="nav-number">2.4.</span> <span class="nav-text">第四課－讀取與修改 DOM 元素的 class</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E8%AA%B2%EF%BC%8D%E8%AA%8D%E8%AD%98-onchange-%E4%BA%8B%E4%BB%B6"><span class="nav-number">2.5.</span> <span class="nav-text">第五課－認識 onchange 事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E8%AA%B2%EF%BC%8D%E8%AE%80%E5%8F%96%E8%88%87%E4%BF%AE%E6%94%B9-DOM-%E5%85%83%E7%B4%A0%E7%9A%84-style"><span class="nav-number">2.6.</span> <span class="nav-text">第六課－讀取與修改 DOM 元素的 style</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E8%AA%B2%EF%BC%8D%E7%94%A8-Selector-API-%E9%81%B8%E5%8F%96%E5%85%83%E7%B4%A0"><span class="nav-number">2.7.</span> <span class="nav-text">第七課－用 Selector API 選取元素</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%B5%90"><span class="nav-number">3.</span> <span class="nav-text">小結</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%80%A3%E7%B5%90"><span class="nav-number">4.</span> <span class="nav-text">文章連結</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CJ Wu"
+      src="/images/avatar-cj.png">
+  <p class="site-author-name" itemprop="name">CJ Wu</p>
+  <div class="site-description" itemprop="description">24y / 肥宅 / 還不是前端工程師</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iam-CJ" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iam-CJ" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:a394675@gmail.com" title="E-Mail → mailto:a394675@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+      <!--顯示近期文章-->
+      
+        <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title">
+            <!-- 設定你要的fa fa icon-->
+            <i class="fa fa-history fa-" aria-hidden="true"></i>
+            近期文章
+        </div>
+        <ul class="links-of-blogroll-list">
+            
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（二）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（一）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/" title="【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1" target="_blank">【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/MarkDown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95/" title="MarkDown常用語法" target="_blank">MarkDown常用語法</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/" title="【作品集】新竹市違規照相桿地圖" target="_blank">【作品集】新竹市違規照相桿地圖</a>
+              </li>
+              
+            
+        </ul>
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CJ Wu</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
