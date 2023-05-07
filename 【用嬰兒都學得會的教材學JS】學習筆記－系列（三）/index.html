@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="google-site-verification" content="S5x9Jy1l3lcXQX0hqQcLU42_636ewC2SpCe1wQfGEQ8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-cj.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-cj.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-cj.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iam-cj.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0KTV79M9Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0KTV79M9Q');
+</script>
+
+  <meta name="description" content="前言小廢話站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【用嬰兒都學得會的教材學JS】學習筆記－系列（三）">
+<meta property="og:url" content="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/">
+<meta property="og:site_name" content="西噘的不專業筆記">
+<meta property="og:description" content="前言小廢話站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2023-05-04T15:03:53.000Z">
+<meta property="article:modified_time" content="2023-05-07T15:42:20.669Z">
+<meta property="article:author" content="CJ Wu">
+<meta property="article:tag" content="用嬰兒都學得會的教材學JS">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（三） | 西噘的不專業筆記</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CYC62V0KT"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2CYC62V0KT');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">西噘的不專業筆記</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我是CJ，我不會亂丟貢丸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-cj.png">
+      <meta itemprop="name" content="CJ Wu">
+      <meta itemprop="description" content="24y / 肥宅 / 還不是前端工程師">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="西噘的不專業筆記">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【用嬰兒都學得會的教材學JS】學習筆記－系列（三）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-05-04 23:03:53" itemprop="dateCreated datePublished" datetime="2023-05-04T23:03:53+08:00">2023-05-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-05-07 23:42:20" itemprop="dateModified" datetime="2023-05-07T23:42:20+08:00">2023-05-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。<br>不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD，網路上可以找到很多前人分享的文章、我遇過的問題也會有人遇到，並且在 Stack Overflow 提問，不怕找不到解方，只怕關鍵字下得不夠清楚。</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 alert 元件：出現此元件的狀況通常是用來公告訊息，或是在使用者做某些動作後的通知、提示</li>
+<li>關鍵字：<strong>alert ui</strong>、<strong>alert component</strong></li>
+</ol>
+</li>
+<li>作業心得：本來以為這系列的重點仍會放在 JS 的功能或語法等，但這堂課看起來比較偏向設計常見樣式，功能僅佔一點<blockquote>
+<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 toast 元件：可以想像成烤好的吐司會從烤土司機<strong>彈跳</strong>出來一樣，當使用者做某些動作後會跳出<strong>提示文字框</strong>給予反饋，這個元件通常會做成「顯示幾秒之後自動關閉」</li>
+<li>認識<code>setTimeout()</code>函式：這個函式的功能是在設定的延遲秒數到了後，執行<strong>一次</strong>括號內程式<figure class="highlight js"><figcaption><span>用法</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入要延遲執行的function</span></span><br><span class="line"><span class="built_in">setTimeout</span>(functionName, 秒數（毫秒）, 參數<span class="number">1</span>, 參數<span class="number">2.</span>..);</span><br><span class="line"><span class="comment">//或裡面塞立即函式</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
+<li>關鍵字：<strong>toast ui</strong>、<strong>toast component</strong></li>
+</ol>
+</li>
+<li>作業心得：其實經過查詢之後，覺得 alert 跟 toast 的設計長得差不多 XD，只是在顯示方面有所差異而已<blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 modal 元件：中文是互動視窗，也有人稱為燈箱或視窗，會在瀏覽網頁時跳出會遮擋內容的視窗，有時會是登入的提示，也有時會顯示廣告；也有時會用來在同一個頁面顯示額外資訊，不需跳轉至別的網址，像是點擊商品圖片後，會跳出詳細介紹、產品規格等資訊的視窗</li>
+<li>關鍵字：<strong>popup modal ui</strong>、<strong>lightbox ui</strong>、<strong>燈箱 css</strong>、<strong>popup modal css</strong></li>
+<li>補充：modal 元件跳出時，通常會讓背景變成半透明黑色、白色，而這種半透明背景遮罩的英文術語叫 black overlay，可以搜尋 <strong>full page black overlay css</strong> 了解如何使用 CSS 實現這樣的效果</li>
+</ol>
+</li>
+<li>作業心得：寫這份作業的時間主要仍是花在寫 CSS，樣式沒問題，用 JS 寫功能就簡單了(&#96;･∀･)b<blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><ul>
+<li>課程概要：<ol>
+<li>不使用 alert 跳出表單驗證提示：alert 的樣式不夠漂亮，可以參考業界是如何設計欄位驗證的樣式</li>
+<li>關鍵字：<strong>form validation ui</strong></li>
+<li>補充：作業的設計會用到有關驗證<strong>有無某字</strong>以及<strong>字串長度</strong>的功能，可以搜尋關鍵字<strong>javascript 包含字串</strong><code>.includes()</code>、<strong>javascript 字串長度</strong><code>.length</code>找方法</li>
+</ol>
+</li>
+<li>作業心得：在寫的過程中基本上沒有遇到什麼困難，只有中途 JSFiddle 的預覽一直跳 404，慢慢除錯發現是 button 的問題，經查詢原來是因為沒有設 type 屬性，加上以後預覽就順利運行了<blockquote>
+<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><ul>
+<li>課程概要：<ol>
+<li>認識 collapse 效果：是指可以將內容收折、展開的效果</li>
+<li>關鍵字：<strong>collapse item css</strong></li>
+<li>補充：收折、展開的動畫通常會是<strong>淡入淡出</strong>、<strong>滑上滑下</strong>，可以搜尋關鍵字<code>slide down css</code>、<code>slide up css</code>、<code>fade in css</code>、<code>fade out css</code>參考如何寫出這樣的效果</li>
+</ol>
+</li>
+<li>作業心得：中間一度卡在 CSS 的<code>transition</code>沒有動畫效果出現，後來把內容的<code>display:none</code>改掉，改成調整<code>height</code>的數值，以及設<code>overflow:hidden</code>把溢出的內容隱藏，動畫就能正常顯示了<blockquote>
+<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><ul>
+<li>課程概要：<ol>
+<li>認識 dropdown 元件：中文是下拉式選單，通常會運用在有多個階層的導覽列</li>
+<li>關鍵字：<strong>dropdown menu javascript</strong></li>
+</ol>
+</li>
+<li>作業心得：嗯 ⋯ 果然比起寫 CSS，寫 JS 更能讓我感到愉悅啊 XD<blockquote>
+<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識 carousel 元件：中文是輪播元件，也有人叫它<strong>幻燈片 slideshow</strong></li>
+<li>關鍵字：<strong>slideshow js</strong>、<strong>carousel javascript</strong></li>
+</ol>
+</li>
+<li>作業心得：這個練習在職訓課程有寫過，所以寫起來很快 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>可能是因為我已經有一些基礎的關係，覺得這系列的課還是不夠有挑戰性，許多元件設計及功能都有見過和寫過，所以會感覺沒有學到新東西、感到有點失望 XD，想要趕快進入下一系列的課ヽ(#&#96;Д´)ﾉ！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a target="_blank" rel="noopener" href="https://codelove.tw/@howtomakeaturn/course/gqveaW">自學網頁の嬰兒教材：JavaScript（三）—— 自己做看看實務常用 UI 元件</a></p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（一）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（二）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</a></div>
+    </li>
+  </ul>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS/" rel="tag"><i class="fa fa-tag"></i> 用嬰兒都學得會的教材學JS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/" rel="prev" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（二）">
+      <i class="fa fa-chevron-left"></i> 【用嬰兒都學得會的教材學JS】學習筆記－系列（二）
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%E5%B0%8F%E5%BB%A2%E8%A9%B1"><span class="nav-number">1.</span> <span class="nav-text">前言小廢話</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AA%B2%E7%A8%8B%E9%96%8B%E5%A7%8B"><span class="nav-number">2.</span> <span class="nav-text">課程開始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E8%AA%B2%EF%BC%8Dalert-%E7%A4%BA%E8%AD%A6%E5%85%83%E4%BB%B6"><span class="nav-number">2.1.</span> <span class="nav-text">第一課－alert 示警元件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E8%AA%B2%EF%BC%8Dtoast-%E5%90%90%E5%8F%B8%E5%85%83%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">第二課－toast 吐司元件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E8%AA%B2%EF%BC%8Dmodal-%E4%BA%92%E5%8B%95%E8%A6%96%E7%AA%97%E5%85%83%E4%BB%B6"><span class="nav-number">2.3.</span> <span class="nav-text">第三課－modal 互動視窗元件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E8%AA%B2%EF%BC%8D%E8%A1%A8%E5%96%AE%E9%A9%97%E8%AD%89"><span class="nav-number">2.4.</span> <span class="nav-text">第四課－表單驗證</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E8%AA%B2%EF%BC%8Dcollapse-%E6%8A%98%E7%96%8A%E6%95%88%E6%9E%9C"><span class="nav-number">2.5.</span> <span class="nav-text">第五課－collapse 折疊效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E8%AA%B2%EF%BC%8Ddropdown-%E4%B8%8B%E6%8B%89%E5%BC%8F%E9%81%B8%E5%96%AE"><span class="nav-number">2.6.</span> <span class="nav-text">第六課－dropdown 下拉式選單</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E8%AA%B2%EF%BC%8Dcarousel-%E8%BC%AA%E6%92%AD%E5%85%83%E4%BB%B6"><span class="nav-number">2.7.</span> <span class="nav-text">第七課－carousel 輪播元件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%B5%90"><span class="nav-number">3.</span> <span class="nav-text">小結</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%80%A3%E7%B5%90"><span class="nav-number">4.</span> <span class="nav-text">文章連結</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CJ Wu"
+      src="/images/avatar-cj.png">
+  <p class="site-author-name" itemprop="name">CJ Wu</p>
+  <div class="site-description" itemprop="description">24y / 肥宅 / 還不是前端工程師</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iam-CJ" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iam-CJ" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:a394675@gmail.com" title="E-Mail → mailto:a394675@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+      <!--顯示近期文章-->
+      
+        <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title">
+            <!-- 設定你要的fa fa icon-->
+            <i class="fa fa-history fa-" aria-hidden="true"></i>
+            近期文章
+        </div>
+        <ul class="links-of-blogroll-list">
+            
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（三）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（二）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（一）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/" title="【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1" target="_blank">【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/MarkDown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95/" title="MarkDown常用語法" target="_blank">MarkDown常用語法</a>
+              </li>
+              
+            
+        </ul>
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CJ Wu</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
