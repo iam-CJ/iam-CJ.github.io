@@ -374,6 +374,101 @@
       </tags>
   </entry>
   <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。<br>不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD，網路上可以找到很多前人分享的文章、我遇過的問題也會有人遇到，並且在 Stack Overflow 提問，不怕找不到解方，只怕關鍵字下得不夠清楚。</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 alert 元件：出現此元件的狀況通常是用來公告訊息，或是在使用者做某些動作後的通知、提示</li>
+<li>關鍵字：<strong>alert ui</strong>、<strong>alert component</strong></li>
+</ol>
+</li>
+<li>作業心得：本來以為這系列的重點仍會放在 JS 的功能或語法等，但這堂課看起來比較偏向設計常見樣式，功能僅佔一點<blockquote>
+<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 toast 元件：可以想像成烤好的吐司會從烤土司機<strong>彈跳</strong>出來一樣，當使用者做某些動作後會跳出<strong>提示文字框</strong>給予反饋，這個元件通常會做成「顯示幾秒之後自動關閉」</li>
+<li>認識<code>setTimeout()</code>函式：這個函式的功能是在設定的延遲秒數到了後，執行<strong>一次</strong>括號內程式<figure class="highlight js"><figcaption><span>用法</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入要延遲執行的function</span></span><br><span class="line"><span class="built_in">setTimeout</span>(functionName, 秒數（毫秒）, 參數<span class="number">1</span>, 參數<span class="number">2.</span>..);</span><br><span class="line"><span class="comment">//或裡面塞立即函式</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
+<li>關鍵字：<strong>toast ui</strong>、<strong>toast component</strong></li>
+</ol>
+</li>
+<li>作業心得：其實經過查詢之後，覺得 alert 跟 toast 的設計長得差不多 XD，只是在顯示方面有所差異而已<blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 modal 元件：中文是互動視窗，也有人稱為燈箱或視窗，會在瀏覽網頁時跳出會遮擋內容的視窗，有時會是登入的提示，也有時會顯示廣告；也有時會用來在同一個頁面顯示額外資訊，不需跳轉至別的網址，像是點擊商品圖片後，會跳出詳細介紹、產品規格等資訊的視窗</li>
+<li>關鍵字：<strong>popup modal ui</strong>、<strong>lightbox ui</strong>、<strong>燈箱 css</strong>、<strong>popup modal css</strong></li>
+<li>補充：modal 元件跳出時，通常會讓背景變成半透明黑色、白色，而這種半透明背景遮罩的英文術語叫 black overlay，可以搜尋 <strong>full page black overlay css</strong> 了解如何使用 CSS 實現這樣的效果</li>
+</ol>
+</li>
+<li>作業心得：寫這份作業的時間主要仍是花在寫 CSS，樣式沒問題，用 JS 寫功能就簡單了(&#96;･∀･)b<blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><ul>
+<li>課程概要：<ol>
+<li>不使用 alert 跳出表單驗證提示：alert 的樣式不夠漂亮，可以參考業界是如何設計欄位驗證的樣式</li>
+<li>關鍵字：<strong>form validation ui</strong></li>
+<li>補充：作業的設計會用到有關驗證<strong>有無某字</strong>以及<strong>字串長度</strong>的功能，可以搜尋關鍵字<strong>javascript 包含字串</strong><code>.includes()</code>、<strong>javascript 字串長度</strong><code>.length</code>找方法</li>
+</ol>
+</li>
+<li>作業心得：在寫的過程中基本上沒有遇到什麼困難，只有中途 JSFiddle 的預覽一直跳 404，慢慢除錯發現是 button 的問題，經查詢原來是因為沒有設 type 屬性，加上以後預覽就順利運行了<blockquote>
+<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><ul>
+<li>課程概要：<ol>
+<li>認識 collapse 效果：是指可以將內容收折、展開的效果</li>
+<li>關鍵字：<strong>collapse item css</strong></li>
+<li>補充：收折、展開的動畫通常會是<strong>淡入淡出</strong>、<strong>滑上滑下</strong>，可以搜尋關鍵字<code>slide down css</code>、<code>slide up css</code>、<code>fade in css</code>、<code>fade out css</code>參考如何寫出這樣的效果</li>
+</ol>
+</li>
+<li>作業心得：中間一度卡在 CSS 的<code>transition</code>沒有動畫效果出現，後來把內容的<code>display:none</code>改掉，改成調整<code>height</code>的數值，以及設<code>overflow:hidden</code>把溢出的內容隱藏，動畫就能正常顯示了<blockquote>
+<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><ul>
+<li>課程概要：<ol>
+<li>認識 dropdown 元件：中文是下拉式選單，通常會運用在有多個階層的導覽列</li>
+<li>關鍵字：<strong>dropdown menu javascript</strong></li>
+</ol>
+</li>
+<li>作業心得：嗯 ⋯ 果然比起寫 CSS，寫 JS 更能讓我感到愉悅啊 XD<blockquote>
+<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識 carousel 元件：中文是輪播元件，也有人叫它<strong>幻燈片 slideshow</strong></li>
+<li>關鍵字：<strong>slideshow js</strong>、<strong>carousel javascript</strong></li>
+</ol>
+</li>
+<li>作業心得：這個練習在職訓課程有寫過，所以寫起來很快 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>可能是因為我已經有一些基礎的關係，覺得這系列的課還是不夠有挑戰性，許多元件設計及功能都有見過和寫過，所以會感覺沒有學到新東西、感到有點失望 XD，想要趕快進入下一系列的課ヽ(#&#96;Д´)ﾉ！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/gqveaW">自學網頁の嬰兒教材：JavaScript（三）—— 自己做看看實務常用 UI 元件</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</title>
     <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧</p>
@@ -472,92 +567,147 @@
       </tags>
   </entry>
   <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。<br>不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD，網路上可以找到很多前人分享的文章、我遇過的問題也會有人遇到，並且在 Stack Overflow 提問，不怕找不到解方，只怕關鍵字下得不夠清楚。</p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><ul>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（五）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>結束系列四馬上就來學系列五啦！目前上到全系列過半，大概耗時半個月，感覺如果我卯起全力來學，應該可以一個月內就完結這系列哦(╯✧∇✧)╯，不過前提是我要先打敗我的惰性 ∠( ᐛ 」∠)＿</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－學會-Cookie-相關功能"><a href="#第一課－學會-Cookie-相關功能" class="headerlink" title="第一課－學會 Cookie 相關功能"></a>第一課－學會 Cookie 相關功能</h2><ul>
 <li>課程概要：<ol>
-<li>認識什麼是 alert 元件：出現此元件的狀況通常是用來公告訊息，或是在使用者做某些動作後的通知、提示</li>
-<li>關鍵字：<strong>alert ui</strong>、<strong>alert component</strong></li>
+<li>認識 HTTP 協定：HTTP 是一種網路通訊協定，主要用來傳輸網頁相關的內容（HTML、圖片、影片 ⋯ 等）的檔案，在 HTTP 的世界中是沒有狀態可言的，每次連線請求都是獨立發生、新的開始。<br><font style="color:grey;">本段內容摘錄自：<a href="https://kaibaoom.tw/2019/10/09/cookies-introduction/">透過購物車來了解 Cookie 的運作方式</a></font></li>
+<li>認識 cookie：相較於無狀態的 HTTP 協議，cookie <strong>可以記錄網頁的狀態</strong>，比如說已登入或是放進購物車裡的商品，並且 cookie 的資料前後端都可以做修改，會附屬在 HTTP 的連線請求上。</li>
+<li>cookie 的特性：<ol>
+<li>其內容在後台主機端也能存取</li>
+<li>其內容在重新整理網頁之後仍會保留</li>
 </ol>
 </li>
-<li>作業心得：本來以為這系列的重點仍會放在 JS 的功能或語法等，但這堂課看起來比較偏向設計常見樣式，功能僅佔一點<blockquote>
-<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
+<li>將值存取於 cookie 的寫法：將值賦予到<code>document.cookie</code>這個物件屬性，值的格式是<code>&#39;name=&#39; + value</code>，而這個程式的設計即便賦予<code>document.cookie</code>兩次值（name 不同的狀況下），但第二次的值不會覆蓋第一個值，而是兩個都存進 cookie 裡</li>
+<li>js-cookie 套件的使用方法：寫 cookie 也有方便的套件可以使用！<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//新增cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">set</span>(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;value&quot;</span>);</span><br><span class="line"><span class="comment">//讀取cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">get</span>(<span class="string">&quot;name&quot;</span>); <span class="comment">//讀取指定的cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">get</span>(); <span class="comment">//讀取所有可見的cookie</span></span><br><span class="line"><span class="comment">//刪除cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">remove</span>(<span class="string">&quot;name&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：由於原本做作業的平台不支援 cookie 存取，因此要到另一個網站，但是我超不喜歡到處辦帳號的感覺，而且這個網站讓我體驗超差，一直出現像是預覽跑不出來、連線逾時、連線錯誤之類的問題，寫到不開心(#&#96;Д´)ﾉ<blockquote>
+<p>作業說明：網頁的一開始會有提示頁，上面會有兩個按鈕，其中一個按鈕將使用者的狀態存入 cookie，使重整網頁後也不會再跳出提示頁，而另一個按鈕會導往 Google 首頁<br>p.s.看後面的課程不需要再用到 Replit 這個網站，因此我將程式碼移至 JSFiddle，但就不支援 cookie 存取了<br><a href="https://jsfiddle.net/iamCJ/f04esaxo/">https://jsfiddle.net/iamCJ/f04esaxo/</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><ul>
+<h2 id="第二課－學會-Local-Storage-相關功能"><a href="#第二課－學會-Local-Storage-相關功能" class="headerlink" title="第二課－學會 Local Storage 相關功能"></a>第二課－學會 Local Storage 相關功能</h2><ul>
 <li>課程概要：<ol>
-<li>認識什麼是 toast 元件：可以想像成烤好的吐司會從烤土司機<strong>彈跳</strong>出來一樣，當使用者做某些動作後會跳出<strong>提示文字框</strong>給予反饋，這個元件通常會做成「顯示幾秒之後自動關閉」</li>
-<li>認識<code>setTimeout()</code>函式：這個函式的功能是在設定的延遲秒數到了後，執行<strong>一次</strong>括號內程式<figure class="highlight js"><figcaption><span>用法</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入要延遲執行的function</span></span><br><span class="line"><span class="built_in">setTimeout</span>(functionName, 秒數（毫秒）, 參數<span class="number">1</span>, 參數<span class="number">2.</span>..);</span><br><span class="line"><span class="comment">//或裡面塞立即函式</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
-<li>關鍵字：<strong>toast ui</strong>、<strong>toast component</strong></li>
+<li>認識 Local Storage：能夠把資料儲存在瀏覽器上的功能</li>
+<li>Local Storage 與 cookie 的差別：<ol>
+<li>local storage 的資料不會挾帶在 http request 中發送，也就是伺服器端<strong>無法</strong>直接存取</li>
+<li>local storage 能儲存的資料大小，比 cookie <strong>大</strong>很多</li>
 </ol>
 </li>
-<li>作業心得：其實經過查詢之後，覺得 alert 跟 toast 的設計長得差不多 XD，只是在顯示方面有所差異而已<blockquote>
-<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
+<li>將值存取於 Local Storage 的寫法：<ol>
+<li>儲存資料：使用 <code>localStorage.setItem(&quot;name&quot;,&quot;value&quot;)</code></li>
+<li>取得資料：使用 <code>localStorage.getItem(&quot;name&quot;)</code></li>
+<li>如果資料的型態非字串，需要使用<code>JSON.stringify</code>將物件轉換成字串，使用 <code>JSON.parse</code>將字串轉換成物件</li>
+</ol>
+</li>
+<li>自己補充：當要存多筆資料時，可以先用<code>array.push()</code>將每筆資料新增在一個陣列中，最後再一次<code>localStorage.setItem(&quot;name&quot;,JSON.stringify(array))</code>把整筆資料存進去</li>
+</ol>
+</li>
+<li>作業心得：新增一開始沒規劃的功能還滿麻煩的，需要調整資料結構，而且很容易出現意外的錯誤 OAO<blockquote>
+<p>作業說明：將系列（二）的作業新增<strong>儲存</strong>按鈕，將清單存入 local storage，在網頁重整後仍能呈現原本的清單內容<br><a href="https://jsfiddle.net/iamCJ/wmnzq15a/">https://jsfiddle.net/iamCJ/wmnzq15a/</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><ul>
-<li>課程概要：<ol>
-<li>認識什麼是 modal 元件：中文是互動視窗，也有人稱為燈箱或視窗，會在瀏覽網頁時跳出會遮擋內容的視窗，有時會是登入的提示，也有時會顯示廣告；也有時會用來在同一個頁面顯示額外資訊，不需跳轉至別的網址，像是點擊商品圖片後，會跳出詳細介紹、產品規格等資訊的視窗</li>
-<li>關鍵字：<strong>popup modal ui</strong>、<strong>lightbox ui</strong>、<strong>燈箱 css</strong>、<strong>popup modal css</strong></li>
-<li>補充：modal 元件跳出時，通常會讓背景變成半透明黑色、白色，而這種半透明背景遮罩的英文術語叫 black overlay，可以搜尋 <strong>full page black overlay css</strong> 了解如何使用 CSS 實現這樣的效果</li>
+<h2 id="第三課－變數作用域、箭頭函式、ES6-語法"><a href="#第三課－變數作用域、箭頭函式、ES6-語法" class="headerlink" title="第三課－變數作用域、箭頭函式、ES6 語法"></a>第三課－變數作用域、箭頭函式、ES6 語法</h2><ul>
+<li>課程概要：<br><font style="color:grey;">剛好之前有寫過關於作用域及宣告方式的筆記，因此以下內容會是由我個人筆記結合課程而產出的</font><ol>
+<li>認識變數作用域：意指變數及被賦予的值有效或者是成立的範圍。JS 的作用域可以分為兩種：<strong>全域</strong>作用域(global)、<strong>區域</strong>作用域(local)，而區域作用域又可以細分為<strong>函式</strong>作用域(function)及<strong>區塊</strong>作用域(block)，依據不同的宣告方式，變數及被賦予的值其有效的範圍也不同</li>
+<li>var、let、const 的差別：<ul>
+<li>var：在 ES6 之前，JS 中的變數作用域只有全域跟函式兩種，並且在使用<code>var</code>時，要留意一種名為 <strong>Hoisting</strong> 的現象，這是一種會讓人搞錯變數作用域的現象。而 var 有效作用域是函式(function)作用域，如果沒有用函式包住的話，被 var 宣告的值會是全域變數</li>
+<li>const、let：在 ES6 之後，新增 const 與 let 兩種宣告方式，有效的作用域類型為區塊(block)作用域，範圍在大括號<code>&#123;&#125;</code>之內；而 const 與 let 的差異則是，const 是宣告不會變的參數，let 則是可能會重新被指定的參數。<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>重複宣告</th>
+<th>先使用，後宣告</th>
+<th>有效作用域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>var</td>
+<td>O</td>
+<td>O</td>
+<td>函式(function)作用域</td>
+</tr>
+<tr>
+<td>let</td>
+<td>O</td>
+<td>X</td>
+<td>區域(block)作用域</td>
+</tr>
+<tr>
+<td>const</td>
+<td>X</td>
+<td>X</td>
+<td>區域(block)作用域</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li>什麼是 hoisting（提升）？：javascript 的特性之一，會讓<code>var</code><strong>宣告</strong>這個動作<strong>提升到函式最頂端</strong>的位置執行，但是「被賦予的值」<strong>不會</strong>跟著被提升！另外函式也具備 hoisting 這個特性，因此在兩個函式需要互相呼叫的狀況下，是可以執行並且合法的</li>
+<li>認識箭頭函式：基本上就長<code>()=&gt;&#123;&#125;</code>這個樣子，而跟一般函式最主要的差別是，箭頭函式中的 this，會依據函式在哪裡建立而決定，而非與一般函式一樣，依照執行時被呼叫的地方決定。<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 基本用法</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">arrow1</span> = (<span class="params">param1, param2</span>) =&gt; &#123; ... &#125;</span><br><span class="line"><span class="comment">// 僅有一個參數時，可省略括號</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">arrow2</span> = params =&gt; &#123; ... &#125;</span><br><span class="line"><span class="comment">// 單一運算後直接回傳時，可省略大括號</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">arrow3</span> = params =&gt; params ** <span class="number">2</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
-<li>作業心得：寫這份作業的時間主要仍是花在寫 CSS，樣式沒問題，用 JS 寫功能就簡單了(&#96;･∀･)b<blockquote>
-<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
+<li>作業心得：這課內容突然變好多，光寫下筆記就花了一些時間，但還好之前就學過這些概念，理解起來不難<blockquote>
+<p>作業說明：寫一個計數器及一個四則運算的計算器，思考宣告變數的位置會如何影響結果並完成作業要求<br><a href="https://jsfiddle.net/iamCJ/cny8rk7w/">https://jsfiddle.net/iamCJ/cny8rk7w/</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><ul>
+<h2 id="第四課－學會-AJAX-基本原理"><a href="#第四課－學會-AJAX-基本原理" class="headerlink" title="第四課－學會 AJAX 基本原理"></a>第四課－學會 AJAX 基本原理</h2><ul>
 <li>課程概要：<ol>
-<li>不使用 alert 跳出表單驗證提示：alert 的樣式不夠漂亮，可以參考業界是如何設計欄位驗證的樣式</li>
-<li>關鍵字：<strong>form validation ui</strong></li>
-<li>補充：作業的設計會用到有關驗證<strong>有無某字</strong>以及<strong>字串長度</strong>的功能，可以搜尋關鍵字<strong>javascript 包含字串</strong><code>.includes()</code>、<strong>javascript 字串長度</strong><code>.length</code>找方法</li>
+<li>認識 AJAX：全名是 Asynchronous JavaScript and XML，簡而言之就是「<strong>非同步</strong>從主機取得資料來更新網頁內容」的意思。<br>舊式的網頁都是瀏覽器向主機發送 HTTP 請求 ⇒ 主機回應一整包 html 內容，因為是一次拿到一整包 html 內容，所以說「網頁上全部內容都是同步取得」。<br>而 AJAX 的技術，則是先載入基本網頁內容，再接著根據需求，於<strong>不同時間點</strong>發送 HTTP 請求取得<strong>部份內容</strong>，所以叫做非同步。</li>
+<li>AJAX 的寫法： 使用<code>.fetch()</code>，括號內參數放入要呼叫的 API 網址，接著使用 <code>.then()</code>把 <code>fetch()</code> 回傳的東西，直接當成物件接著呼叫，然後再次使用<code>.then()</code>再把結果當成物件再呼叫一次<br><code>fetch()</code> 回傳的東西代表的是一個 HTTP 回應物件，這個回應物件的 HTTP body 是實際的 JSON 內容，可以用<code>.json()</code>函式取得內容<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users/1&quot;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
-<li>作業心得：在寫的過程中基本上沒有遇到什麼困難，只有中途 JSFiddle 的預覽一直跳 404，慢慢除錯發現是 button 的問題，經查詢原來是因為沒有設 type 屬性，加上以後預覽就順利運行了<blockquote>
-<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
+<li>作業心得：大家把作業弄得好漂亮哦，但我今天有點偏懶，先把功能做出來就好 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：使用 AJAX 取得商品資料，將所有商品名稱列出，並新增按下會跳出該商品 id、分類、說明的按鈕<br><a href="https://jsfiddle.net/iamCJ/xehb2nt4/">https://jsfiddle.net/iamCJ/xehb2nt4/</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><ul>
+<h2 id="第五課－學會-AJAX-錯誤處理"><a href="#第五課－學會-AJAX-錯誤處理" class="headerlink" title="第五課－學會 AJAX 錯誤處理"></a>第五課－學會 AJAX 錯誤處理</h2><ul>
 <li>課程概要：<ol>
-<li>認識 collapse 效果：是指可以將內容收折、展開的效果</li>
-<li>關鍵字：<strong>collapse item css</strong></li>
-<li>補充：收折、展開的動畫通常會是<strong>淡入淡出</strong>、<strong>滑上滑下</strong>，可以搜尋關鍵字<code>slide down css</code>、<code>slide up css</code>、<code>fade in css</code>、<code>fade out css</code>參考如何寫出這樣的效果</li>
+<li>認識 AJAX 可能發生的各種錯誤：在 AJAX 請求資料時，可能會發生各種狀況，像是：主機故障或者過度忙碌無法回應、呼叫 API 時登入驗證資訊過期、API 有限制額度，用戶額度使用完了被主機拒絕、用戶在發送 AJAX 時網路斷線了</li>
+<li>認識 AJAX 錯誤處理的寫法：可以使用<code>.catch()</code>函式，在括號裡面寫當發生錯誤狀況時，要出現的訊息或處理方式，比如 alert 告知使用者剛剛的請求發生錯誤，請重新整理再試一次</li>
 </ol>
 </li>
-<li>作業心得：中間一度卡在 CSS 的<code>transition</code>沒有動畫效果出現，後來把內容的<code>display:none</code>改掉，改成調整<code>height</code>的數值，以及設<code>overflow:hidden</code>把溢出的內容隱藏，動畫就能正常顯示了<blockquote>
-<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
+<li>作業心得：這篇內容好短好開心 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：將上一堂課的作業加上 AJAX 的錯誤處理機制<br><a href="https://jsfiddle.net/iamCJ/bj6fLec0/">https://jsfiddle.net/iamCJ/bj6fLec0/</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><ul>
+<h2 id="第六課－學會-AJAX-與各種-HTTP-請求方法"><a href="#第六課－學會-AJAX-與各種-HTTP-請求方法" class="headerlink" title="第六課－學會 AJAX 與各種 HTTP 請求方法"></a>第六課－學會 AJAX 與各種 HTTP 請求方法</h2><ul>
 <li>課程概要：<ol>
-<li>認識 dropdown 元件：中文是下拉式選單，通常會運用在有多個階層的導覽列</li>
-<li>關鍵字：<strong>dropdown menu javascript</strong></li>
+<li>認識 AJAX 與不同的 HTTP 請求方法：HTTP 協定中，HTTP Request 有多種不同的方法，基本上寫法都大同小異，在<code>.fetch()</code>加入第二個物件類型的參數，新增<code>method:</code>屬性註明要使用的請求方法，另外再新增代表 HTTP body 的<code>body:</code>屬性放入你想要新增或修改的資料即可，但由於資料需要是字串格式，因此在<code>body:</code>後須用<code>JSON.stringify</code>將物件轉為字串<ol>
+<li>使用 HTTP GET 讀取資料<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users&quot;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+<li>使用 HTTP POST 新增資料<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span>,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;apple&quot;</span>,</span><br><span class="line">    <span class="attr">email</span>: <span class="string">&quot;apple@gmail.com&quot;</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+<li>使用 HTTP PUT 更新資料<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//指定修改ID為4的用戶資料</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users/4&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;PUT&quot;</span>,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;banana&quot;</span>,</span><br><span class="line">    <span class="attr">email</span>: <span class="string">&quot;banana@gmail.com&quot;</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+<li>使用 HTTP DELETE 刪除資料<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//指定刪除ID為8的用戶資料</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users/8&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;DELETE&quot;</span>,</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
-<li>作業心得：嗯 ⋯ 果然比起寫 CSS，寫 JS 更能讓我感到愉悅啊 XD<blockquote>
-<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
+<li>補充：上面的範例，用戶參數都是在網址最後加上<code>/&#123;ID&#125;</code>這種格式帶入，實務上，GET 參數也可能用<code>?id=&#123;ID&#125;</code>這種格式，而 POST 或其他類型的請求中，用戶參數也可能直接加在 <code>body: JSON.stringify(&#123;&#125;)</code> 裡面的屬性之中</li>
+</ol>
+</li>
+<li>作業心得：在寫的時候不知道腦袋哪裡卡住，想用事件傳被點擊目標的 id 參數，怎麼用都會出錯，後來把事件寫在跟 fetch 同一個 function 就可以直接用 id 參數，不用傳&#x3D; &#x3D;<blockquote>
+<p>作業說明：將上一堂課作業裡的每一項商品旁邊加上刪除按鈕，點擊按鈕後要將 API 的資料刪除，並且畫面的項目也要一起被刪除<br><a href="https://jsfiddle.net/iamCJ/x5n0cwhq/">https://jsfiddle.net/iamCJ/x5n0cwhq/</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><ul>
+<h2 id="第七課－學會-AJAX-與-data-attribute-的結合"><a href="#第七課－學會-AJAX-與-data-attribute-的結合" class="headerlink" title="第七課－學會 AJAX 與 data attribute 的結合"></a>第七課－學會 AJAX 與 data attribute 的結合</h2><ul>
 <li>課程概要：<ol>
-<li>認識 carousel 元件：中文是輪播元件，也有人叫它<strong>幻燈片 slideshow</strong></li>
-<li>關鍵字：<strong>slideshow js</strong>、<strong>carousel javascript</strong></li>
+<li>認識 data attribute：可以自訂屬性，存放資料、參數</li>
+<li>data attribute 的寫法：html 的部分，直接在 tag 裡設定 <code>data-*</code> 屬性，米字號<code>*</code>可以隨意命名，寫 js 的部分，直接存取 DOM 元素的 <code>dataset</code> 屬性<figure class="highlight html"><figcaption><span>html</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">data-example</span>=<span class="string">&quot;hello&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> data = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>).<span class="property">dataset</span>.<span class="property">example</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(data); <span class="comment">// hello</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
-<li>作業心得：這個練習在職訓課程有寫過，所以寫起來很快 ∠( ᐛ 」∠)＿<blockquote>
-<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
+<li>作業心得：modal 的部分我偷懶拿之前作業的樣式 ∠( ᐛ 」∠)＿，其他部分寫得很開心～<blockquote>
+<p>作業說明：把需要使用的資料用 data 屬性存起來，在需要使用時存取 dataset 即可，並將上一堂作業 alert 的部分，改成以 modal 元件呈現<br><a href="https://jsfiddle.net/iamCJ/okL98ndr/">https://jsfiddle.net/iamCJ/okL98ndr/</a></p>
 </blockquote>
 </li>
 </ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>可能是因為我已經有一些基礎的關係，覺得這系列的課還是不夠有挑戰性，許多元件設計及功能都有見過和寫過，所以會感覺沒有學到新東西、感到有點失望 XD，想要趕快進入下一系列的課ヽ(#&#96;Д´)ﾉ！</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/gqveaW">自學網頁の嬰兒教材：JavaScript（三）—— 自己做看看實務常用 UI 元件</a></p>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列有些課的內容暴增，讓我比前幾個系列花更多時間在做整理 _(´ཀ`」 ∠)_ ，不過也令我更加深了 AJAX 的概念跟使用方法，以前都有點一知半解，學到怎麼做就跟著做，現在我就更清楚我是為了什麼而打這段程式 (&#96;･∀･)b</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/Zq4v3w">自學網頁の嬰兒教材：JavaScript（五）—— 打造功能豐富的前端應用程式</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>

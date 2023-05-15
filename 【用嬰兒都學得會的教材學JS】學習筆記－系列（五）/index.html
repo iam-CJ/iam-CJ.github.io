@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="google-site-verification" content="S5x9Jy1l3lcXQX0hqQcLU42_636ewC2SpCe1wQfGEQ8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-cj.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-cj.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-cj.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iam-cj.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0KTV79M9Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0KTV79M9Q');
+</script>
+
+  <meta name="description" content="前言小廢話結束系列四馬上就來學系列五啦！目前上到全系列過半，大概耗時半個月，感覺如果我卯起全力來學，應該可以一個月內就完結這系列哦(╯✧∇✧)╯，不過前提是我要先打敗我的惰性 ∠( ᐛ 」∠)＿ 課程開始第一課－學會 Cookie 相關功能">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【用嬰兒都學得會的教材學JS】學習筆記－系列（五）">
+<meta property="og:url" content="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89/">
+<meta property="og:site_name" content="西噘的不專業筆記">
+<meta property="og:description" content="前言小廢話結束系列四馬上就來學系列五啦！目前上到全系列過半，大概耗時半個月，感覺如果我卯起全力來學，應該可以一個月內就完結這系列哦(╯✧∇✧)╯，不過前提是我要先打敗我的惰性 ∠( ᐛ 」∠)＿ 課程開始第一課－學會 Cookie 相關功能">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2023-05-10T06:52:55.000Z">
+<meta property="article:modified_time" content="2023-05-15T11:30:30.485Z">
+<meta property="article:author" content="CJ Wu">
+<meta property="article:tag" content="用嬰兒都學得會的教材學JS">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（五） | 西噘的不專業筆記</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CYC62V0KT"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2CYC62V0KT');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">西噘的不專業筆記</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我是CJ，我不會亂丟貢丸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-cj.png">
+      <meta itemprop="name" content="CJ Wu">
+      <meta itemprop="description" content="24y / 肥宅 / 還不是前端工程師">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="西噘的不專業筆記">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【用嬰兒都學得會的教材學JS】學習筆記－系列（五）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-05-10 14:52:55" itemprop="dateCreated datePublished" datetime="2023-05-10T14:52:55+08:00">2023-05-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-05-15 19:30:30" itemprop="dateModified" datetime="2023-05-15T19:30:30+08:00">2023-05-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>結束系列四馬上就來學系列五啦！目前上到全系列過半，大概耗時半個月，感覺如果我卯起全力來學，應該可以一個月內就完結這系列哦(╯✧∇✧)╯，不過前提是我要先打敗我的惰性 ∠( ᐛ 」∠)＿</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－學會-Cookie-相關功能"><a href="#第一課－學會-Cookie-相關功能" class="headerlink" title="第一課－學會 Cookie 相關功能"></a>第一課－學會 Cookie 相關功能</h2><ul>
+<li>課程概要：<ol>
+<li>認識 HTTP 協定：HTTP 是一種網路通訊協定，主要用來傳輸網頁相關的內容（HTML、圖片、影片 ⋯ 等）的檔案，在 HTTP 的世界中是沒有狀態可言的，每次連線請求都是獨立發生、新的開始。<br><font style="color:grey;">本段內容摘錄自：<a target="_blank" rel="noopener" href="https://kaibaoom.tw/2019/10/09/cookies-introduction/">透過購物車來了解 Cookie 的運作方式</a></font></li>
+<li>認識 cookie：相較於無狀態的 HTTP 協議，cookie <strong>可以記錄網頁的狀態</strong>，比如說已登入或是放進購物車裡的商品，並且 cookie 的資料前後端都可以做修改，會附屬在 HTTP 的連線請求上。</li>
+<li>cookie 的特性：<ol>
+<li>其內容在後台主機端也能存取</li>
+<li>其內容在重新整理網頁之後仍會保留</li>
+</ol>
+</li>
+<li>將值存取於 cookie 的寫法：將值賦予到<code>document.cookie</code>這個物件屬性，值的格式是<code>&#39;name=&#39; + value</code>，而這個程式的設計即便賦予<code>document.cookie</code>兩次值（name 不同的狀況下），但第二次的值不會覆蓋第一個值，而是兩個都存進 cookie 裡</li>
+<li>js-cookie 套件的使用方法：寫 cookie 也有方便的套件可以使用！<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//新增cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">set</span>(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;value&quot;</span>);</span><br><span class="line"><span class="comment">//讀取cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">get</span>(<span class="string">&quot;name&quot;</span>); <span class="comment">//讀取指定的cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">get</span>(); <span class="comment">//讀取所有可見的cookie</span></span><br><span class="line"><span class="comment">//刪除cookie</span></span><br><span class="line"><span class="title class_">Cookies</span>.<span class="title function_">remove</span>(<span class="string">&quot;name&quot;</span>);</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：由於原本做作業的平台不支援 cookie 存取，因此要到另一個網站，但是我超不喜歡到處辦帳號的感覺，而且這個網站讓我體驗超差，一直出現像是預覽跑不出來、連線逾時、連線錯誤之類的問題，寫到不開心(#&#96;Д´)ﾉ<blockquote>
+<p>作業說明：網頁的一開始會有提示頁，上面會有兩個按鈕，其中一個按鈕將使用者的狀態存入 cookie，使重整網頁後也不會再跳出提示頁，而另一個按鈕會導往 Google 首頁<br>p.s.看後面的課程不需要再用到 Replit 這個網站，因此我將程式碼移至 JSFiddle，但就不支援 cookie 存取了<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/f04esaxo/">https://jsfiddle.net/iamCJ/f04esaxo/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－學會-Local-Storage-相關功能"><a href="#第二課－學會-Local-Storage-相關功能" class="headerlink" title="第二課－學會 Local Storage 相關功能"></a>第二課－學會 Local Storage 相關功能</h2><ul>
+<li>課程概要：<ol>
+<li>認識 Local Storage：能夠把資料儲存在瀏覽器上的功能</li>
+<li>Local Storage 與 cookie 的差別：<ol>
+<li>local storage 的資料不會挾帶在 http request 中發送，也就是伺服器端<strong>無法</strong>直接存取</li>
+<li>local storage 能儲存的資料大小，比 cookie <strong>大</strong>很多</li>
+</ol>
+</li>
+<li>將值存取於 Local Storage 的寫法：<ol>
+<li>儲存資料：使用 <code>localStorage.setItem(&quot;name&quot;,&quot;value&quot;)</code></li>
+<li>取得資料：使用 <code>localStorage.getItem(&quot;name&quot;)</code></li>
+<li>如果資料的型態非字串，需要使用<code>JSON.stringify</code>將物件轉換成字串，使用 <code>JSON.parse</code>將字串轉換成物件</li>
+</ol>
+</li>
+<li>自己補充：當要存多筆資料時，可以先用<code>array.push()</code>將每筆資料新增在一個陣列中，最後再一次<code>localStorage.setItem(&quot;name&quot;,JSON.stringify(array))</code>把整筆資料存進去</li>
+</ol>
+</li>
+<li>作業心得：新增一開始沒規劃的功能還滿麻煩的，需要調整資料結構，而且很容易出現意外的錯誤 OAO<blockquote>
+<p>作業說明：將系列（二）的作業新增<strong>儲存</strong>按鈕，將清單存入 local storage，在網頁重整後仍能呈現原本的清單內容<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/wmnzq15a/">https://jsfiddle.net/iamCJ/wmnzq15a/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－變數作用域、箭頭函式、ES6-語法"><a href="#第三課－變數作用域、箭頭函式、ES6-語法" class="headerlink" title="第三課－變數作用域、箭頭函式、ES6 語法"></a>第三課－變數作用域、箭頭函式、ES6 語法</h2><ul>
+<li>課程概要：<br><font style="color:grey;">剛好之前有寫過關於作用域及宣告方式的筆記，因此以下內容會是由我個人筆記結合課程而產出的</font><ol>
+<li>認識變數作用域：意指變數及被賦予的值有效或者是成立的範圍。JS 的作用域可以分為兩種：<strong>全域</strong>作用域(global)、<strong>區域</strong>作用域(local)，而區域作用域又可以細分為<strong>函式</strong>作用域(function)及<strong>區塊</strong>作用域(block)，依據不同的宣告方式，變數及被賦予的值其有效的範圍也不同</li>
+<li>var、let、const 的差別：<ul>
+<li>var：在 ES6 之前，JS 中的變數作用域只有全域跟函式兩種，並且在使用<code>var</code>時，要留意一種名為 <strong>Hoisting</strong> 的現象，這是一種會讓人搞錯變數作用域的現象。而 var 有效作用域是函式(function)作用域，如果沒有用函式包住的話，被 var 宣告的值會是全域變數</li>
+<li>const、let：在 ES6 之後，新增 const 與 let 兩種宣告方式，有效的作用域類型為區塊(block)作用域，範圍在大括號<code>&#123;&#125;</code>之內；而 const 與 let 的差異則是，const 是宣告不會變的參數，let 則是可能會重新被指定的參數。<table>
+<thead>
+<tr>
+<th>名稱</th>
+<th>重複宣告</th>
+<th>先使用，後宣告</th>
+<th>有效作用域</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>var</td>
+<td>O</td>
+<td>O</td>
+<td>函式(function)作用域</td>
+</tr>
+<tr>
+<td>let</td>
+<td>O</td>
+<td>X</td>
+<td>區域(block)作用域</td>
+</tr>
+<tr>
+<td>const</td>
+<td>X</td>
+<td>X</td>
+<td>區域(block)作用域</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+<li>什麼是 hoisting（提升）？：javascript 的特性之一，會讓<code>var</code><strong>宣告</strong>這個動作<strong>提升到函式最頂端</strong>的位置執行，但是「被賦予的值」<strong>不會</strong>跟著被提升！另外函式也具備 hoisting 這個特性，因此在兩個函式需要互相呼叫的狀況下，是可以執行並且合法的</li>
+<li>認識箭頭函式：基本上就長<code>()=&gt;&#123;&#125;</code>這個樣子，而跟一般函式最主要的差別是，箭頭函式中的 this，會依據函式在哪裡建立而決定，而非與一般函式一樣，依照執行時被呼叫的地方決定。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 基本用法</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">arrow1</span> = (<span class="params">param1, param2</span>) =&gt; &#123; ... &#125;</span><br><span class="line"><span class="comment">// 僅有一個參數時，可省略括號</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">arrow2</span> = params =&gt; &#123; ... &#125;</span><br><span class="line"><span class="comment">// 單一運算後直接回傳時，可省略大括號</span></span><br><span class="line"><span class="keyword">let</span> <span class="title function_">arrow3</span> = params =&gt; params ** <span class="number">2</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：這課內容突然變好多，光寫下筆記就花了一些時間，但還好之前就學過這些概念，理解起來不難<blockquote>
+<p>作業說明：寫一個計數器及一個四則運算的計算器，思考宣告變數的位置會如何影響結果並完成作業要求<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/cny8rk7w/">https://jsfiddle.net/iamCJ/cny8rk7w/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－學會-AJAX-基本原理"><a href="#第四課－學會-AJAX-基本原理" class="headerlink" title="第四課－學會 AJAX 基本原理"></a>第四課－學會 AJAX 基本原理</h2><ul>
+<li>課程概要：<ol>
+<li>認識 AJAX：全名是 Asynchronous JavaScript and XML，簡而言之就是「<strong>非同步</strong>從主機取得資料來更新網頁內容」的意思。<br>舊式的網頁都是瀏覽器向主機發送 HTTP 請求 ⇒ 主機回應一整包 html 內容，因為是一次拿到一整包 html 內容，所以說「網頁上全部內容都是同步取得」。<br>而 AJAX 的技術，則是先載入基本網頁內容，再接著根據需求，於<strong>不同時間點</strong>發送 HTTP 請求取得<strong>部份內容</strong>，所以叫做非同步。</li>
+<li>AJAX 的寫法： 使用<code>.fetch()</code>，括號內參數放入要呼叫的 API 網址，接著使用 <code>.then()</code>把 <code>fetch()</code> 回傳的東西，直接當成物件接著呼叫，然後再次使用<code>.then()</code>再把結果當成物件再呼叫一次<br><code>fetch()</code> 回傳的東西代表的是一個 HTTP 回應物件，這個回應物件的 HTTP body 是實際的 JSON 內容，可以用<code>.json()</code>函式取得內容<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users/1&quot;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：大家把作業弄得好漂亮哦，但我今天有點偏懶，先把功能做出來就好 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：使用 AJAX 取得商品資料，將所有商品名稱列出，並新增按下會跳出該商品 id、分類、說明的按鈕<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/xehb2nt4/">https://jsfiddle.net/iamCJ/xehb2nt4/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－學會-AJAX-錯誤處理"><a href="#第五課－學會-AJAX-錯誤處理" class="headerlink" title="第五課－學會 AJAX 錯誤處理"></a>第五課－學會 AJAX 錯誤處理</h2><ul>
+<li>課程概要：<ol>
+<li>認識 AJAX 可能發生的各種錯誤：在 AJAX 請求資料時，可能會發生各種狀況，像是：主機故障或者過度忙碌無法回應、呼叫 API 時登入驗證資訊過期、API 有限制額度，用戶額度使用完了被主機拒絕、用戶在發送 AJAX 時網路斷線了</li>
+<li>認識 AJAX 錯誤處理的寫法：可以使用<code>.catch()</code>函式，在括號裡面寫當發生錯誤狀況時，要出現的訊息或處理方式，比如 alert 告知使用者剛剛的請求發生錯誤，請重新整理再試一次</li>
+</ol>
+</li>
+<li>作業心得：這篇內容好短好開心 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：將上一堂課的作業加上 AJAX 的錯誤處理機制<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/bj6fLec0/">https://jsfiddle.net/iamCJ/bj6fLec0/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－學會-AJAX-與各種-HTTP-請求方法"><a href="#第六課－學會-AJAX-與各種-HTTP-請求方法" class="headerlink" title="第六課－學會 AJAX 與各種 HTTP 請求方法"></a>第六課－學會 AJAX 與各種 HTTP 請求方法</h2><ul>
+<li>課程概要：<ol>
+<li>認識 AJAX 與不同的 HTTP 請求方法：HTTP 協定中，HTTP Request 有多種不同的方法，基本上寫法都大同小異，在<code>.fetch()</code>加入第二個物件類型的參數，新增<code>method:</code>屬性註明要使用的請求方法，另外再新增代表 HTTP body 的<code>body:</code>屬性放入你想要新增或修改的資料即可，但由於資料需要是字串格式，因此在<code>body:</code>後須用<code>JSON.stringify</code>將物件轉為字串<ol>
+<li>使用 HTTP GET 讀取資料<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users&quot;</span>)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+<li>使用 HTTP POST 新增資料<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span>,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;apple&quot;</span>,</span><br><span class="line">    <span class="attr">email</span>: <span class="string">&quot;apple@gmail.com&quot;</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+<li>使用 HTTP PUT 更新資料<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//指定修改ID為4的用戶資料</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users/4&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;PUT&quot;</span>,</span><br><span class="line">  <span class="attr">body</span>: <span class="title class_">JSON</span>.<span class="title function_">stringify</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;banana&quot;</span>,</span><br><span class="line">    <span class="attr">email</span>: <span class="string">&quot;banana@gmail.com&quot;</span>,</span><br><span class="line">  &#125;),</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+<li>使用 HTTP DELETE 刪除資料<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//指定刪除ID為8的用戶資料</span></span><br><span class="line"><span class="title function_">fetch</span>(<span class="string">&quot;https://fakestoreapi.com/users/8&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">method</span>: <span class="string">&quot;DELETE&quot;</span>,</span><br><span class="line">&#125;)</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> res.<span class="title function_">json</span>())</span><br><span class="line">  .<span class="title function_">then</span>(<span class="function">(<span class="params">json</span>) =&gt;</span> <span class="variable language_">console</span>.<span class="title function_">log</span>(json));</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>補充：上面的範例，用戶參數都是在網址最後加上<code>/&#123;ID&#125;</code>這種格式帶入，實務上，GET 參數也可能用<code>?id=&#123;ID&#125;</code>這種格式，而 POST 或其他類型的請求中，用戶參數也可能直接加在 <code>body: JSON.stringify(&#123;&#125;)</code> 裡面的屬性之中</li>
+</ol>
+</li>
+<li>作業心得：在寫的時候不知道腦袋哪裡卡住，想用事件傳被點擊目標的 id 參數，怎麼用都會出錯，後來把事件寫在跟 fetch 同一個 function 就可以直接用 id 參數，不用傳&#x3D; &#x3D;<blockquote>
+<p>作業說明：將上一堂課作業裡的每一項商品旁邊加上刪除按鈕，點擊按鈕後要將 API 的資料刪除，並且畫面的項目也要一起被刪除<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/x5n0cwhq/">https://jsfiddle.net/iamCJ/x5n0cwhq/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－學會-AJAX-與-data-attribute-的結合"><a href="#第七課－學會-AJAX-與-data-attribute-的結合" class="headerlink" title="第七課－學會 AJAX 與 data attribute 的結合"></a>第七課－學會 AJAX 與 data attribute 的結合</h2><ul>
+<li>課程概要：<ol>
+<li>認識 data attribute：可以自訂屬性，存放資料、參數</li>
+<li>data attribute 的寫法：html 的部分，直接在 tag 裡設定 <code>data-*</code> 屬性，米字號<code>*</code>可以隨意命名，寫 js 的部分，直接存取 DOM 元素的 <code>dataset</code> 屬性<figure class="highlight html"><figcaption><span>html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">data-example</span>=<span class="string">&quot;hello&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> data = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>).<span class="property">dataset</span>.<span class="property">example</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(data); <span class="comment">// hello</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：modal 的部分我偷懶拿之前作業的樣式 ∠( ᐛ 」∠)＿，其他部分寫得很開心～<blockquote>
+<p>作業說明：把需要使用的資料用 data 屬性存起來，在需要使用時存取 dataset 即可，並將上一堂作業 alert 的部分，改成以 modal 元件呈現<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/okL98ndr/">https://jsfiddle.net/iamCJ/okL98ndr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列有些課的內容暴增，讓我比前幾個系列花更多時間在做整理 _(´ཀ`」 ∠)_ ，不過也令我更加深了 AJAX 的概念跟使用方法，以前都有點一知半解，學到怎麼做就跟著做，現在我就更清楚我是為了什麼而打這段程式 (&#96;･∀･)b</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a target="_blank" rel="noopener" href="https://codelove.tw/@howtomakeaturn/course/Zq4v3w">自學網頁の嬰兒教材：JavaScript（五）—— 打造功能豐富的前端應用程式</a></p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（一）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（三）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（二）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（四）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（四）</a></div>
+    </li>
+  </ul>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS/" rel="tag"><i class="fa fa-tag"></i> 用嬰兒都學得會的教材學JS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89/" rel="prev" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（四）">
+      <i class="fa fa-chevron-left"></i> 【用嬰兒都學得會的教材學JS】學習筆記－系列（四）
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%E5%B0%8F%E5%BB%A2%E8%A9%B1"><span class="nav-number">1.</span> <span class="nav-text">前言小廢話</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AA%B2%E7%A8%8B%E9%96%8B%E5%A7%8B"><span class="nav-number">2.</span> <span class="nav-text">課程開始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-Cookie-%E7%9B%B8%E9%97%9C%E5%8A%9F%E8%83%BD"><span class="nav-number">2.1.</span> <span class="nav-text">第一課－學會 Cookie 相關功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-Local-Storage-%E7%9B%B8%E9%97%9C%E5%8A%9F%E8%83%BD"><span class="nav-number">2.2.</span> <span class="nav-text">第二課－學會 Local Storage 相關功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E8%AA%B2%EF%BC%8D%E8%AE%8A%E6%95%B8%E4%BD%9C%E7%94%A8%E5%9F%9F%E3%80%81%E7%AE%AD%E9%A0%AD%E5%87%BD%E5%BC%8F%E3%80%81ES6-%E8%AA%9E%E6%B3%95"><span class="nav-number">2.3.</span> <span class="nav-text">第三課－變數作用域、箭頭函式、ES6 語法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-AJAX-%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="nav-number">2.4.</span> <span class="nav-text">第四課－學會 AJAX 基本原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-AJAX-%E9%8C%AF%E8%AA%A4%E8%99%95%E7%90%86"><span class="nav-number">2.5.</span> <span class="nav-text">第五課－學會 AJAX 錯誤處理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-AJAX-%E8%88%87%E5%90%84%E7%A8%AE-HTTP-%E8%AB%8B%E6%B1%82%E6%96%B9%E6%B3%95"><span class="nav-number">2.6.</span> <span class="nav-text">第六課－學會 AJAX 與各種 HTTP 請求方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-AJAX-%E8%88%87-data-attribute-%E7%9A%84%E7%B5%90%E5%90%88"><span class="nav-number">2.7.</span> <span class="nav-text">第七課－學會 AJAX 與 data attribute 的結合</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%B5%90"><span class="nav-number">3.</span> <span class="nav-text">小結</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%80%A3%E7%B5%90"><span class="nav-number">4.</span> <span class="nav-text">文章連結</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CJ Wu"
+      src="/images/avatar-cj.png">
+  <p class="site-author-name" itemprop="name">CJ Wu</p>
+  <div class="site-description" itemprop="description">24y / 肥宅 / 還不是前端工程師</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iam-CJ" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iam-CJ" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:a394675@gmail.com" title="E-Mail → mailto:a394675@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+      <!--顯示近期文章-->
+      
+        <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title">
+            <!-- 設定你要的fa fa icon-->
+            <i class="fa fa-history fa-" aria-hidden="true"></i>
+            近期文章
+        </div>
+        <ul class="links-of-blogroll-list">
+            
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（五）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（五）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（四）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（四）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（三）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（二）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（一）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a>
+              </li>
+              
+            
+        </ul>
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CJ Wu</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
