@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="google-site-verification" content="S5x9Jy1l3lcXQX0hqQcLU42_636ewC2SpCe1wQfGEQ8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-cj.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-cj.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-cj.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iam-cj.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0KTV79M9Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0KTV79M9Q');
+</script>
+
+  <meta name="description" content="前言小廢話因為這個系列站長大大希望教給我們的是如何自己學會框架，給我們某些觀念或功能的關鍵字，請我們自行去看官方文件，而非直接告訴我們什麼語法的使用方法，也因此下面寫的內容幾乎是我自己整理，以及將之前在 Alex 大大那裡學的概念結合而成的 ∠( ᐛ 」∠)＿ 課程開始第一課－認識 Vue 基本環境與 render state">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【用嬰兒都學得會的教材學JS】學習筆記－系列（七）">
+<meta property="og:url" content="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89/">
+<meta property="og:site_name" content="西噘的不專業筆記">
+<meta property="og:description" content="前言小廢話因為這個系列站長大大希望教給我們的是如何自己學會框架，給我們某些觀念或功能的關鍵字，請我們自行去看官方文件，而非直接告訴我們什麼語法的使用方法，也因此下面寫的內容幾乎是我自己整理，以及將之前在 Alex 大大那裡學的概念結合而成的 ∠( ᐛ 」∠)＿ 課程開始第一課－認識 Vue 基本環境與 render state">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2023-05-17T14:22:37.000Z">
+<meta property="article:modified_time" content="2023-05-20T07:06:07.381Z">
+<meta property="article:author" content="CJ Wu">
+<meta property="article:tag" content="用嬰兒都學得會的教材學JS">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（七） | 西噘的不專業筆記</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CYC62V0KT"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2CYC62V0KT');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">西噘的不專業筆記</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我是CJ，我不會亂丟貢丸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-cj.png">
+      <meta itemprop="name" content="CJ Wu">
+      <meta itemprop="description" content="24y / 肥宅 / 還不是前端工程師">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="西噘的不專業筆記">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【用嬰兒都學得會的教材學JS】學習筆記－系列（七）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-05-17 22:22:37" itemprop="dateCreated datePublished" datetime="2023-05-17T22:22:37+08:00">2023-05-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2023-05-20 15:06:07" itemprop="dateModified" datetime="2023-05-20T15:06:07+08:00">2023-05-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>因為這個系列站長大大希望教給我們的是如何自己學會框架，給我們某些觀念或功能的關鍵字，請我們自行去看官方文件，而非直接告訴我們什麼語法的使用方法，也因此下面寫的內容幾乎是我自己整理，以及將之前在 Alex 大大那裡學的概念結合而成的 ∠( ᐛ 」∠)＿</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-Vue-基本環境與-render-state"><a href="#第一課－認識-Vue-基本環境與-render-state" class="headerlink" title="第一課－認識 Vue 基本環境與 render state"></a>第一課－認識 Vue 基本環境與 render state</h2><ul>
+<li>課程概要：<ol>
+<li>學會 Vue 的基本安裝與運行：導入 CDN 或是用 npm 安裝</li>
+<li>學會如何建立一個 Vue 應用：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; createApp &#125; = <span class="title class_">Vue</span>;</span><br><span class="line"><span class="title function_">createApp</span>(&#123;</span><br><span class="line">  <span class="title function_">data</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">data</span>: <span class="string">&quot;hello&quot;</span>,</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+<li>學會在 template render 資料的語法：在 template 的地方使用雙中括號<code>&#123;&#123;  &#125;&#125;</code>，括號內放 data 即可</li>
+</ol>
+</li>
+<li>作業心得：這一課好像是使用 Vue 1 為例，建立新的 Vue 實體的寫法、將 Vue 掛載到 template 的寫法跟我平常寫法有點不太一樣（？<blockquote>
+<p>作業說明：將 application state 成功 render 到 template<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/2uq5v7xz/">https://jsfiddle.net/iamCJ/2uq5v7xz/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－體驗一下-Reactivity-的效果與便利"><a href="#第二課－體驗一下-Reactivity-的效果與便利" class="headerlink" title="第二課－體驗一下 Reactivity 的效果與便利"></a>第二課－體驗一下 Reactivity 的效果與便利</h2><ul>
+<li>課程概要：<ol>
+<li>了解 Vue 中 Reactivity 的基本觀念：當更新 data 後，Vue 會幫你自動更新畫面</li>
+<li>了解 Computed 屬性：根據我在 Alex 大大的影片學到的，<code>computed</code>主要管理<strong>資料</strong>產<strong>資料</strong></li>
+</ol>
+</li>
+<li>作業心得：沒有優劣之分，但我更喜歡 Alex 大大教的 Vue，感覺教得更詳盡，也會補充實際在工作上可能會遇到的問題，對我來說，我比較需要這樣具體、詳細且清楚的叮嚀（？<blockquote>
+<p>作業說明：使用<code>mounted()</code>將 data 的資料做更動，體驗 reactivity 的效果<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/56h3zxy4/">https://jsfiddle.net/iamCJ/56h3zxy4/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－學習-Vue-條件判斷式的寫法"><a href="#第三課－學習-Vue-條件判斷式的寫法" class="headerlink" title="第三課－學習 Vue 條件判斷式的寫法"></a>第三課－學習 Vue 條件判斷式的寫法</h2><ul>
+<li>課程概要：<ol>
+<li>認識綁定 class 以及 style 的寫法：首先 Vue 有屬性綁定資料的功能，語法是<code>v-bind:attribute</code>，可以縮寫為<code>:attribute</code><br><font style="color:grey;">綁定 class 以及 style 實在有很多寫法，這邊只寫基本用法，如果有需要可以直接去參考<a target="_blank" rel="noopener" href="https://vuejs.org/guide/essentials/class-and-style.html#binding-html-classes">官方文件</a></font><ol>
+<li>綁定 class 的方法：請參照下方範例，在 template 的 tag 內加入<code>:class</code>，而大括弧內前面放 class 的名字，後面放型態為布林值的參數，可以用於根據需求切換 class</li>
+<li>綁定 style 的方法：請參照下方範例，在 template 的 tag 內加入<code>:style</code>，而大括弧內前面放屬性，後面放參數，如果屬性名稱以<code>-</code>連接，可以用引號包起來，或者用駝峰式寫法<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:class</span>=<span class="string">&quot;&#123; classname: isActive &#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">&quot;&#123; &#x27;background-color&#x27;: datacolor &#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">:style</span>=<span class="string">&quot;&#123; backgroundColor: datacolor &#125;&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- in JS</span></span><br><span class="line"><span class="comment">  data() &#123;</span></span><br><span class="line"><span class="comment">    return &#123;</span></span><br><span class="line"><span class="comment">      isActive: true,</span></span><br><span class="line"><span class="comment">      datacolor : &#x27;red&#x27;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">  &#125; </span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>認識條件判斷的寫法：依照需求，在 template 的 tag 內加上<code>v-if</code>、<code>v-else</code>、<code>v-else-if</code>或<code>v-show</code>，用法基本上跟在 JS 內一樣，可以放參數或是判斷式，當判斷式的結果為<code>true</code>時，就會在 template 出現該 tag 內容，其他不符條件的就不會出現<figure class="highlight html"><figcaption><span>官方文件範例</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-if</span>=<span class="string">&quot;type === &#x27;A&#x27;&quot;</span>&gt;</span>A<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else-if</span>=<span class="string">&quot;type === &#x27;B&#x27;&quot;</span>&gt;</span>B<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else-if</span>=<span class="string">&quot;type === &#x27;C&#x27;&quot;</span>&gt;</span>C<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-else</span>&gt;</span>Not A/B/C<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">//</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">v-show</span>=<span class="string">&quot;type === &#x27;A&#x27;&quot;</span>&gt;</span>A<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>補充：<ol>
+<li><code>v-if</code>和<code>v-show</code>的差別：這兩者看起來的效果相同，不過<code>v-if</code>控制的是 <strong>DOM 元素</strong>，不符條件的會被 Vue 把內容抽起來並註解掉那段 tag，而<code>v-show</code>則是控制 CSS <strong>display 屬性</strong>，不符條件的會被設為<code>display:none</code><br><font style="color:grey;">因此<code>v-if</code>會花費較多的<strong>切換成本</strong>，而<code>v-show</code>會花費較多的<strong>載入成本</strong>（因為要將全部條件都載入網頁），所以如果是要用在頻繁切換的功能，建議使用<code>v-show</code></font></li>
+<li>官方文件<strong>不建議</strong>在同一層級同時使用<code>v-if</code>和<code>v-for</code>，牽涉到兩者優先度的設定，<code>v-if</code>會先被執行</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>作業心得：作業不難，難的是寫文章_(´ཀ`」 ∠)_<blockquote>
+<p>作業說明：延續上一課作業，將 data 的 color 綁定到 template 的 style<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/ntuqkch6/">https://jsfiddle.net/iamCJ/ntuqkch6/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－學習-Vue-迴圈的寫法"><a href="#第四課－學習-Vue-迴圈的寫法" class="headerlink" title="第四課－學習 Vue 迴圈的寫法"></a>第四課－學習 Vue 迴圈的寫法</h2><ul>
+<li>課程概要：認識 for 迴圈寫法<code>v-for</code>，像是結合<code>for of</code>、<code>for in</code>，可以同時取到陣列的<strong>值</strong>及<strong>索引</strong>，也可以只用一個參數取值，中間連接詞寫<code>in</code>或<code>of</code>皆可，功能是一樣的<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;(item, index) in items&quot;</span>&gt;</span>&#123;&#123; item &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;(item, index) of items&quot;</span>&gt;</span>&#123;&#123; item &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">&quot;item in items&quot;</span>&gt;</span>&#123;&#123; item &#125;&#125;<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- in JS</span></span><br><span class="line"><span class="comment">  data() &#123;</span></span><br><span class="line"><span class="comment">    return &#123;</span></span><br><span class="line"><span class="comment">      items: [&#x27;A&#x27;,&#x27;B&#x27;,&#x27;C&#x27;,&#x27;D&#x27;]</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">  &#125; </span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>作業心得：這個也是之前常常寫到的，輕輕鬆鬆啦(&#96;･∀･)b<blockquote>
+<p>作業說明：延續上一課作業，將原先一筆一筆 render 的事項改用 for 迴圈寫<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/d7hL34jb/">https://jsfiddle.net/iamCJ/d7hL34jb/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－學習-Vue-事件處理的寫法"><a href="#第五課－學習-Vue-事件處理的寫法" class="headerlink" title="第五課－學習 Vue 事件處理的寫法"></a>第五課－學習 Vue 事件處理的寫法</h2><ul>
+<li>課程概要：<ol>
+<li>認識事件處理的寫法<code>v-on:eventname</code>：可以縮寫為<code>@eventname</code>，後面可以放函式名稱，也可以直接執行函式<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;clickHandler1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">&quot;clickHandler2(&#x27;hello&#x27;)&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- in JS </span></span><br><span class="line"><span class="comment">  methods:&#123;</span></span><br><span class="line"><span class="comment">    clickHandler1()&#123;</span></span><br><span class="line"><span class="comment">      alert(&#x27;hi&#x27;)</span></span><br><span class="line"><span class="comment">    &#125;,</span></span><br><span class="line"><span class="comment">    clickHandler2(text)&#123;</span></span><br><span class="line"><span class="comment">      alert( text + &#x27;how are you&#x27;)</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">  &#125;</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>如何分辨 template 中雙引號的內容，是<strong>變數</strong>還是<strong>字串</strong>：<br>基本上在屬性前面帶有 Vue 的語法（如：<code>v-</code>系列、<code>@</code>、<code>:</code>等），雙引號內容會是變數，其他時候就跟 HTML 的屬性一樣，裡面放的是字串</li>
+<li>認識處理表單資料的方法：可以使用<code>v-model</code>將使用者在表單輸入的值做資料<strong>雙向綁定</strong>，能夠在輸入的值改變時，資料同步更新在 template 和 data 中<br><font style="color:grey;">不過在 Vue 3，<code>v-model</code>的用法跟寫法修改很多，建議在轉換使用 Vue 3 時，可以多看<code>v-model</code>的說明</font><figure class="highlight html"><figcaption><span>官方文件範例</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Message is: &#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;message&quot;</span> <span class="attr">placeholder</span>=<span class="string">&quot;edit me&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：由於太不習慣 Vue 1 的寫法，我改成用 Vue 2 了 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：接續上一課作業，增加新增事項與刪除事項的功能，會運用到<code>v-model</code>、綁定事件的方法<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/1tawvj6r/">https://jsfiddle.net/iamCJ/1tawvj6r/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－認識-Lifecycle-Hooks-與-Watchers"><a href="#第六課－認識-Lifecycle-Hooks-與-Watchers" class="headerlink" title="第六課－認識 Lifecycle Hooks 與 Watchers"></a>第六課－認識 Lifecycle Hooks 與 Watchers</h2><ul>
+<li>課程概要：<ol>
+<li>認識 Lifecycle Hooks：首先要先認識 Vue 的<strong>生命週期</strong>，Vue 的實體物件（元件 component），有被<strong>建立</strong>、<strong>更新</strong>、<strong>銷毀</strong>的生命週期階段，而每個階段皆有 Hook 讓我們可以在該階段執行一些行為或檢查<br><font style="color:grey;">p.s.而更詳細的部分我之前有做過筆記，待之後補上</font></li>
+<li>認識 Watcher 屬性：根據我在 Alex 大大的影片學到的，<code>watch</code>主要管理<strong>資料</strong>產<strong>行為&#x2F;事件</strong>，用於隨時監聽某些變數，如果發現它們更新，就執行我們設定的行為或事件，而這樣的行為或事件被稱為<strong>副作用</strong>(side effects)</li>
+<li>補充：遇到陣列或物件型態的 data，需要深度觀察、將<code>deep</code>屬性設為 true，watcher 才會監聽到物件內的所有屬性<font style="color:grey;">，但原理不太清楚（？</font></li>
+</ol>
+</li>
+<li>作業心得：感覺我做作業做到上癮（？，用已經熟練的框架寫程式寫得好快樂 XD，加上之前就有做過相關的筆記，這課的筆記算是寫得滿輕鬆的<blockquote>
+<p>作業說明：接續上一課作業，增加自動儲存的功能，使用 watcher 監聽 data 的<code>notes</code>，一有更新資料就將<code>notes</code>存入 local storage，並且在<code>mounted</code>階段檢查 local storage 有無<code>notes</code>的資料，如果有則自動載入<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/d36hL2r5/">https://jsfiddle.net/iamCJ/d36hL2r5/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－認識-Template-Refs"><a href="#第七課－認識-Template-Refs" class="headerlink" title="第七課－認識 Template Refs"></a>第七課－認識 Template Refs</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 Template Refs：框架會幫我們處理及更新 DOM 相關的工作，若我們再自行去操作 DOM 可能會發生難以處理的錯誤，因此 Vue 提供了<code>ref</code>這個屬性來解決抓取 DOM 的問題<br>在想要抓取的 template tag 內加入<code>ref=&quot;&quot;</code>，雙引號內填入 ref value（可以理解成把這個 reference 命名），在 JS 只要使用<code>this.$refs.refValue</code>就可以抓取到這個 DOM 元素<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//template</span></span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;parent&quot;</span>&gt;</span><br><span class="line">  <span class="language-xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;child&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;childDiv&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/div&gt;;</span><br><span class="line"><span class="comment">//js</span></span><br><span class="line"><span class="keyword">const</span> vm = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&quot;#app&quot;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;&#125;,</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="title function_">example</span>(<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">childDiv</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：今天學到新的東西！在這之前我抓取 DOM 元素都是用<code>querySelector</code>，不過好像也沒有遇到過什麼問題 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：使用<code>ref</code>抓取<code>textarea</code>，在<code>textarea</code>套用之前課程介紹過的 autosize 套件<br><a target="_blank" rel="noopener" href="https://jsfiddle.net/iamCJ/5tpobqdn/">https://jsfiddle.net/iamCJ/5tpobqdn/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列大多都是教很基礎的功能，而我已經學過也寫過一陣子，對我來說沒有接觸到太多新的概念，比較大的收穫應該是把語法弄得更熟悉，以及累積實作的作品吧。</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a target="_blank" rel="noopener" href="https://codelove.tw/@howtomakeaturn/course/AqJGxd">自學網頁の嬰兒教材：JavaScript（七）—— 不想教你 Vue，只想教你怎麼學框架</a></p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（一）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（三）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（五）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（五）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（二）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\【用嬰兒都學得會的教材學JS】學習筆記－系列（六）\" rel="bookmark">【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</a></div>
+    </li>
+  </ul>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS/" rel="tag"><i class="fa fa-tag"></i> 用嬰兒都學得會的教材學JS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/" rel="prev" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（六）">
+      <i class="fa fa-chevron-left"></i> 【用嬰兒都學得會的教材學JS】學習筆記－系列（六）
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%E5%B0%8F%E5%BB%A2%E8%A9%B1"><span class="nav-number">1.</span> <span class="nav-text">前言小廢話</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AA%B2%E7%A8%8B%E9%96%8B%E5%A7%8B"><span class="nav-number">2.</span> <span class="nav-text">課程開始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E8%AA%B2%EF%BC%8D%E8%AA%8D%E8%AD%98-Vue-%E5%9F%BA%E6%9C%AC%E7%92%B0%E5%A2%83%E8%88%87-render-state"><span class="nav-number">2.1.</span> <span class="nav-text">第一課－認識 Vue 基本環境與 render state</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E8%AA%B2%EF%BC%8D%E9%AB%94%E9%A9%97%E4%B8%80%E4%B8%8B-Reactivity-%E7%9A%84%E6%95%88%E6%9E%9C%E8%88%87%E4%BE%BF%E5%88%A9"><span class="nav-number">2.2.</span> <span class="nav-text">第二課－體驗一下 Reactivity 的效果與便利</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E8%AA%B2%EF%BC%8D%E5%AD%B8%E7%BF%92-Vue-%E6%A2%9D%E4%BB%B6%E5%88%A4%E6%96%B7%E5%BC%8F%E7%9A%84%E5%AF%AB%E6%B3%95"><span class="nav-number">2.3.</span> <span class="nav-text">第三課－學習 Vue 條件判斷式的寫法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E8%AA%B2%EF%BC%8D%E5%AD%B8%E7%BF%92-Vue-%E8%BF%B4%E5%9C%88%E7%9A%84%E5%AF%AB%E6%B3%95"><span class="nav-number">2.4.</span> <span class="nav-text">第四課－學習 Vue 迴圈的寫法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E8%AA%B2%EF%BC%8D%E5%AD%B8%E7%BF%92-Vue-%E4%BA%8B%E4%BB%B6%E8%99%95%E7%90%86%E7%9A%84%E5%AF%AB%E6%B3%95"><span class="nav-number">2.5.</span> <span class="nav-text">第五課－學習 Vue 事件處理的寫法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E8%AA%B2%EF%BC%8D%E8%AA%8D%E8%AD%98-Lifecycle-Hooks-%E8%88%87-Watchers"><span class="nav-number">2.6.</span> <span class="nav-text">第六課－認識 Lifecycle Hooks 與 Watchers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E8%AA%B2%EF%BC%8D%E8%AA%8D%E8%AD%98-Template-Refs"><span class="nav-number">2.7.</span> <span class="nav-text">第七課－認識 Template Refs</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%B5%90"><span class="nav-number">3.</span> <span class="nav-text">小結</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%80%A3%E7%B5%90"><span class="nav-number">4.</span> <span class="nav-text">文章連結</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CJ Wu"
+      src="/images/avatar-cj.png">
+  <p class="site-author-name" itemprop="name">CJ Wu</p>
+  <div class="site-description" itemprop="description">24y / 肥宅 / 還不是前端工程師</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iam-CJ" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iam-CJ" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:a394675@gmail.com" title="E-Mail → mailto:a394675@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+      <!--顯示近期文章-->
+      
+        <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title">
+            <!-- 設定你要的fa fa icon-->
+            <i class="fa fa-history fa-" aria-hidden="true"></i>
+            近期文章
+        </div>
+        <ul class="links-of-blogroll-list">
+            
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（七）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（七）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（六）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（五）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（五）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（四）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（四）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（三）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</a>
+              </li>
+              
+            
+        </ul>
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CJ Wu</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
