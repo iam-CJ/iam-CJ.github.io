@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【作品集】就。很。Pro | Procreate 中文筆刷資源網</title>
-    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%B0%B1%E3%80%82%E5%BE%88%E3%80%82Pro%20Procreate%20%E4%B8%AD%E6%96%87%E7%AD%86%E5%88%B7%E8%B3%87%E6%BA%90%E7%B6%B2/</url>
-    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>一個以 Procreate（ios 系統知名付費繪圖軟體）筆刷為主要商品的模擬電商網站。<br>如需參照原始碼（Vue 框架），可以移至 <a href="https://github.com/iam-CJ/SideProject_1_Vue-structure">我的 GitHub</a> 瀏覽。</p>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
-<p><a href="https://iam-cj.github.io/SideProject_1/">就。很。Pro | Procreate 中文筆刷資源網</a></p>
-</blockquote>
-<img alt="homepage-preview" width="500" height="500" src="https://raw.githubusercontent.com/iam-CJ/SideProject_1/e4dfbe7a3cfbbb54df5bd4d9b15cd87d7f762656/%E9%A6%96%E9%A0%81%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
-
-<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
-<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化，目前主要以螢幕寬為 390px(像素)、768px、1440px 是最適合瀏覽之尺寸。</li>
-<li><strong>收藏商品：</strong>可於各類商品頁對喜愛的商品點擊【♡】愛心圖示將其加入收藏，並且可以在螢幕右上角的【我的收藏】（使用手機者則是【🖤】愛心圖示）內瀏覽或移除收藏項目。</li>
-<li><strong>會員登入：</strong>第一次從首頁要跳轉至其他頁時，會需要登入（帳號密碼皆為 123），但此功能尚不完善，登入後不會有變化也無法登出。</li>
-</ul>
-<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
-<li><p><strong>目前無繁體中文平台、網路上的資源分散：</strong><br>本身作為此繪畫 app 使用者，在尋找筆刷及紙質參考的資源時會感到有些麻煩，因為沒有繁中的平台集結，多是英文、簡體中文的平台；另外也有很多都是分享在個人的部落格，資源到處分散，會覺得看到眼花撩亂。</p>
-</li>
-<li><p><strong>對於其他網站的疑慮：</strong><br>有很多時候用中文會找不到想要的筆刷，需要改成打英文關鍵字才能找到，但找到後又會擔心是詐騙網站，下載後電腦或平板可能會中毒或洩漏個資。</p>
-</li>
-</ol>
-<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
-<li><strong>HTML、CSS、JavaScript：</strong>最初我僅使用最基本的三大語言將網站架構起來，並且多數樣式是自己手刻的，直到需要寫的 CSS 樣式以及網站結構規模變大、變複雜時，才加入 SCSS 及 Vue 框架等工具。</li>
-<li><strong>CSS 預處理器－SCSS：</strong>選擇使用 SCSS 的原因是，它提供了巢狀結構的寫法，並且可以透過變數來統一管理高重複性的樣式。對我而言，這樣做可以方便的查找和調整樣式，並且快速套用固定元素的樣式，大大減少了上下翻找確認樣式的時間。</li>
-<li><strong>Vue 框架－Vue Cli、Vue Router：</strong>加入 Vue 框架是因為我想要新增收藏商品以及會員登入功能。選擇 Vue 框架是因為它在處理資料與畫面很直覺易懂；此外，以各商品類別頁為例，透過 router 控制傳遞的參數，我可以輕鬆的改變網頁內容（改變顯示的商品類別），不用像之前只使用三大語言，每一個商品類別都需要建立一個頁面。</li>
-</ul>
-<h1 id="未來待新增的功能"><a href="#未來待新增的功能" class="headerlink" title="未來待新增的功能"></a>未來待新增的功能</h1><ul>
-<li>會員登入後，增加可見資訊（如放入購物車的商品、及會員資料等）</li>
-<li>購物車功能，可計算所有放入購物車商品的累計金額</li>
-<li>搜尋功能，輸入關鍵字後列出符合的商品清單，並且可以透過點擊跳轉至該商品介紹頁</li>
-</ul>
-]]></content>
-      <categories>
-        <category>作品集</category>
-      </categories>
-      <tags>
-        <tag>作品集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MarkDown常用語法</title>
     <url>/MarkDown%E5%B8%B8%E7%94%A8%E8%AA%9E%E6%B3%95/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>畢竟這個部落格是以 MarkDown 語法寫成的，那就必須要了解一些常用的才能寫出<del>炫炮(X</del>有用又清楚的文章啊！以下的筆記是我看了官方文件以及其他大大的文章整理而成的，有常見的、也有可能用不到的，但沒關係先寫下來再說 ∠( ᐛ 」∠)＿</p>
@@ -243,6 +205,44 @@
       </tags>
   </entry>
   <entry>
+    <title>【作品集】就。很。Pro | Procreate 中文筆刷資源網</title>
+    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%B0%B1%E3%80%82%E5%BE%88%E3%80%82Pro%20Procreate%20%E4%B8%AD%E6%96%87%E7%AD%86%E5%88%B7%E8%B3%87%E6%BA%90%E7%B6%B2/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>一個以 Procreate（ios 系統知名付費繪圖軟體）筆刷為主要商品的模擬電商網站。<br>如需參照原始碼（Vue 框架），可以移至 <a href="https://github.com/iam-CJ/SideProject_1_Vue-structure">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_1/">就。很。Pro | Procreate 中文筆刷資源網</a></p>
+</blockquote>
+<img alt="homepage-preview" width="500" height="500" src="https://raw.githubusercontent.com/iam-CJ/SideProject_1/e4dfbe7a3cfbbb54df5bd4d9b15cd87d7f762656/%E9%A6%96%E9%A0%81%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化，目前主要以螢幕寬為 390px(像素)、768px、1440px 是最適合瀏覽之尺寸。</li>
+<li><strong>收藏商品：</strong>可於各類商品頁對喜愛的商品點擊【♡】愛心圖示將其加入收藏，並且可以在螢幕右上角的【我的收藏】（使用手機者則是【🖤】愛心圖示）內瀏覽或移除收藏項目。</li>
+<li><strong>會員登入：</strong>第一次從首頁要跳轉至其他頁時，會需要登入（帳號密碼皆為 123），但此功能尚不完善，登入後不會有變化也無法登出。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><p><strong>目前無繁體中文平台、網路上的資源分散：</strong><br>本身作為此繪畫 app 使用者，在尋找筆刷及紙質參考的資源時會感到有些麻煩，因為沒有繁中的平台集結，多是英文、簡體中文的平台；另外也有很多都是分享在個人的部落格，資源到處分散，會覺得看到眼花撩亂。</p>
+</li>
+<li><p><strong>對於其他網站的疑慮：</strong><br>有很多時候用中文會找不到想要的筆刷，需要改成打英文關鍵字才能找到，但找到後又會擔心是詐騙網站，下載後電腦或平板可能會中毒或洩漏個資。</p>
+</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>HTML、CSS、JavaScript：</strong>最初我僅使用最基本的三大語言將網站架構起來，並且多數樣式是自己手刻的，直到需要寫的 CSS 樣式以及網站結構規模變大、變複雜時，才加入 SCSS 及 Vue 框架等工具。</li>
+<li><strong>CSS 預處理器－SCSS：</strong>選擇使用 SCSS 的原因是，它提供了巢狀結構的寫法，並且可以透過變數來統一管理高重複性的樣式。對我而言，這樣做可以方便的查找和調整樣式，並且快速套用固定元素的樣式，大大減少了上下翻找確認樣式的時間。</li>
+<li><strong>Vue 框架－Vue Cli、Vue Router：</strong>加入 Vue 框架是因為我想要新增收藏商品以及會員登入功能。選擇 Vue 框架是因為它在處理資料與畫面很直覺易懂；此外，以各商品類別頁為例，透過 router 控制傳遞的參數，我可以輕鬆的改變網頁內容（改變顯示的商品類別），不用像之前只使用三大語言，每一個商品類別都需要建立一個頁面。</li>
+</ul>
+<h1 id="未來待新增的功能"><a href="#未來待新增的功能" class="headerlink" title="未來待新增的功能"></a>未來待新增的功能</h1><ul>
+<li>會員登入後，增加可見資訊（如放入購物車的商品、及會員資料等）</li>
+<li>購物車功能，可計算所有放入購物車商品的累計金額</li>
+<li>搜尋功能，輸入關鍵字後列出符合的商品清單，並且可以透過點擊跳轉至該商品介紹頁</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【作品集】新竹市違規照相桿地圖</title>
     <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
     <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
@@ -274,6 +274,103 @@
       </categories>
       <tags>
         <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>其實我在上完職訓課程之後一直有個困擾，除了沒學到框架以外，就是我 JS 的程度停留在能夠基礎操作，好像都會但深入問就被問倒，也抓不太清楚自己還不會的範圍。<br>然而，我在苦惱之際突然靈光一閃，想到在臉書社團看過阿川大大在宣傳自己的課程，點開介紹後了解課程設計是以寫小專案的方式學 JS，而我喜歡邊做邊學，印象更深刻也比較有趣，就這樣開啟了學習的旅程 ∠( ᐛ 」∠)＿<br><font style="font-size:15px;color:grey;">p.s.本系列標題是來自站長阿川大大將這份教材取名為自學網頁の嬰兒教材</font></p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－基本的函數操作、onclick-事件"><a href="#第一課－基本的函數操作、onclick-事件" class="headerlink" title="第一課－基本的函數操作、onclick 事件"></a>第一課－基本的函數操作、onclick 事件</h2><ul>
+<li>課程概要：介紹 onclick<blockquote>
+<p>作業說明：在 html tag 中，加入 onclick 事件，寫出一個點擊按鈕後跳出 alert 的功能<br><a href="https://jsfiddle.net/iamCJ/135yh0pv/">https://jsfiddle.net/iamCJ/135yh0pv/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－基本的變數操作、從-html-取得內容"><a href="#第二課－基本的變數操作、從-html-取得內容" class="headerlink" title="第二課－基本的變數操作、從 html 取得內容"></a>第二課－基本的變數操作、從 html 取得內容</h2><ul>
+<li>課程概要：教導如何使用<code>getElementById</code>抓取 html 的內容</li>
+<li>作業心得：最近都在寫 Vue，忘記宣告變數要放在 function 裡面，才會重新抓 input 裡的值<blockquote>
+<p>作業說明：透過<code>getElementById().value</code>抓取 input 內容，用變數存取並使用<br><a href="https://jsfiddle.net/iamCJ/ewy6bak2/">https://jsfiddle.net/iamCJ/ewy6bak2/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－修改-html-的內容"><a href="#第三課－修改-html-的內容" class="headerlink" title="第三課－修改 html 的內容"></a>第三課－修改 html 的內容</h2><ul>
+<li>課程概要：用選取器選取元素後，可以使用<code>.textContent</code>在 tag 裡新增內容</li>
+<li>自己補充：這個方式會直接覆蓋 tag 原有的內容<blockquote>
+<p>作業說明：使用<code>.textContent</code>讓某個區塊的內容可以隨著 input 裡的值做更動<br><a href="https://jsfiddle.net/iamCJ/bm6xovej/">https://jsfiddle.net/iamCJ/bm6xovej/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－基本的陣列操作"><a href="#第四課－基本的陣列操作" class="headerlink" title="第四課－基本的陣列操作"></a>第四課－基本的陣列操作</h2><ul>
+<li>課程概要：<ol>
+<li>陣列的長相<code>[]</code>、索引的使用<code>array[index]</code></li>
+<li>選單元素會有以下屬性可以使用：<ol>
+<li><code>.selectedIndex</code>：可以讓我們取得<strong>被選取到</strong>的選項索引</li>
+<li><code>.options</code>：會以陣列型態列出所有<code>&lt;option&gt;</code>，而單一個<code>&lt;option&gt;</code>又會是物件型態<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">options = [&#123; option1 &#125;, &#123; option2 &#125;, &#123; option3 &#125;];</span><br></pre></td></tr></table></figure></li>
+<li><code>.value</code>、<code>.text</code>：單一個<code>&lt;option&gt;</code>可以透過這兩個屬性來進一步取得他的 value 以及打在選項上的字</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>作業心得：對我來說，把樣式弄漂亮比較麻煩 XD，所以我想先以寫好功能為重點<blockquote>
+<p>作業說明：透過<code>.selectedIndex</code>及<code>option.text</code>的屬性，將使用者選擇的選項顯示在下面的表單中<br><a href="https://jsfiddle.net/iamCJ/cdw6k4us/">https://jsfiddle.net/iamCJ/cdw6k4us/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－基本的-if-x2F-else-條件流程控制"><a href="#第五課－基本的-if-x2F-else-條件流程控制" class="headerlink" title="第五課－基本的 if&#x2F;else 條件流程控制"></a>第五課－基本的 if&#x2F;else 條件流程控制</h2><ul>
+<li>課程概要：<ol>
+<li>介紹流程控制 if&#x2F;else</li>
+<li>變數賦值是一個等號<code>=</code>、真正的等於是兩個等號<code>==</code></li>
+</ol>
+</li>
+<li>自己補充：之後還有一個全等於是三個等號<code>===</code><blockquote>
+<p>作業說明：透過 if&#x2F;else 判斷使用者選取的選項，進而 alert 相對應的內容<br><a href="https://jsfiddle.net/iamCJ/9qmya12j/">https://jsfiddle.net/iamCJ/9qmya12j/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－認識資料型態與轉換"><a href="#第六課－認識資料型態與轉換" class="headerlink" title="第六課－認識資料型態與轉換"></a>第六課－認識資料型態與轉換</h2><ul>
+<li>課程概要：<ol>
+<li>認識<strong>數字</strong>資料型態<ol>
+<li>數字可以做加減乘除運算</li>
+<li>要分清楚資料型態是<strong>字串</strong>還是<strong>數字</strong>，雖然仍可做運算、不會報錯，但不鼓勵這樣混用，建議將資料轉型</li>
+</ol>
+</li>
+<li>轉換資料型態<ol>
+<li><strong>數值</strong>轉<strong>字串</strong>可以用<code>.toString()</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;100&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> c = a + b.<span class="title function_">toString</span>();</span><br></pre></td></tr></table></figure></li>
+<li><strong>字串</strong>轉<strong>數值</strong>可以用<code>parseInt()</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;100&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> c = <span class="built_in">parseInt</span>(a) + b;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>我們在 JS 透過<code>getElementByXX</code>或<code>querySelector</code>抓取使用者在 html 輸入的內容（例如表單的 input），一律是<strong>字串</strong>型態，如果需要資料是數字型態、需要做數值運算的話，需要資料轉型</li>
+</ol>
+</li>
+<li>作業心得：在做訂購數量的 input 時，學到了可以用<code>max=&quot;&quot;</code>、<code>min=&quot;&quot;</code>設最大最小值，甚至 type 是日期的也可以設定<blockquote>
+<p>作業說明：抓取使用者填入的訂購數量，將資料轉型為數字後計算價錢，顯示於下面的表單<br><a href="https://jsfiddle.net/iamCJ/r3ogam4j/">https://jsfiddle.net/iamCJ/r3ogam4j/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－認識巢狀結構"><a href="#第七課－認識巢狀結構" class="headerlink" title="第七課－認識巢狀結構"></a>第七課－認識巢狀結構</h2><ul>
+<li>課程概要：<ol>
+<li>了解<strong>數字</strong>資料型態的比較：大於<code>&gt;</code>、小於<code>&lt;</code>、大於等於<code>&gt;=</code>、小於等於<code>&lt;=</code>、不等於<code>!=</code></li>
+<li>認識<code>else if</code>：<ol>
+<li>當<code>if</code>條件不成立時，會往下到<code>else if</code>條件判斷，如果仍不成立，才會到 else</li>
+<li><code>else if</code>可以有多個，當前面的<code>else if</code>條件不成立時，才會接著往下一個<code>else if</code>判斷</li>
+</ol>
+</li>
+<li>巢狀結構是什麼？<br>就是<code>if</code>裡面又包了一層<code>if</code>，可以再繼續包下去，不過不建議，程式會變得不易閱讀，可以在條件的部分多琢磨一點，例如使用 and<code>&amp;&amp;</code>、or<code>||</code>將條件串起來<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//巢狀結構</span></span><br><span class="line"><span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且大於100&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且小於等於100&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，但大於100&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，且小於等於100&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用 &amp;&amp; 修改條件</span></span><br><span class="line"><span class="keyword">if</span> (a &gt; b &amp;&amp; a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且大於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &gt; b &amp;&amp; a &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且小於等於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &lt;= b &amp;&amp; a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，但大於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，且小於等於100&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：忘記<code>else if</code>的 else 跟 if 要分開，難怪 JSFiddle 一直報錯 XD<blockquote>
+<p>作業說明：透過<code>if</code>、<code>else if</code>及<code>else</code>判斷使用者填寫表單的狀況，並依需要跳出 alert 提示<br><a href="https://jsfiddle.net/iamCJ/hrc9pv3g/">https://jsfiddle.net/iamCJ/hrc9pv3g/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>因為我本來就有些 JS 的基礎，所以這個系列的概念以及實作對我來說沒什麼問題，只是在要寫的功能越來越多時，對於切分功能、整理程式碼會有些苦惱，還有把樣式整理成能看的樣子花了好多時間 XD</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/l3j5xk">自學網頁の嬰兒教材：JavaScript（一）—— 幫衣服工廠做個好用表單</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
       </tags>
   </entry>
   <entry>
@@ -375,103 +472,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>其實我在上完職訓課程之後一直有個困擾，除了沒學到框架以外，就是我 JS 的程度停留在能夠基礎操作，好像都會但深入問就被問倒，也抓不太清楚自己還不會的範圍。<br>然而，我在苦惱之際突然靈光一閃，想到在臉書社團看過阿川大大在宣傳自己的課程，點開介紹後了解課程設計是以寫小專案的方式學 JS，而我喜歡邊做邊學，印象更深刻也比較有趣，就這樣開啟了學習的旅程 ∠( ᐛ 」∠)＿<br><font style="font-size:15px;color:grey;">p.s.本系列標題是來自站長阿川大大將這份教材取名為自學網頁の嬰兒教材</font></p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－基本的函數操作、onclick-事件"><a href="#第一課－基本的函數操作、onclick-事件" class="headerlink" title="第一課－基本的函數操作、onclick 事件"></a>第一課－基本的函數操作、onclick 事件</h2><ul>
-<li>課程概要：介紹 onclick<blockquote>
-<p>作業說明：在 html tag 中，加入 onclick 事件，寫出一個點擊按鈕後跳出 alert 的功能<br><a href="https://jsfiddle.net/iamCJ/135yh0pv/">https://jsfiddle.net/iamCJ/135yh0pv/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第二課－基本的變數操作、從-html-取得內容"><a href="#第二課－基本的變數操作、從-html-取得內容" class="headerlink" title="第二課－基本的變數操作、從 html 取得內容"></a>第二課－基本的變數操作、從 html 取得內容</h2><ul>
-<li>課程概要：教導如何使用<code>getElementById</code>抓取 html 的內容</li>
-<li>作業心得：最近都在寫 Vue，忘記宣告變數要放在 function 裡面，才會重新抓 input 裡的值<blockquote>
-<p>作業說明：透過<code>getElementById().value</code>抓取 input 內容，用變數存取並使用<br><a href="https://jsfiddle.net/iamCJ/ewy6bak2/">https://jsfiddle.net/iamCJ/ewy6bak2/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第三課－修改-html-的內容"><a href="#第三課－修改-html-的內容" class="headerlink" title="第三課－修改 html 的內容"></a>第三課－修改 html 的內容</h2><ul>
-<li>課程概要：用選取器選取元素後，可以使用<code>.textContent</code>在 tag 裡新增內容</li>
-<li>自己補充：這個方式會直接覆蓋 tag 原有的內容<blockquote>
-<p>作業說明：使用<code>.textContent</code>讓某個區塊的內容可以隨著 input 裡的值做更動<br><a href="https://jsfiddle.net/iamCJ/bm6xovej/">https://jsfiddle.net/iamCJ/bm6xovej/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第四課－基本的陣列操作"><a href="#第四課－基本的陣列操作" class="headerlink" title="第四課－基本的陣列操作"></a>第四課－基本的陣列操作</h2><ul>
-<li>課程概要：<ol>
-<li>陣列的長相<code>[]</code>、索引的使用<code>array[index]</code></li>
-<li>選單元素會有以下屬性可以使用：<ol>
-<li><code>.selectedIndex</code>：可以讓我們取得<strong>被選取到</strong>的選項索引</li>
-<li><code>.options</code>：會以陣列型態列出所有<code>&lt;option&gt;</code>，而單一個<code>&lt;option&gt;</code>又會是物件型態<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">options = [&#123; option1 &#125;, &#123; option2 &#125;, &#123; option3 &#125;];</span><br></pre></td></tr></table></figure></li>
-<li><code>.value</code>、<code>.text</code>：單一個<code>&lt;option&gt;</code>可以透過這兩個屬性來進一步取得他的 value 以及打在選項上的字</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>作業心得：對我來說，把樣式弄漂亮比較麻煩 XD，所以我想先以寫好功能為重點<blockquote>
-<p>作業說明：透過<code>.selectedIndex</code>及<code>option.text</code>的屬性，將使用者選擇的選項顯示在下面的表單中<br><a href="https://jsfiddle.net/iamCJ/cdw6k4us/">https://jsfiddle.net/iamCJ/cdw6k4us/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第五課－基本的-if-x2F-else-條件流程控制"><a href="#第五課－基本的-if-x2F-else-條件流程控制" class="headerlink" title="第五課－基本的 if&#x2F;else 條件流程控制"></a>第五課－基本的 if&#x2F;else 條件流程控制</h2><ul>
-<li>課程概要：<ol>
-<li>介紹流程控制 if&#x2F;else</li>
-<li>變數賦值是一個等號<code>=</code>、真正的等於是兩個等號<code>==</code></li>
-</ol>
-</li>
-<li>自己補充：之後還有一個全等於是三個等號<code>===</code><blockquote>
-<p>作業說明：透過 if&#x2F;else 判斷使用者選取的選項，進而 alert 相對應的內容<br><a href="https://jsfiddle.net/iamCJ/9qmya12j/">https://jsfiddle.net/iamCJ/9qmya12j/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第六課－認識資料型態與轉換"><a href="#第六課－認識資料型態與轉換" class="headerlink" title="第六課－認識資料型態與轉換"></a>第六課－認識資料型態與轉換</h2><ul>
-<li>課程概要：<ol>
-<li>認識<strong>數字</strong>資料型態<ol>
-<li>數字可以做加減乘除運算</li>
-<li>要分清楚資料型態是<strong>字串</strong>還是<strong>數字</strong>，雖然仍可做運算、不會報錯，但不鼓勵這樣混用，建議將資料轉型</li>
-</ol>
-</li>
-<li>轉換資料型態<ol>
-<li><strong>數值</strong>轉<strong>字串</strong>可以用<code>.toString()</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;100&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> c = a + b.<span class="title function_">toString</span>();</span><br></pre></td></tr></table></figure></li>
-<li><strong>字串</strong>轉<strong>數值</strong>可以用<code>parseInt()</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="string">&quot;100&quot;</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">100</span>;</span><br><span class="line"><span class="keyword">let</span> c = <span class="built_in">parseInt</span>(a) + b;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>我們在 JS 透過<code>getElementByXX</code>或<code>querySelector</code>抓取使用者在 html 輸入的內容（例如表單的 input），一律是<strong>字串</strong>型態，如果需要資料是數字型態、需要做數值運算的話，需要資料轉型</li>
-</ol>
-</li>
-<li>作業心得：在做訂購數量的 input 時，學到了可以用<code>max=&quot;&quot;</code>、<code>min=&quot;&quot;</code>設最大最小值，甚至 type 是日期的也可以設定<blockquote>
-<p>作業說明：抓取使用者填入的訂購數量，將資料轉型為數字後計算價錢，顯示於下面的表單<br><a href="https://jsfiddle.net/iamCJ/r3ogam4j/">https://jsfiddle.net/iamCJ/r3ogam4j/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第七課－認識巢狀結構"><a href="#第七課－認識巢狀結構" class="headerlink" title="第七課－認識巢狀結構"></a>第七課－認識巢狀結構</h2><ul>
-<li>課程概要：<ol>
-<li>了解<strong>數字</strong>資料型態的比較：大於<code>&gt;</code>、小於<code>&lt;</code>、大於等於<code>&gt;=</code>、小於等於<code>&lt;=</code>、不等於<code>!=</code></li>
-<li>認識<code>else if</code>：<ol>
-<li>當<code>if</code>條件不成立時，會往下到<code>else if</code>條件判斷，如果仍不成立，才會到 else</li>
-<li><code>else if</code>可以有多個，當前面的<code>else if</code>條件不成立時，才會接著往下一個<code>else if</code>判斷</li>
-</ol>
-</li>
-<li>巢狀結構是什麼？<br>就是<code>if</code>裡面又包了一層<code>if</code>，可以再繼續包下去，不過不建議，程式會變得不易閱讀，可以在條件的部分多琢磨一點，例如使用 and<code>&amp;&amp;</code>、or<code>||</code>將條件串起來<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//巢狀結構</span></span><br><span class="line"><span class="keyword">if</span> (a &gt; b) &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且大於100&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且小於等於100&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，但大於100&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，且小於等於100&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用 &amp;&amp; 修改條件</span></span><br><span class="line"><span class="keyword">if</span> (a &gt; b &amp;&amp; a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且大於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &gt; b &amp;&amp; a &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a大於b，且小於等於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (a &lt;= b &amp;&amp; a &gt; <span class="number">100</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，但大於100&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;a小於等於b，且小於等於100&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>作業心得：忘記<code>else if</code>的 else 跟 if 要分開，難怪 JSFiddle 一直報錯 XD<blockquote>
-<p>作業說明：透過<code>if</code>、<code>else if</code>及<code>else</code>判斷使用者填寫表單的狀況，並依需要跳出 alert 提示<br><a href="https://jsfiddle.net/iamCJ/hrc9pv3g/">https://jsfiddle.net/iamCJ/hrc9pv3g/</a></p>
-</blockquote>
-</li>
-</ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>因為我本來就有些 JS 的基礎，所以這個系列的概念以及實作對我來說沒什麼問題，只是在要寫的功能越來越多時，對於切分功能、整理程式碼會有些苦惱，還有把樣式整理成能看的樣子花了好多時間 XD</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/l3j5xk">自學網頁の嬰兒教材：JavaScript（一）—— 幫衣服工廠做個好用表單</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>用嬰兒都學得會的教材學JS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</title>
     <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。<br>不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD，網路上可以找到很多前人分享的文章、我遇過的問題也會有人遇到，並且在 Stack Overflow 提問，不怕找不到解方，只怕關鍵字下得不夠清楚。</p>
@@ -558,6 +558,104 @@
 </ul>
 <h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>可能是因為我已經有一些基礎的關係，覺得這系列的課還是不夠有挑戰性，許多元件設計及功能都有見過和寫過，所以會感覺沒有學到新東西、感到有點失望 XD，想要趕快進入下一系列的課ヽ(#&#96;Д´)ﾉ！</p>
 <h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/gqveaW">自學網頁の嬰兒教材：JavaScript（三）—— 自己做看看實務常用 UI 元件</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-DOM-樹、新增元素"><a href="#第一課－認識-DOM-樹、新增元素" class="headerlink" title="第一課－認識 DOM 樹、新增元素"></a>第一課－認識 DOM 樹、新增元素</h2><ul>
+<li>課程概要：<ol>
+<li>認識 DOM tree、子元素、父元素的概念</li>
+<li>使用 JS 操作 DOM tree：<ol>
+<li><code>.createElement()</code>：在括弧內填入元素名稱，例如：<code>p</code>、<code>h1</code>，就可以動態新增元素</li>
+<li><code>.append()</code>：可以用此方法將某個元素變為自己的子元素<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> newElement = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;p&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> exampleDiv = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">exampleDiv.<span class="title function_">append</span>(newElement);</span><br><span class="line"><span class="comment">//html結構會是這樣</span></span><br><span class="line"><span class="comment">//&lt;div&gt;</span></span><br><span class="line"><span class="comment">//  &lt;p&gt;&lt;/p&gt;</span></span><br><span class="line"><span class="comment">//&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>使用<code>alert</code>、<code>console.log()</code>來除錯</li>
+</ol>
+</li>
+<li>作業心得：這次依然是 CSS 比較花費時間 XD。<blockquote>
+<p>作業說明：按下按鈕後，在下方表單新增使用者在 input 輸入的事項，會用到<code>.createElement()</code>及<code>.append()</code>。<br><a href="https://jsfiddle.net/iamCJ/j17Lq0om/">https://jsfiddle.net/iamCJ/j17Lq0om/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－從-DOM-樹移除元素、動態加上-onclick-事件"><a href="#第二課－從-DOM-樹移除元素、動態加上-onclick-事件" class="headerlink" title="第二課－從 DOM 樹移除元素、動態加上 onclick 事件"></a>第二課－從 DOM 樹移除元素、動態加上 onclick 事件</h2><ul>
+<li>課程概要：<ol>
+<li>動態加入 onclick 事件：在 JS 內使用變數綁定事件，而非在 html tag 內加事件</li>
+<li>使用<code>.children</code>、<code>.parentElement</code>可以列出元素的所有子元素及父元素，而所有子元素會以<strong>陣列</strong>型態列出</li>
+<li>使用<code>.remove()</code>可以刪除該元素</li>
+<li>了解<code>document</code>物件、<code>event</code>物件：前者是 JS 在瀏覽器內建的<strong>物件</strong>，代表網頁<strong>當下的狀態</strong>；後者也是<strong>物件</strong>，代表網頁<strong>當下正在發生的事件</strong>，使用<code>event.target</code>可以找到當前發生事件的元素</li>
+</ol>
+</li>
+<li>作業心得：我覺得這次比較困擾我的部分是：想要把<strong>新增</strong>及<strong>刪除</strong>的功能切開，希望新增的 function 就放新增的東西，刪除的 function 也一樣，但由於刪除的按鈕需要在新增 function 的部分跟著<code>inputValue</code>一起長出來（只是我的想法而已），所以最後刪除的 function 裡就只放刪除的行為而已<blockquote>
+<p>作業說明：在每一個事項旁新增刪除的按鈕，運用<code>event.target</code>找到被觸發的<code>button</code>元素，再使用<code>.parentElement</code>指定整個<code>&lt;li&gt;</code>及其子元素，並用<code>.remove()</code>將指定的整個結構刪除<br><a href="https://jsfiddle.net/iamCJ/y6fLjr9o/">https://jsfiddle.net/iamCJ/y6fLjr9o/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－認識-for-迴圈"><a href="#第三課－認識-for-迴圈" class="headerlink" title="第三課－認識 for 迴圈"></a>第三課－認識 for 迴圈</h2><ul>
+<li>課程概要：認識<code>for of</code>的寫法，這個方法會將<code>of</code>後面接的陣列內容依序一筆一筆跑程式<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;cat&quot;</span>, <span class="string">&quot;dog&quot;</span>, <span class="string">&quot;bird&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> text = <span class="string">&quot;I am a &quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> animal <span class="keyword">of</span> array1) &#123;</span><br><span class="line">  text += animal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(text);</span><br></pre></td></tr></table></figure></li>
+<li>自己補充：我想要在 JS 新增的刪除按鈕加上 id，原本只知道加 class 的方式是<code>.classList.add()</code>，後來查到<code>.setAttribute()</code>這個方法，可以新增 id、class、style 等等</li>
+<li>作業心得：一直卡在要怎麼取到 span 的值，偷偷看其他人的作業才發現，原來取到<code>list.children</code>之後，再用<code>.children[0]</code>指向第一個子元素的<code>&lt;span&gt;</code>就可以了<blockquote>
+<p>作業說明：新增一個可以將所有事項 alert 出來的按鈕，使用<code>for of</code>並結合<code>.children.textContent</code>將每一筆事項列出<br><a href="https://jsfiddle.net/iamCJ/Ldbx2u4o/">https://jsfiddle.net/iamCJ/Ldbx2u4o/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－讀取與修改-DOM-元素的-class"><a href="#第四課－讀取與修改-DOM-元素的-class" class="headerlink" title="第四課－讀取與修改 DOM 元素的 class"></a>第四課－讀取與修改 DOM 元素的 class</h2><ul>
+<li>課程概要：<ol>
+<li>動態在 DOM tree<strong>存取</strong>元素的 class：使用<code>.className</code>的屬性就能取到元素的 class</li>
+<li>動態在 DOM tree<strong>修改</strong>元素的 class：直接修改<code>.className</code>屬性</li>
+</ol>
+</li>
+<li>作業心得：不太喜歡重複的程式出現太多次，例如在 if 判斷裡，不同條件下要呈現的內容只有些微差異，卻要一直重複相似的程式碼，但目前想到的辦法就只能將重複會用到的設為變數，至少畫面看起來比較簡潔了一點<blockquote>
+<p>作業說明：增加選單，依照不同選項給予所輸入的事項對應的 class，並且輸出到 alert 的內容也要依據不同選項而有所差異<br><a href="https://jsfiddle.net/iamCJ/5mok4eq1/">https://jsfiddle.net/iamCJ/5mok4eq1/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－認識-onchange-事件"><a href="#第五課－認識-onchange-事件" class="headerlink" title="第五課－認識 onchange 事件"></a>第五課－認識 onchange 事件</h2><ul>
+<li>課程概要：<br>認識<code>onchange</code>方法：被綁上這個方法的元素有變化就會觸發事件。不過不同的 html 元素對於觸發<code>onchange</code>的定義有點不同，取得<strong>變化後的新值</strong>的方式也會有不同</li>
+<li>作業心得：今天的作業沒有問題，做得很順利(&#96;･∀･)b<blockquote>
+<p>作業說明：使用<code>onchange</code>來偵測選單的變動，當使用者點選不同選項時，給予 input 樣式的變化<br><a href="https://jsfiddle.net/iamCJ/pLj9xsdr/">https://jsfiddle.net/iamCJ/pLj9xsdr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－讀取與修改-DOM-元素的-style"><a href="#第六課－讀取與修改-DOM-元素的-style" class="headerlink" title="第六課－讀取與修改 DOM 元素的 style"></a>第六課－讀取與修改 DOM 元素的 style</h2><ul>
+<li>課程概要：修改<code>.style.display</code>屬性，讓元素顯示或消失</li>
+<li>作業心得：<ol>
+<li>這堂課的作業應該是想要我們運用<code>.style.display</code>去設計樣式的切換，但我想要的樣式若使用<code>display:none</code>的話會跑版，因此我選擇改用<code>visibility</code>去控制元素的顯示或消失</li>
+<li>另外在寫完程式後，列出多個事項來測試才發現，我原本的寫法－<strong>先抓好要控制的元素，在符合條件時修改其 style</strong>，會變成不管勾選哪個事項，只有第一個事項會觸發，所以我後來改成用<code>event.target.parentElement.children[2]</code>去抓被觸發的<code>&lt;span&gt;</code>，就沒問題了</li>
+</ol>
+</li>
+<li><font style="color:grey;">這行是為了排版好看 ∠( ᐛ 」∠)＿</font><blockquote>
+<p>作業說明：使用<code>.style.display</code>屬性控制元素，在被勾選起來的事項旁顯示元素，沒有被勾選的則隱藏，我自己還加入了 class，將被勾起的事項文字加上刪除線（<code>text-decoration:line-through</code>）<br><a href="https://jsfiddle.net/iamCJ/mw581v70/">https://jsfiddle.net/iamCJ/mw581v70/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－用-Selector-API-選取元素"><a href="#第七課－用-Selector-API-選取元素" class="headerlink" title="第七課－用 Selector API 選取元素"></a>第七課－用 Selector API 選取元素</h2><ul>
+<li>課程概要：<ol>
+<li>認識<code>.querySelector()</code>、<code>.querySelectorAll()</code><ol>
+<li><code>.querySelector()</code>：於括號內填入要存取的元素名稱、id、或是 class，如果有多個符合的元素，<strong>只會回傳第一個</strong></li>
+<li><code>.querySelectorAll()</code>：使用方式跟<code>.querySelector()</code>一樣，不同的是，如果有多個符合的元素，將<strong>以陣列形式全部列出</strong></li>
+<li>兩者與<code>.getElementById()</code>的差別是：<code>.getElementById()</code>只能存取有設置<code>id</code>的元素，而<code>.querySelector()</code>及<code>.querySelectorAll()</code>可以直接存取 DOM 元素（可以當作是 html tag），並且可以用類似於 css 指定元素的方式設定要找的目標，例如：<code>document.querySelector(&#39;div ul li p&#39;)</code></li>
+</ol>
+</li>
+<li>認識<code>.closest()</code>：於括號內填入要存取的元素名稱、id、或是 class，他會從目前位置往上層找，父層找不到就再往祖父層找，直到找到第一個符合的元素，但這個方法只能找祖先（？，與目前位置在同一層的元素不會回傳結果</li>
+</ol>
+</li>
+<li>作業心得：相較於之前教的，我更喜歡用這一課用<code>.closest()</code>及<code>.querySelector()</code>的方法來找父元素、子元素，因為可以更明確指定，比較不會因為架構的順序調整與變動而影響，若像是使用索引的方式指定的話，如：<code>children[0]</code>，在換順序以後索引就需要跟著更換<blockquote>
+<p>作業說明：作業進行重構程式碼，將<code>.getElementById()</code>、<code>.parentElement</code>、<code>.children</code>全部改為這一課教的語法<br><a href="https://jsfiddle.net/iamCJ/6k38qar4/">https://jsfiddle.net/iamCJ/6k38qar4/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>我覺得這系列的課還在我有學過的範圍裡，只是有幾個語法沒有用過，或是更習慣使用另一種相似功能的語法，難度還不高，期待後面的課程可以更有挑戰性 ٩(｡・ω・｡)﻿و</p>
+<p>原本預期兩～三天可以完成一個系列的課程，但沒想到實作起來還是挺花時間的，要再加把勁！趕快把接下來的課學完吧！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/vx8gqZ">自學網頁の嬰兒教材：JavaScript（二）—— 親手做個待辦事項小工具</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
@@ -717,95 +815,92 @@
       </tags>
   </entry>
   <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（二）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>今天沒有什麼想說的，只想告訴自己：快快學、繼續學，趕快找到工作！(๑•̀ㅂ•́)و✧</p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-DOM-樹、新增元素"><a href="#第一課－認識-DOM-樹、新增元素" class="headerlink" title="第一課－認識 DOM 樹、新增元素"></a>第一課－認識 DOM 樹、新增元素</h2><ul>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（八）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AB%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這系列就是讓自己做各種小專案啦～只給一些關鍵字以及作業要求，其他像是邏輯、功能和結構等等，通通由自己一人構思、完成，覺得還滿興奮的，可以測試看看自己的能力，同時也能累積投遞履歷用的作品集(&#96;･∀･)b</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－碼表應用程式"><a href="#第一課－碼表應用程式" class="headerlink" title="第一課－碼表應用程式"></a>第一課－碼表應用程式</h2><ul>
 <li>課程概要：<ol>
-<li>認識 DOM tree、子元素、父元素的概念</li>
-<li>使用 JS 操作 DOM tree：<ol>
-<li><code>.createElement()</code>：在括弧內填入元素名稱，例如：<code>p</code>、<code>h1</code>，就可以動態新增元素</li>
-<li><code>.append()</code>：可以用此方法將某個元素變為自己的子元素<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> newElement = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;p&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> exampleDiv = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">exampleDiv.<span class="title function_">append</span>(newElement);</span><br><span class="line"><span class="comment">//html結構會是這樣</span></span><br><span class="line"><span class="comment">//&lt;div&gt;</span></span><br><span class="line"><span class="comment">//  &lt;p&gt;&lt;/p&gt;</span></span><br><span class="line"><span class="comment">//&lt;/div&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>目標：做出碼表應用程式</li>
+<li>關鍵字：<strong>online stopwatch</strong>、<strong>線上碼表</strong></li>
 </ol>
 </li>
-<li>使用<code>alert</code>、<code>console.log()</code>來除錯</li>
-</ol>
-</li>
-<li>作業心得：這次依然是 CSS 比較花費時間 XD。<blockquote>
-<p>作業說明：按下按鈕後，在下方表單新增使用者在 input 輸入的事項，會用到<code>.createElement()</code>及<code>.append()</code>。<br><a href="https://jsfiddle.net/iamCJ/j17Lq0om/">https://jsfiddle.net/iamCJ/j17Lq0om/</a></p>
+<li>作業心得：做這個作業滿卡的，因為我想要將<code>setInterval</code>放入<code>if</code>裡面，不管怎麼宣告<code>setInterval</code>都一直無法使用<code>clearInterval</code>將計時器暫停，看到某位同學的作業是將<code>setInterval</code>賦值給 data 內的參數才終於恍然大悟 XD，最後成功了，然後我樣式真的沒辦法弄漂亮 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：做出簡易的計時碼表，需要有開始按鈕、重設按鈕，按下開始按鈕後碼表開始計時，並且開始的字樣變成暫停，再按下暫停按鈕，字樣變成繼續，而按下重設按鈕碼表要歸零。<br>我使用到的關鍵語法：<code>setInterval</code>、<code>cleanInterval</code>。<br><a href="https://jsfiddle.net/iamCJ/2hLfa0tw/">https://jsfiddle.net/iamCJ/2hLfa0tw/</a></p>
 </blockquote>
-</li>
+<script async src="//jsfiddle.net/iamCJ/2hLfa0tw/embed/result/"></script></li>
 </ul>
-<h2 id="第二課－從-DOM-樹移除元素、動態加上-onclick-事件"><a href="#第二課－從-DOM-樹移除元素、動態加上-onclick-事件" class="headerlink" title="第二課－從 DOM 樹移除元素、動態加上 onclick 事件"></a>第二課－從 DOM 樹移除元素、動態加上 onclick 事件</h2><ul>
+<h2 id="第二課－筆記應用程式"><a href="#第二課－筆記應用程式" class="headerlink" title="第二課－筆記應用程式"></a>第二課－筆記應用程式</h2><ul>
 <li>課程概要：<ol>
-<li>動態加入 onclick 事件：在 JS 內使用變數綁定事件，而非在 html tag 內加事件</li>
-<li>使用<code>.children</code>、<code>.parentElement</code>可以列出元素的所有子元素及父元素，而所有子元素會以<strong>陣列</strong>型態列出</li>
-<li>使用<code>.remove()</code>可以刪除該元素</li>
-<li>了解<code>document</code>物件、<code>event</code>物件：前者是 JS 在瀏覽器內建的<strong>物件</strong>，代表網頁<strong>當下的狀態</strong>；後者也是<strong>物件</strong>，代表網頁<strong>當下正在發生的事件</strong>，使用<code>event.target</code>可以找到當前發生事件的元素</li>
+<li>目標：做出筆記應用程式</li>
+<li>關鍵字：<strong>write notes online</strong>、<strong>online note tool</strong></li>
 </ol>
 </li>
-<li>作業心得：我覺得這次比較困擾我的部分是：想要把<strong>新增</strong>及<strong>刪除</strong>的功能切開，希望新增的 function 就放新增的東西，刪除的 function 也一樣，但由於刪除的按鈕需要在新增 function 的部分跟著<code>inputValue</code>一起長出來（只是我的想法而已），所以最後刪除的 function 裡就只放刪除的行為而已<blockquote>
-<p>作業說明：在每一個事項旁新增刪除的按鈕，運用<code>event.target</code>找到被觸發的<code>button</code>元素，再使用<code>.parentElement</code>指定整個<code>&lt;li&gt;</code>及其子元素，並用<code>.remove()</code>將指定的整個結構刪除<br><a href="https://jsfiddle.net/iamCJ/y6fLjr9o/">https://jsfiddle.net/iamCJ/y6fLjr9o/</a></p>
+<li>作業心得：一開始做得很順，但是做到「點擊其他的事項進行修改」的部分就卡住了，將事項的內容傳送回<code>textarea</code>後就不知道該怎麼把修改後的內容傳回存放事項的陣列，後來看了其他同學怎麼處理的，發現有位同學是連<code>textarea</code>也做 for 迴圈，每個事項都有對應的<code>textarea</code>，而要不要顯示<code>textarea</code>的狀態存在事項的物件中，這樣就能修改個別的事項內容了，這個做法滿聰明的餒(&#96;･∀･)b<blockquote>
+<p>作業說明：做出簡易的記事本，有一個可以輸入文字的<code>textarea</code>還有新增筆記的按鈕，筆記內容要隨時存到 local storage，還需要有個筆記清單的區塊來放置所有事項，每個事項旁都有刪除按鈕，且點擊單一事項可以修改該事項的內容<br><a href="https://jsfiddle.net/iamCJ/21j9qdv8/">https://jsfiddle.net/iamCJ/21j9qdv8/</a></p>
 </blockquote>
-</li>
+<script async src="//jsfiddle.net/iamCJ/21j9qdv8/146/embed/result/"></script></li>
 </ul>
-<h2 id="第三課－認識-for-迴圈"><a href="#第三課－認識-for-迴圈" class="headerlink" title="第三課－認識 for 迴圈"></a>第三課－認識 for 迴圈</h2><ul>
-<li>課程概要：認識<code>for of</code>的寫法，這個方法會將<code>of</code>後面接的陣列內容依序一筆一筆跑程式<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;cat&quot;</span>, <span class="string">&quot;dog&quot;</span>, <span class="string">&quot;bird&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> text = <span class="string">&quot;I am a &quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> animal <span class="keyword">of</span> array1) &#123;</span><br><span class="line">  text += animal;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(text);</span><br></pre></td></tr></table></figure></li>
-<li>自己補充：我想要在 JS 新增的刪除按鈕加上 id，原本只知道加 class 的方式是<code>.classList.add()</code>，後來查到<code>.setAttribute()</code>這個方法，可以新增 id、class、style 等等</li>
-<li>作業心得：一直卡在要怎麼取到 span 的值，偷偷看其他人的作業才發現，原來取到<code>list.children</code>之後，再用<code>.children[0]</code>指向第一個子元素的<code>&lt;span&gt;</code>就可以了<blockquote>
-<p>作業說明：新增一個可以將所有事項 alert 出來的按鈕，使用<code>for of</code>並結合<code>.children.textContent</code>將每一筆事項列出<br><a href="https://jsfiddle.net/iamCJ/Ldbx2u4o/">https://jsfiddle.net/iamCJ/Ldbx2u4o/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第四課－讀取與修改-DOM-元素的-class"><a href="#第四課－讀取與修改-DOM-元素的-class" class="headerlink" title="第四課－讀取與修改 DOM 元素的 class"></a>第四課－讀取與修改 DOM 元素的 class</h2><ul>
+<h2 id="第三課－分帳應用程式"><a href="#第三課－分帳應用程式" class="headerlink" title="第三課－分帳應用程式"></a>第三課－分帳應用程式</h2><ul>
 <li>課程概要：<ol>
-<li>動態在 DOM tree<strong>存取</strong>元素的 class：使用<code>.className</code>的屬性就能取到元素的 class</li>
-<li>動態在 DOM tree<strong>修改</strong>元素的 class：直接修改<code>.className</code>屬性</li>
+<li>目標：做出分帳應用程式</li>
+<li>關鍵字：<strong>分帳應用程式</strong>、<strong>分帳 app</strong>、<strong>splitwise 網頁版</strong></li>
 </ol>
 </li>
-<li>作業心得：不太喜歡重複的程式出現太多次，例如在 if 判斷裡，不同條件下要呈現的內容只有些微差異，卻要一直重複相似的程式碼，但目前想到的辦法就只能將重複會用到的設為變數，至少畫面看起來比較簡潔了一點<blockquote>
-<p>作業說明：增加選單，依照不同選項給予所輸入的事項對應的 class，並且輸出到 alert 的內容也要依據不同選項而有所差異<br><a href="https://jsfiddle.net/iamCJ/5mok4eq1/">https://jsfiddle.net/iamCJ/5mok4eq1/</a></p>
+<li>作業心得：前陣子跟朋友們討論出遊相關事宜時，才認識到這個酷炫的新東西，沒想到我也可以做得出來！雖然我覺得思考邏輯以及安排好資料格式有點燒腦，某個地方卡住了就會想很久，或是發現取資料時很麻煩、甚至取不到，就要再改寫資料的格式，而且功能沒有像別人做的那麼複雜，畫面也沒那麼精美 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：做出簡易的分帳程式<br>作業要求如下：（1）資料要隨時存入 local storage（2）需要有可以增加成員姓名、增加款項的按鈕，而增加款項的部分可以填入金額、事項以及由誰付款（3）需要成員列表及款項列表將所有成員及所有款項列出，成員列表的部分需列出成員姓名以及應付&#x2F;應收金額（並需有顏色區別），款項列表則需列出金額、事項以及付款人，並且有刪除按鈕可以刪除個別款項（4）需要有旅程結束的按鈕，清除所有成員及款項資料<br><a href="https://jsfiddle.net/iamCJ/xgu5k1vy/">https://jsfiddle.net/iamCJ/xgu5k1vy/</a></p>
 </blockquote>
-</li>
+<script async src="//jsfiddle.net/iamCJ/xgu5k1vy/embed/result/"></script></li>
 </ul>
-<h2 id="第五課－認識-onchange-事件"><a href="#第五課－認識-onchange-事件" class="headerlink" title="第五課－認識 onchange 事件"></a>第五課－認識 onchange 事件</h2><ul>
-<li>課程概要：<br>認識<code>onchange</code>方法：被綁上這個方法的元素有變化就會觸發事件。不過不同的 html 元素對於觸發<code>onchange</code>的定義有點不同，取得<strong>變化後的新值</strong>的方式也會有不同</li>
-<li>作業心得：今天的作業沒有問題，做得很順利(&#96;･∀･)b<blockquote>
-<p>作業說明：使用<code>onchange</code>來偵測選單的變動，當使用者點選不同選項時，給予 input 樣式的變化<br><a href="https://jsfiddle.net/iamCJ/pLj9xsdr/">https://jsfiddle.net/iamCJ/pLj9xsdr/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第六課－讀取與修改-DOM-元素的-style"><a href="#第六課－讀取與修改-DOM-元素的-style" class="headerlink" title="第六課－讀取與修改 DOM 元素的 style"></a>第六課－讀取與修改 DOM 元素的 style</h2><ul>
-<li>課程概要：修改<code>.style.display</code>屬性，讓元素顯示或消失</li>
-<li>作業心得：<ol>
-<li>這堂課的作業應該是想要我們運用<code>.style.display</code>去設計樣式的切換，但我想要的樣式若使用<code>display:none</code>的話會跑版，因此我選擇改用<code>visibility</code>去控制元素的顯示或消失</li>
-<li>另外在寫完程式後，列出多個事項來測試才發現，我原本的寫法－<strong>先抓好要控制的元素，在符合條件時修改其 style</strong>，會變成不管勾選哪個事項，只有第一個事項會觸發，所以我後來改成用<code>event.target.parentElement.children[2]</code>去抓被觸發的<code>&lt;span&gt;</code>，就沒問題了</li>
-</ol>
-</li>
-<li><font style="color:grey;">這行是為了排版好看 ∠( ᐛ 」∠)＿</font><blockquote>
-<p>作業說明：使用<code>.style.display</code>屬性控制元素，在被勾選起來的事項旁顯示元素，沒有被勾選的則隱藏，我自己還加入了 class，將被勾起的事項文字加上刪除線（<code>text-decoration:line-through</code>）<br><a href="https://jsfiddle.net/iamCJ/mw581v70/">https://jsfiddle.net/iamCJ/mw581v70/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第七課－用-Selector-API-選取元素"><a href="#第七課－用-Selector-API-選取元素" class="headerlink" title="第七課－用 Selector API 選取元素"></a>第七課－用 Selector API 選取元素</h2><ul>
+<h2 id="第四課－行事曆應用程式"><a href="#第四課－行事曆應用程式" class="headerlink" title="第四課－行事曆應用程式"></a>第四課－行事曆應用程式</h2><ul>
 <li>課程概要：<ol>
-<li>認識<code>.querySelector()</code>、<code>.querySelectorAll()</code><ol>
-<li><code>.querySelector()</code>：於括號內填入要存取的元素名稱、id、或是 class，如果有多個符合的元素，<strong>只會回傳第一個</strong></li>
-<li><code>.querySelectorAll()</code>：使用方式跟<code>.querySelector()</code>一樣，不同的是，如果有多個符合的元素，將<strong>以陣列形式全部列出</strong></li>
-<li>兩者與<code>.getElementById()</code>的差別是：<code>.getElementById()</code>只能存取有設置<code>id</code>的元素，而<code>.querySelector()</code>及<code>.querySelectorAll()</code>可以直接存取 DOM 元素（可以當作是 html tag），並且可以用類似於 css 指定元素的方式設定要找的目標，例如：<code>document.querySelector(&#39;div ul li p&#39;)</code></li>
+<li>目標：做出行事曆應用程式</li>
+<li>關鍵字：<strong>calendar app ui</strong></li>
+<li>補充：現在大部份新出的 JS 套件，都會提供 native（原生 JS）、Vue、React 三種版本讓使用者做選擇、以便使用，套件官方通常會將框架版本的底層寫法做修改，不過，沒有的話也能自行將初始化相關設定放在 mounted 裡，在狀態更新時，想辦法與套件狀態同步即可</li>
 </ol>
 </li>
-<li>認識<code>.closest()</code>：於括號內填入要存取的元素名稱、id、或是 class，他會從目前位置往上層找，父層找不到就再往祖父層找，直到找到第一個符合的元素，但這個方法只能找祖先（？，與目前位置在同一層的元素不會回傳結果</li>
+<li>作業心得：將原生 JS 環境的套件改寫成適用在 Vue 環境的過程還滿有趣的，不斷推測、嘗試可行的方法，會一點一點找到能執行的規則，不過可以的話，以後還是盡量找支援 Vue 框架的套件就好了 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：做出簡易的行事曆，需要有一個新增活動的按鈕，點擊按鈕後可以輸入活動名稱、選擇活動日期與時間，選擇日期時間的 UI 用之前課程教過的 datetimepicker 套件，而行事曆 UI 的部分則使用 FullCalendar 套件，需要將活動正確顯示於行事曆上，並且點擊活動可以出現確認刪除的對話方塊，確認後能刪除活動，並且使用 CDN 版本，自己學習如何在框架內導入套件，<strong>不能</strong>用官方提供的 Vue 版本<br><a href="https://jsfiddle.net/iamCJ/cxrqgt0j/">https://jsfiddle.net/iamCJ/cxrqgt0j/</a></p>
+</blockquote>
+<script async src="//jsfiddle.net/iamCJ/cxrqgt0j/embed/result/"></script></li>
+</ul>
+<h2 id="第五課－體重追蹤應用程式"><a href="#第五課－體重追蹤應用程式" class="headerlink" title="第五課－體重追蹤應用程式"></a>第五課－體重追蹤應用程式</h2><ul>
+<li>課程概要：<ol>
+<li>目標：做出體重追蹤應用程式</li>
+<li>關鍵字：<strong>weight tracking</strong></li>
+<li>補充：找尋套件但官方並無提供框架版本的話，可以搜尋<code>how to use 套件名稱 in 框架名稱</code>看看有無其他開發者將該套件改寫成框架可使用的版本</li>
 </ol>
 </li>
-<li>作業心得：相較於之前教的，我更喜歡用這一課用<code>.closest()</code>及<code>.querySelector()</code>的方法來找父元素、子元素，因為可以更明確指定，比較不會因為架構的順序調整與變動而影響，若像是使用索引的方式指定的話，如：<code>children[0]</code>，在換順序以後索引就需要跟著更換<blockquote>
-<p>作業說明：作業進行重構程式碼，將<code>.getElementById()</code>、<code>.parentElement</code>、<code>.children</code>全部改為這一課教的語法<br><a href="https://jsfiddle.net/iamCJ/6k38qar4/">https://jsfiddle.net/iamCJ/6k38qar4/</a></p>
+<li>作業心得：沒想到 Chart.js 跟 Vue 相容性有點差，總是會遇到很多未知的錯誤，不過也還好不是只有我一個人遇到這些問題，參考一下他人的解決辦法就順利完成了！<blockquote>
+<p>作業說明：做出簡易的體重追蹤工具，需要有可以輸入體重及日期的表格，以及新增資料的按鈕，並且有清單列表將所有資料依日期排序列出，搭配 Chart.js 將資料圖表化（以折線圖的形式呈現）<br><a href="https://jsfiddle.net/iamCJ/tncuzgd8/">https://jsfiddle.net/iamCJ/tncuzgd8/</a></p>
+</blockquote>
+<script async src="//jsfiddle.net/iamCJ/tncuzgd8/embed/result/"></script></li>
+</ul>
+<h2 id="第六課－天氣查詢應用程式"><a href="#第六課－天氣查詢應用程式" class="headerlink" title="第六課－天氣查詢應用程式"></a>第六課－天氣查詢應用程式</h2><ul>
+<li>課程概要：<ol>
+<li>目標：做出天氣查詢應用程式</li>
+<li>關鍵字：<strong>weather app ui</strong></li>
+<li>補充：關於 API 的使用，為了避免 API 被過度呼叫、濫用，通常會需要註冊、取得金鑰（key）才能呼叫，而使用金鑰驗證的方法有很多，可能是呼叫 API 時，在 http request header 裡面附上 API key，或直接把 key 附在呼叫的 url 上，也或者是在 http post 內使用 form data 附上，而實際驗證的方法還是要看 API 作者是選擇哪一種</li>
+</ol>
+</li>
+<li>作業心得：覺得呼叫 API 還滿好玩的，不複雜且可以運用的資料很多種，加上氣象局把資料整理得很清楚，所以在學習使用的時候還滿輕鬆的，但是我偷懶，作業呈現的資料跟樣式沒有另外做處理 ∠( ᐛ 」∠)＿這次的練習想要把重點放在 call API，並取到自己想要的資料<blockquote>
+<p>作業說明：做出簡易的天氣查詢工具，需要有選單選取縣市，選取縣市後需要呈現該地的天氣現象、最高溫度、最低溫度、降雨機率，而資料取用自中央氣象局的 API<br><a href="https://jsfiddle.net/iamCJ/9odgx75c/">https://jsfiddle.net/iamCJ/9odgx75c/</a></p>
+</blockquote>
+<script async src="//jsfiddle.net/iamCJ/9odgx75c/embed/result/"></script></li>
+</ul>
+<h2 id="第七課－國家資訊與地圖應用程式"><a href="#第七課－國家資訊與地圖應用程式" class="headerlink" title="第七課－國家資訊與地圖應用程式"></a>第七課－國家資訊與地圖應用程式</h2><ul>
+<li><font style="color:red;">提醒：本次作業要使用到的 API-restcountries，可能是點擊數太多伺服器爆炸，或是我個人操作問題，一直無法成功呼叫到 API，官方說明網站也出現錯誤，而目前我尚未找到替代的 API，因此這課的作業先暫緩製作</font></li>
+<li>課程概要：<ol>
+<li>目標：組合多個 API，做出國家資訊與地圖應用程式</li>
+<li>使用 API 與套件：<strong>restcountries</strong>、<strong>Leaflet</strong>、<strong>OpenStreetMap</strong></li>
+</ol>
+</li>
+<li>作業心得：暫無<blockquote>
+<p>作業說明：做出簡易的國家資訊與地圖工具，顯示世界地圖，在每個國家的中心點放置大頭針的標記，點擊大頭針後會跳出視窗，視窗內顯示國旗圖案、國家名稱、首都名稱、貨幣符號<br><a href="https://jsfiddle.net/iamCJ/m30ayj8g/">https://jsfiddle.net/iamCJ/m30ayj8g/</a></p>
 </blockquote>
 </li>
 </ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>我覺得這系列的課還在我有學過的範圍裡，只是有幾個語法沒有用過，或是更習慣使用另一種相似功能的語法，難度還不高，期待後面的課程可以更有挑戰性 ٩(｡・ω・｡)﻿و</p>
-<p>原本預期兩～三天可以完成一個系列的課程，但沒想到實作起來還是挺花時間的，要再加把勁！趕快把接下來的課學完吧！</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/vx8gqZ">自學網頁の嬰兒教材：JavaScript（二）—— 親手做個待辦事項小工具</a></p>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>要做這麼多小專案真的有難度耶，每個都需要耗時三到四天左右，加上有幾課要求套用原生 JS 版本的套件，處理兼容和 bug 就佔了很多時間，不過看到專案完成且能成功執行還是非常有成就感！也對於自己的能力更有自信了一點，期望自己能製作出敢分享給身邊親朋好友使用的工具 XD</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/jqe6xX">自學網頁の嬰兒教材：JavaScript（八）—— 不想教你 Vue，只想讓你寫有趣專案</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
