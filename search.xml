@@ -243,40 +243,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【作品集】新竹市違規照相桿地圖</title>
-    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
-    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
-<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
-<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
-</blockquote>
-<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
-
-<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
-<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
-<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
-<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
-<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
-<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
-</ul>
-<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
-<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
-<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
-</ol>
-<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
-<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
-<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
-<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
-<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>作品集</category>
-      </categories>
-      <tags>
-        <tag>作品集</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</title>
     <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>其實我在上完職訓課程之後一直有個困擾，除了沒學到框架以外，就是我 JS 的程度停留在能夠基礎操作，好像都會但深入問就被問倒，也抓不太清楚自己還不會的範圍。<br>然而，我在苦惱之際突然靈光一閃，想到在臉書社團看過阿川大大在宣傳自己的課程，點開介紹後了解課程設計是以寫小專案的方式學 JS，而我喜歡邊做邊學，印象更深刻也比較有趣，就這樣開啟了學習的旅程 ∠( ᐛ 」∠)＿<br><font style="font-size:15px;color:grey;">p.s.本系列標題是來自站長阿川大大將這份教材取名為自學網頁の嬰兒教材</font></p>
@@ -469,6 +435,40 @@
       </categories>
       <tags>
         <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【作品集】新竹市違規照相桿地圖</title>
+    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E6%96%B0%E7%AB%B9%E5%B8%82%E9%81%95%E8%A6%8F%E7%85%A7%E7%9B%B8%E6%A1%BF%E5%9C%B0%E5%9C%96/</url>
+    <content><![CDATA[<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>可以查詢新竹市內設有違規自動照相固定桿之位置，照相桿類型包含移動式照相桿、測速、違規停車、科技執法等，資料來自新竹市政府開放資料平台之最新資料(111.12.28)。<br>如需參照原始碼，可以移至 <a href="https://github.com/iam-CJ/SideProject_2">我的 GitHub</a> 瀏覽。</p>
+<h1 id="DEMO"><a href="#DEMO" class="headerlink" title="DEMO"></a>DEMO</h1><blockquote>
+<p><a href="https://iam-cj.github.io/SideProject_2/">新竹市違規自動照相桿地圖</a></p>
+</blockquote>
+<img alt="homepage-preview" width="700" height="300" src="https://raw.githubusercontent.com/iam-CJ/SideProject_2/7592c597d98e62bb7eb5fe4e27b3884243fc9d1a/%E9%A0%90%E8%A6%BD%E5%9C%96.png"/>
+
+<h1 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h1><ul>
+<li><strong>具備 RWD：</strong>隨螢幕尺寸變化，網頁排版及大小也會隨著變化。</li>
+<li><strong>可選取地區、街道以縮小搜尋範圍：</strong>可以透過網頁上方選單選取想要查看的路段，精簡顯示的結果讓使用者能一目了然。</li>
+<li><strong>科技執法照相桿篩選按鈕：</strong>因應近幾年各地增設科技執法照相桿，切換按鈕可快速得知科技執法照相桿之設置地點。</li>
+<li><strong>顯示搜尋結果筆數：</strong>避免結果出現在當前所看到的地圖範圍以外而難以察覺，提供結果數來提醒使用者可以移動地圖去做查閱。</li>
+<li><strong>點擊座標可瀏覽更詳細資訊：</strong>查詢結果會以座標圖示出現在地圖上，如果想要了解該照相桿之速限及類型，可以點擊座標圖示進一步查看。</li>
+</ul>
+<h1 id="製作動機"><a href="#製作動機" class="headerlink" title="製作動機"></a>製作動機</h1><ol>
+<li><strong>練習接外部資料並處理：</strong><br>由於上一份作品之資料來源都存於本機，因此這次想要嘗試運用外部資料來製作作品，並且練習觀察資料結構、發想能如何運用。</li>
+<li><strong>近期增設許多科技執法照相桿：</strong><br>近幾年各地開始增設科技執法照相桿，若平時沒有看新聞或追蹤相關資訊的習慣，容易錯過消息；另外對於不熟當地或是對路名不敏感的人，即便得知在哪個路口，沒有看到地圖可能還是不夠清楚。</li>
+</ol>
+<h1 id="使用技術"><a href="#使用技術" class="headerlink" title="使用技術"></a>使用技術</h1><ul>
+<li><strong>Bootstrap：</strong>利用其預設的 CSS 樣式，快速建立整齊、美觀的介面。</li>
+<li><strong>OpenStreetMap、Leaflet：</strong>地圖的顯示是使用免費開源圖資－OpenStreetMap，而設定地圖縮放大小、預設顯示位置以及設立座標等功能，則是使用 Leaflet 這個開源的 JavaScript library 來製作。</li>
+<li><strong>Vue 框架－Vue Cli：</strong>運用 Vue 其雙向綁定的特性，資料畫面會同步更新，在處理上更省事。</li>
+<li><strong>Axios、Vue-Axios：</strong>使用 Axios 來引入及讀取來自外部的 Json 檔。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
       </tags>
   </entry>
   <entry>
@@ -888,116 +888,19 @@
 <script async src="//jsfiddle.net/iamCJ/9odgx75c/embed/result/"></script></li>
 </ul>
 <h2 id="第七課－國家資訊與地圖應用程式"><a href="#第七課－國家資訊與地圖應用程式" class="headerlink" title="第七課－國家資訊與地圖應用程式"></a>第七課－國家資訊與地圖應用程式</h2><ul>
-<li><font style="color:red;">提醒：本次作業要使用到的 API-restcountries，可能是點擊數太多伺服器爆炸，或是我個人操作問題，一直無法成功呼叫到 API，官方說明網站也出現錯誤，而目前我尚未找到替代的 API，因此這課的作業先暫緩製作</font></li>
+<li><font style="color:red;">提醒：本次作業用到的 restcountries API，不時可能因點擊數太多、伺服器負荷量爆炸，抑或作者暫時關閉 API，導致呼叫 API 失敗而無法正常顯示</font></li>
 <li>課程概要：<ol>
 <li>目標：組合多個 API，做出國家資訊與地圖應用程式</li>
 <li>使用 API 與套件：<strong>restcountries</strong>、<strong>Leaflet</strong>、<strong>OpenStreetMap</strong></li>
 </ol>
 </li>
-<li>作業心得：暫無<blockquote>
+<li>作業心得：之前自己做違規照相桿地圖時，就是用 Leaflet 搭配 OpenStreetMap，所以用起來很快就上手，遇到比較多問題是 call restcountries 資料，有時會取不到想要的，有時在 function 讀不到，後來參考其他同學的結構才順利解決，但還是不太明白我原本的寫法為何出錯就是了 ∠( ᐛ 」∠)＿<blockquote>
 <p>作業說明：做出簡易的國家資訊與地圖工具，顯示世界地圖，在每個國家的中心點放置大頭針的標記，點擊大頭針後會跳出視窗，視窗內顯示國旗圖案、國家名稱、首都名稱、貨幣符號<br><a href="https://jsfiddle.net/iamCJ/m30ayj8g/">https://jsfiddle.net/iamCJ/m30ayj8g/</a></p>
 </blockquote>
-</li>
+<script async src="//jsfiddle.net/iamCJ/m30ayj8g/embed/result/"></script></li>
 </ul>
 <h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>要做這麼多小專案真的有難度耶，每個都需要耗時三到四天左右，加上有幾課要求套用原生 JS 版本的套件，處理兼容和 bug 就佔了很多時間，不過看到專案完成且能成功執行還是非常有成就感！也對於自己的能力更有自信了一點，期望自己能製作出敢分享給身邊親朋好友使用的工具 XD</p>
 <h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/jqe6xX">自學網頁の嬰兒教材：JavaScript（八）—— 不想教你 Vue，只想讓你寫有趣專案</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>用嬰兒都學得會的教材學JS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這個系列比較像是過去的土法煉鋼寫法與接觸新框架中間的銜接（？，站長大大選擇先用 data model 與 render function 教我們關注點分離的概念，習慣資料與畫面、功能分開管理，了解於原理後再讓我們接觸框架，而非直接進入框架的教學，比較能避免我們會出現搞不清楚某些功能到底是原生 JS 還是框架所提供的狀況。</p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-data-model-與-render-function"><a href="#第一課－認識-data-model-與-render-function" class="headerlink" title="第一課－認識 data model 與 render function"></a>第一課－認識 data model 與 render function</h2><ul>
-<li>課程概要：<ol>
-<li>認識 data model 的觀念：當你要面對的是大型專案時，不建議再使用操作 DOM 元素去更新其內容，會變得很難以維護，因此需要將程式的<strong>狀態</strong>與其他部份分開，而這個<strong>狀態</strong>通常被稱為 <strong>state</strong>、<strong>model</strong> 或 <strong>data model</strong>，在資料更動時，只需要去處理 data model，這樣在開發複雜專案時，相關函式一律只要專注於 data model 就好，不用管使用者介面<figure class="highlight js"><figcaption><span>data model 範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> product = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;冬季外套&quot;</span>,</span><br><span class="line">  <span class="attr">price</span>: <span class="number">1990</span>,</span><br><span class="line">  <span class="attr">category</span>: <span class="string">&quot;women&quot;</span>,</span><br><span class="line">  <span class="attr">remain</span>: <span class="number">5</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-<li>認識 render function 的觀念：狀態由 data model 管理，而負責更新<strong>畫面</strong>則可以使用 <strong>render function</strong> 的方法，放一個 root 元素，作為放關於使用者介面之程式碼的容器，接著寫一個 render 函式，將所設計的使用者介面做出來、塞到 root 中<br>這個 render 函式有三個注意事項：<ol>
-<li>第一行要先<strong>清空</strong>放使用者介面的容器</li>
-<li>在所有跟<strong>狀態</strong>有關操作的<strong>最後一行</strong>，都要呼叫 render 函式（為了更新畫面）</li>
-<li><strong>所有 DOM 操作</strong>一律由 render 函式處理</li>
-</ol>
-</li>
-</ol>
-</li>
-<li>作業心得：我自己覺得這堂課的觀念有點像 Vue 框架<strong>分開管理</strong>資料以及模板（或者說 HTML 要長的樣子）的概念<blockquote>
-<p>作業說明：使用 render function 把 data model 給渲染出來<br><a href="https://jsfiddle.net/iamCJ/53r4on0a/">https://jsfiddle.net/iamCJ/53r4on0a/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第二課－認識陣列操作"><a href="#第二課－認識陣列操作" class="headerlink" title="第二課－認識陣列操作"></a>第二課－認識陣列操作</h2><ul>
-<li>課程概要：學會使用<code>.push()</code>新增值到陣列，括號內填入想要加入陣列的字串、數字或參數等等，它會加在陣列的<strong>最後方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">push</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li>自己補充：其他常見的陣列處理方法<ol>
-<li><code>.unshift()</code>：也是新增值到陣列，但是它會加在陣列的<strong>最前方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">unshift</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;D&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.shift()</code>：<strong>移除</strong>陣列的<strong>第一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">shift</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.pop()</code>：<strong>移除</strong>陣列的<strong>最後一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">pop</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><span id="splice"><code>.splice(開始索引, 刪除數量, 要插入的值)</code>：用來<strong>切割移除或拼接</strong>某個陣列，這個方法<strong>會</strong>改變原陣列的值！</span><br>括號內第一個參數填入開始的索引值，負數則代表從後面開始算起（例如 -1 為倒數第一個）；第二個參數填入從開始索引（包含）算起<strong>總共</strong>要刪除的<strong>數量</strong>，填 0 就不會刪除；第三個參數可以填入要插入的值，會插在被切割掉的值之位置<br>而直接呼叫<code>.splice()</code>則會回傳被刪除的值<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> removed1 = array1.<span class="title function_">splice</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, removed1); <span class="comment">// 結果為 array1[&quot;A&quot;, &quot;B&quot;], removed1[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array2.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array2); <span class="comment">// 結果為 [&quot;A&quot;, &quot;B&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array3.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>, <span class="string">&quot;嗨嗨嗨&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;嗨嗨嗨&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array4.<span class="title function_">splice</span>(-<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array4); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.slice(開始索引, 結束索引)</code>：用來<strong>複製</strong>某個陣列，會回傳<strong>指定索引範圍的新陣列</strong>，這個方法<strong>不會</strong>改變原陣列的值。<br>括號內填索引範圍，前面的參數為開始的索引值，負數代表從後面開始算起；而後面的參數為結束的索引值，需要注意範圍會切在這個<strong>索引之前</strong>，<strong>不包含</strong>結束索引的值！沒有寫則預設為<code>array.length</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = array1.<span class="title function_">slice</span>(<span class="number">2</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">slice</span>(<span class="number">2</span>, <span class="number">4</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">slice</span>(-<span class="number">2</span>); <span class="comment">//結果為[&quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// 結果仍為 [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.concat()</code>：用來<strong>合併</strong>多個陣列，<strong>不會</strong>改變原先陣列的值，而是回傳一個新的、被合併的陣列。<font style="color:grey;">p.s.而當括號內不填入其他陣列時，我自己會當作是用來<strong>複製</strong>陣列</font><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">concat</span>(array2);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="comment">///括號內不填陣列時</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">concat</span>();</span><br><span class="line">array4.<span class="title function_">push</span>(<span class="string">&quot;ZZZ&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, array4); <span class="comment">// array1[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], array4[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;,&quot;ZZZ&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.include()</code>：用來<strong>尋找</strong>陣列中是否<strong>包含某個值</strong>，結果會以布林值型態回傳<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.indexOf()</code>：用來<strong>尋找</strong>陣列中某個值的<strong>索引位置</strong>，而若搜索的值不在陣列內，則會回傳<code>-1</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">indexOf</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// 0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// -1</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.join()</code>：用來將陣列中的值<strong>轉為字串</strong>，並且加入指定字元做為<strong>值與值連接的符號</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;&amp;&quot;</span>)); <span class="comment">// A&amp;B&amp;C</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;/ &quot;</span>)); <span class="comment">// A/ B/ C/</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>作業心得：作業本身很簡單，不過自己補充的部分花了一些時間整理，但果然還是要自己實際筆記起來，才會記得更熟、把細節搞清楚呀 ∠( ᐛ 」∠)＿<blockquote>
-<p>作業說明：延續上一堂作業，加入一個 input 以及一個新增按鈕，按鈕按下後，必須先更新 data modal 再執行畫面的 render<br><a href="https://jsfiddle.net/iamCJ/L5vrodn7/">https://jsfiddle.net/iamCJ/L5vrodn7/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第三課－認識匿名函式"><a href="#第三課－認識匿名函式" class="headerlink" title="第三課－認識匿名函式"></a>第三課－認識匿名函式</h2><ul>
-<li>課程概要：<ol>
-<li>學會使用<code>.splice()</code>，根據索引刪除陣列元素：這個在上一堂我就先自己補充啦～可以點<a href="#splice">這邊</a>來看</li>
-<li>認識<code>for in</code>迴圈：參數會回傳陣列的<strong>索引</strong>，而<code>for of</code>則是回傳陣列的值<figure class="highlight js"><figcaption><span>for in</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> array) &#123;</span><br><span class="line">  <span class="keyword">const</span> item = array[index];</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(index, item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>認識匿名函式（anonymous function）：動態宣告一個函式，然後直接指派、使用，其實就只是沒有名字的函式而已。<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//有名字的函式長這樣</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//匿名函式長這樣</span></span><br><span class="line"><span class="keyword">let</span> div = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">div.<span class="property">onclick</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈哈&quot;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>作業心得：忘記畫面是根據 data 渲染的，資料變化就會自動更新，原本還想說處理完陣列內的資料，接著要處理<code>&lt;li&gt;</code>、<code>&lt;span&gt;</code>，結果點預覽畫面測試的時候才發現不需要多此一舉 ∠( ᐛ 」∠)＿<blockquote>
-<p>作業說明：加入一個刪除按鈕，按下後刪除他在陣列中的資料，並且重新 render 畫面<br><a href="https://jsfiddle.net/iamCJ/ndtpurzy/">https://jsfiddle.net/iamCJ/ndtpurzy/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第四課－熟悉-render-function"><a href="#第四課－熟悉-render-function" class="headerlink" title="第四課－熟悉 render function"></a>第四課－熟悉 render function</h2><ul>
-<li>課程概要：根據資料內容的不同，render function 內可以有各種條件判斷、巢狀結構等等較複雜的邏輯</li>
-<li>作業心得：做這個作業沒什麼特別想法，只覺得這樣的寫法真的讓思考變得輕鬆多了 XD<blockquote>
-<p>作業說明：延續上一堂作業，讓 data 加入 category 屬性來做分類，在 render function 設條件判斷，不同分類的事項要有不同顏色<br><a href="https://jsfiddle.net/iamCJ/5ba2e3x0/">https://jsfiddle.net/iamCJ/5ba2e3x0/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第五課－熟悉匿名函式"><a href="#第五課－熟悉匿名函式" class="headerlink" title="第五課－熟悉匿名函式"></a>第五課－熟悉匿名函式</h2><ul>
-<li>課程概要：<ol>
-<li>認識布林值：是資料型態的一種，只有<code>true</code>跟<code>false</code>兩種值</li>
-<li>認識更新陣列值的方法：只要指定陣列的索引，並賦值給它即可<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">array[index] = <span class="string">&quot;new&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>作業心得：覺得這系列的作業跟在系列二寫的時候感覺很不一樣，系列二寫得有點卡，覺得所有功能都尬在一起，有時候看著畫面亂亂的程式碼，腦袋也變得亂亂的了 XD<blockquote>
-<p>作業說明：延續上一堂作業，讓 data 加入 isCompleted 屬性，增加標示已完成的按鈕，按下按鈕後要更新 isCompleted 的狀態，並且更新畫面，讓事項的後面有（已完成）的字樣<br><a href="https://jsfiddle.net/iamCJ/kbc96Lq3/">https://jsfiddle.net/iamCJ/kbc96Lq3/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第六課－認識-data-model-的優點"><a href="#第六課－認識-data-model-的優點" class="headerlink" title="第六課－認識 data model 的優點"></a>第六課－認識 data model 的優點</h2><ul>
-<li>課程概要：沒有教新的東西，繼續加強 data model 的練習</li>
-<li>作業心得：data model 的設計真的讓取資料變得很簡單耶！記得在系列二時，做這個作業總感覺很麻煩，code 也很不乾脆（？，取資料都要從 DOM 下手，今天就輕鬆多了(ﾉ&gt;ω&lt;)ﾉ<blockquote>
-<p>作業說明：延續上一堂作業，新增一個匯出事項的按鈕，按下按鈕後，要 alert 出所有事項，並依事項的分類（重要程度）有不同的提示（加上米字號）<br><a href="https://jsfiddle.net/iamCJ/L8dhzxs0/">https://jsfiddle.net/iamCJ/L8dhzxs0/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第七課－資料序列化"><a href="#第七課－資料序列化" class="headerlink" title="第七課－資料序列化"></a>第七課－資料序列化</h2><ul>
-<li>課程概要：<ol>
-<li>認識資料序列化（serialization）：即為將 <strong>data model 轉為字串</strong>，可以用來跟第三方程式溝通、或將資料儲存到資料庫等等</li>
-<li>認識反序列化（deserialization）：則跟序列化相反，是將<strong>序列化資料轉換回來</strong>，變成程式可用的資料</li>
-</ol>
-</li>
-<li>作業心得：再次讚嘆這個 data model 設計，之前在寫的時候不知道為什麼很容易會有煩躁感（？，現在終於知道原因了，除了是因為之前把資料跟畫面全部寫在一起的關係，另外就是跟我寫在 Vue 的時候差很多，一直很不習慣沒辦法直接取用 data，而現在這個寫法超清爽*｡٩(ˊωˋ*)و✧*｡<blockquote>
-<p>作業說明：延續上一堂作業，新增一個儲存按鈕，按下按鈕後將陣列內容存入 local storage，並且在重整網頁時判斷 local storage 有無資料，如果有則自動載入<br><a href="https://jsfiddle.net/iamCJ/huwmsf40/">https://jsfiddle.net/iamCJ/huwmsf40/</a></p>
-</blockquote>
-</li>
-</ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列的學習速度又回來啦！覺得這一系列的寫法比較符合我的習慣，在寫作業的過程跟心情都很順暢 XD。接下來就要進入學習 Vue 的系列啦，之前有自學過，我在想應該可以很快就上手，也期待可以學到新觀念跟新技巧～</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/2anPxn">自學網頁の嬰兒教材：JavaScript（六）—— 從前端設計心態到前端工程心態</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
@@ -1118,6 +1021,103 @@ js 的部分，需要 new 一個 <code>chart(element,&#123;&#125;)</code>，括�
 </ul>
 <h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這個系列的課接觸到很多神人設計的套件，一邊佩服他們的技術，一邊感謝他們的貢獻給其他開發者帶來很大的便利，也期待自己有一天也能獨立研發出方便好用又炫炮的套件，變成神人之一；同時也覺得這堂課很有趣，只要調整一些設定值就能很輕易達到自己想要的結果，有種自己很厲害的錯覺 XD<br>話說，學到這系列，我覺得寫文章比學習新東西還累 XD</p>
 <h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/837eq0">自學網頁の嬰兒教材：JavaScript（四）—— 學會第三方套件的使用方法</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這個系列比較像是過去的土法煉鋼寫法與接觸新框架中間的銜接（？，站長大大選擇先用 data model 與 render function 教我們關注點分離的概念，習慣資料與畫面、功能分開管理，了解於原理後再讓我們接觸框架，而非直接進入框架的教學，比較能避免我們會出現搞不清楚某些功能到底是原生 JS 還是框架所提供的狀況。</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-data-model-與-render-function"><a href="#第一課－認識-data-model-與-render-function" class="headerlink" title="第一課－認識 data model 與 render function"></a>第一課－認識 data model 與 render function</h2><ul>
+<li>課程概要：<ol>
+<li>認識 data model 的觀念：當你要面對的是大型專案時，不建議再使用操作 DOM 元素去更新其內容，會變得很難以維護，因此需要將程式的<strong>狀態</strong>與其他部份分開，而這個<strong>狀態</strong>通常被稱為 <strong>state</strong>、<strong>model</strong> 或 <strong>data model</strong>，在資料更動時，只需要去處理 data model，這樣在開發複雜專案時，相關函式一律只要專注於 data model 就好，不用管使用者介面<figure class="highlight js"><figcaption><span>data model 範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> product = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;冬季外套&quot;</span>,</span><br><span class="line">  <span class="attr">price</span>: <span class="number">1990</span>,</span><br><span class="line">  <span class="attr">category</span>: <span class="string">&quot;women&quot;</span>,</span><br><span class="line">  <span class="attr">remain</span>: <span class="number">5</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li>認識 render function 的觀念：狀態由 data model 管理，而負責更新<strong>畫面</strong>則可以使用 <strong>render function</strong> 的方法，放一個 root 元素，作為放關於使用者介面之程式碼的容器，接著寫一個 render 函式，將所設計的使用者介面做出來、塞到 root 中<br>這個 render 函式有三個注意事項：<ol>
+<li>第一行要先<strong>清空</strong>放使用者介面的容器</li>
+<li>在所有跟<strong>狀態</strong>有關操作的<strong>最後一行</strong>，都要呼叫 render 函式（為了更新畫面）</li>
+<li><strong>所有 DOM 操作</strong>一律由 render 函式處理</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>作業心得：我自己覺得這堂課的觀念有點像 Vue 框架<strong>分開管理</strong>資料以及模板（或者說 HTML 要長的樣子）的概念<blockquote>
+<p>作業說明：使用 render function 把 data model 給渲染出來<br><a href="https://jsfiddle.net/iamCJ/53r4on0a/">https://jsfiddle.net/iamCJ/53r4on0a/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－認識陣列操作"><a href="#第二課－認識陣列操作" class="headerlink" title="第二課－認識陣列操作"></a>第二課－認識陣列操作</h2><ul>
+<li>課程概要：學會使用<code>.push()</code>新增值到陣列，括號內填入想要加入陣列的字串、數字或參數等等，它會加在陣列的<strong>最後方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">push</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li>自己補充：其他常見的陣列處理方法<ol>
+<li><code>.unshift()</code>：也是新增值到陣列，但是它會加在陣列的<strong>最前方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">unshift</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;D&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.shift()</code>：<strong>移除</strong>陣列的<strong>第一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">shift</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.pop()</code>：<strong>移除</strong>陣列的<strong>最後一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">pop</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><span id="splice"><code>.splice(開始索引, 刪除數量, 要插入的值)</code>：用來<strong>切割移除或拼接</strong>某個陣列，這個方法<strong>會</strong>改變原陣列的值！</span><br>括號內第一個參數填入開始的索引值，負數則代表從後面開始算起（例如 -1 為倒數第一個）；第二個參數填入從開始索引（包含）算起<strong>總共</strong>要刪除的<strong>數量</strong>，填 0 就不會刪除；第三個參數可以填入要插入的值，會插在被切割掉的值之位置<br>而直接呼叫<code>.splice()</code>則會回傳被刪除的值<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> removed1 = array1.<span class="title function_">splice</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, removed1); <span class="comment">// 結果為 array1[&quot;A&quot;, &quot;B&quot;], removed1[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array2.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array2); <span class="comment">// 結果為 [&quot;A&quot;, &quot;B&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array3.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>, <span class="string">&quot;嗨嗨嗨&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;嗨嗨嗨&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array4.<span class="title function_">splice</span>(-<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array4); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.slice(開始索引, 結束索引)</code>：用來<strong>複製</strong>某個陣列，會回傳<strong>指定索引範圍的新陣列</strong>，這個方法<strong>不會</strong>改變原陣列的值。<br>括號內填索引範圍，前面的參數為開始的索引值，負數代表從後面開始算起；而後面的參數為結束的索引值，需要注意範圍會切在這個<strong>索引之前</strong>，<strong>不包含</strong>結束索引的值！沒有寫則預設為<code>array.length</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = array1.<span class="title function_">slice</span>(<span class="number">2</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">slice</span>(<span class="number">2</span>, <span class="number">4</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">slice</span>(-<span class="number">2</span>); <span class="comment">//結果為[&quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// 結果仍為 [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.concat()</code>：用來<strong>合併</strong>多個陣列，<strong>不會</strong>改變原先陣列的值，而是回傳一個新的、被合併的陣列。<font style="color:grey;">p.s.而當括號內不填入其他陣列時，我自己會當作是用來<strong>複製</strong>陣列</font><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">concat</span>(array2);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="comment">///括號內不填陣列時</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">concat</span>();</span><br><span class="line">array4.<span class="title function_">push</span>(<span class="string">&quot;ZZZ&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, array4); <span class="comment">// array1[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], array4[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;,&quot;ZZZ&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.include()</code>：用來<strong>尋找</strong>陣列中是否<strong>包含某個值</strong>，結果會以布林值型態回傳<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.indexOf()</code>：用來<strong>尋找</strong>陣列中某個值的<strong>索引位置</strong>，而若搜索的值不在陣列內，則會回傳<code>-1</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">indexOf</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// 0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// -1</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.join()</code>：用來將陣列中的值<strong>轉為字串</strong>，並且加入指定字元做為<strong>值與值連接的符號</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;&amp;&quot;</span>)); <span class="comment">// A&amp;B&amp;C</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;/ &quot;</span>)); <span class="comment">// A/ B/ C/</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：作業本身很簡單，不過自己補充的部分花了一些時間整理，但果然還是要自己實際筆記起來，才會記得更熟、把細節搞清楚呀 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：延續上一堂作業，加入一個 input 以及一個新增按鈕，按鈕按下後，必須先更新 data modal 再執行畫面的 render<br><a href="https://jsfiddle.net/iamCJ/L5vrodn7/">https://jsfiddle.net/iamCJ/L5vrodn7/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－認識匿名函式"><a href="#第三課－認識匿名函式" class="headerlink" title="第三課－認識匿名函式"></a>第三課－認識匿名函式</h2><ul>
+<li>課程概要：<ol>
+<li>學會使用<code>.splice()</code>，根據索引刪除陣列元素：這個在上一堂我就先自己補充啦～可以點<a href="#splice">這邊</a>來看</li>
+<li>認識<code>for in</code>迴圈：參數會回傳陣列的<strong>索引</strong>，而<code>for of</code>則是回傳陣列的值<figure class="highlight js"><figcaption><span>for in</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> array) &#123;</span><br><span class="line">  <span class="keyword">const</span> item = array[index];</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(index, item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>認識匿名函式（anonymous function）：動態宣告一個函式，然後直接指派、使用，其實就只是沒有名字的函式而已。<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//有名字的函式長這樣</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//匿名函式長這樣</span></span><br><span class="line"><span class="keyword">let</span> div = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">div.<span class="property">onclick</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈哈&quot;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：忘記畫面是根據 data 渲染的，資料變化就會自動更新，原本還想說處理完陣列內的資料，接著要處理<code>&lt;li&gt;</code>、<code>&lt;span&gt;</code>，結果點預覽畫面測試的時候才發現不需要多此一舉 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：加入一個刪除按鈕，按下後刪除他在陣列中的資料，並且重新 render 畫面<br><a href="https://jsfiddle.net/iamCJ/ndtpurzy/">https://jsfiddle.net/iamCJ/ndtpurzy/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－熟悉-render-function"><a href="#第四課－熟悉-render-function" class="headerlink" title="第四課－熟悉 render function"></a>第四課－熟悉 render function</h2><ul>
+<li>課程概要：根據資料內容的不同，render function 內可以有各種條件判斷、巢狀結構等等較複雜的邏輯</li>
+<li>作業心得：做這個作業沒什麼特別想法，只覺得這樣的寫法真的讓思考變得輕鬆多了 XD<blockquote>
+<p>作業說明：延續上一堂作業，讓 data 加入 category 屬性來做分類，在 render function 設條件判斷，不同分類的事項要有不同顏色<br><a href="https://jsfiddle.net/iamCJ/5ba2e3x0/">https://jsfiddle.net/iamCJ/5ba2e3x0/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－熟悉匿名函式"><a href="#第五課－熟悉匿名函式" class="headerlink" title="第五課－熟悉匿名函式"></a>第五課－熟悉匿名函式</h2><ul>
+<li>課程概要：<ol>
+<li>認識布林值：是資料型態的一種，只有<code>true</code>跟<code>false</code>兩種值</li>
+<li>認識更新陣列值的方法：只要指定陣列的索引，並賦值給它即可<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">array[index] = <span class="string">&quot;new&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：覺得這系列的作業跟在系列二寫的時候感覺很不一樣，系列二寫得有點卡，覺得所有功能都尬在一起，有時候看著畫面亂亂的程式碼，腦袋也變得亂亂的了 XD<blockquote>
+<p>作業說明：延續上一堂作業，讓 data 加入 isCompleted 屬性，增加標示已完成的按鈕，按下按鈕後要更新 isCompleted 的狀態，並且更新畫面，讓事項的後面有（已完成）的字樣<br><a href="https://jsfiddle.net/iamCJ/kbc96Lq3/">https://jsfiddle.net/iamCJ/kbc96Lq3/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－認識-data-model-的優點"><a href="#第六課－認識-data-model-的優點" class="headerlink" title="第六課－認識 data model 的優點"></a>第六課－認識 data model 的優點</h2><ul>
+<li>課程概要：沒有教新的東西，繼續加強 data model 的練習</li>
+<li>作業心得：data model 的設計真的讓取資料變得很簡單耶！記得在系列二時，做這個作業總感覺很麻煩，code 也很不乾脆（？，取資料都要從 DOM 下手，今天就輕鬆多了(ﾉ&gt;ω&lt;)ﾉ<blockquote>
+<p>作業說明：延續上一堂作業，新增一個匯出事項的按鈕，按下按鈕後，要 alert 出所有事項，並依事項的分類（重要程度）有不同的提示（加上米字號）<br><a href="https://jsfiddle.net/iamCJ/L8dhzxs0/">https://jsfiddle.net/iamCJ/L8dhzxs0/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－資料序列化"><a href="#第七課－資料序列化" class="headerlink" title="第七課－資料序列化"></a>第七課－資料序列化</h2><ul>
+<li>課程概要：<ol>
+<li>認識資料序列化（serialization）：即為將 <strong>data model 轉為字串</strong>，可以用來跟第三方程式溝通、或將資料儲存到資料庫等等</li>
+<li>認識反序列化（deserialization）：則跟序列化相反，是將<strong>序列化資料轉換回來</strong>，變成程式可用的資料</li>
+</ol>
+</li>
+<li>作業心得：再次讚嘆這個 data model 設計，之前在寫的時候不知道為什麼很容易會有煩躁感（？，現在終於知道原因了，除了是因為之前把資料跟畫面全部寫在一起的關係，另外就是跟我寫在 Vue 的時候差很多，一直很不習慣沒辦法直接取用 data，而現在這個寫法超清爽*｡٩(ˊωˋ*)و✧*｡<blockquote>
+<p>作業說明：延續上一堂作業，新增一個儲存按鈕，按下按鈕後將陣列內容存入 local storage，並且在重整網頁時判斷 local storage 有無資料，如果有則自動載入<br><a href="https://jsfiddle.net/iamCJ/huwmsf40/">https://jsfiddle.net/iamCJ/huwmsf40/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列的學習速度又回來啦！覺得這一系列的寫法比較符合我的習慣，在寫作業的過程跟心情都很順暢 XD。接下來就要進入學習 Vue 的系列啦，之前有自學過，我在想應該可以很快就上手，也期待可以學到新觀念跟新技巧～</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/2anPxn">自學網頁の嬰兒教材：JavaScript（六）—— 從前端設計心態到前端工程心態</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
