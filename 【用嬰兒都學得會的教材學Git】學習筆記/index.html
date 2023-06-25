@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="google-site-verification" content="S5x9Jy1l3lcXQX0hqQcLU42_636ewC2SpCe1wQfGEQ8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-cj.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-cj.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-cj.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"iam-cj.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0KTV79M9Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0KTV79M9Q');
+</script>
+
+  <meta name="description" content="前言小廢話Git 是進入職場必會的技能，要懂得使用它才能夠跟其他人合作專案，如果一個操作失誤，可是有可能讓所有人的心血全部不見、釀成無法挽回的大災難呀 Σ(°△°|||)，因此要好好學習常用的指令，用小練習讓操作熟練，就比較不容易出錯啦～p.s. 我很不會想名字、標題，想說是同一個人的教學，乾脆就沿用 JS 系列的名稱吧～ ∠( ᐛ 」∠)＿ 課程開始第一課－學會 git 初始化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【用嬰兒都學得會的教材學Git】學習筆記">
+<meta property="og:url" content="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8Git%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/">
+<meta property="og:site_name" content="西噘的不專業筆記">
+<meta property="og:description" content="前言小廢話Git 是進入職場必會的技能，要懂得使用它才能夠跟其他人合作專案，如果一個操作失誤，可是有可能讓所有人的心血全部不見、釀成無法挽回的大災難呀 Σ(°△°|||)，因此要好好學習常用的指令，用小練習讓操作熟練，就比較不容易出錯啦～p.s. 我很不會想名字、標題，想說是同一個人的教學，乾脆就沿用 JS 系列的名稱吧～ ∠( ᐛ 」∠)＿ 課程開始第一課－學會 git 初始化">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2023-06-05T06:30:42.000Z">
+<meta property="article:modified_time" content="2023-06-05T06:30:42.000Z">
+<meta property="article:author" content="CJ Wu">
+<meta property="article:tag" content="Git">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8Git%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-TW'
+  };
+</script>
+
+  <title>【用嬰兒都學得會的教材學Git】學習筆記 | 西噘的不專業筆記</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2CYC62V0KT"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2CYC62V0KT');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">西噘的不專業筆記</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我是CJ，我不會亂丟貢丸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首頁</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>關於</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>歸檔</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜尋
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜尋..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8Git%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar-cj.png">
+      <meta itemprop="name" content="CJ Wu">
+      <meta itemprop="description" content="24y / 肥宅 / 還不是前端工程師">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="西噘的不專業筆記">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【用嬰兒都學得會的教材學Git】學習筆記
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時間：2023-06-05 14:30:42" itemprop="dateCreated datePublished" datetime="2023-06-05T14:30:42+08:00">2023-06-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Git/" itemprop="url" rel="index"><span itemprop="name">Git</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>Git 是進入職場必會的技能，要懂得使用它才能夠跟其他人合作專案，如果一個操作失誤，可是有可能讓所有人的心血全部不見、釀成無法挽回的大災難呀 Σ(°△°|||)，因此要好好學習常用的指令，用小練習讓操作熟練，就比較不容易出錯啦～<br><font style="color:grey;">p.s. 我很不會想名字、標題，想說是同一個人的教學，乾脆就沿用 JS 系列的名稱吧～ ∠( ᐛ 」∠)＿</font></p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－學會-git-初始化"><a href="#第一課－學會-git-初始化" class="headerlink" title="第一課－學會 git 初始化"></a>第一課－學會 git 初始化</h2><ul>
+<li>課程概要：<ol>
+<li><code>git init</code>：這個指令會<strong>初始化</strong>資料夾環境，讓 git 開始追蹤資料夾內所有檔案的任何變化</li>
+<li><code>git status</code>：這個指令可以查看<strong>目前的工作狀態</strong></li>
+<li><code>git log</code>：這個指令可以查看<strong>歷史編輯紀錄</strong></li>
+</ol>
+</li>
+<li>作業說明：建立新資料夾並用 git 初始化，接著分別輸入<code>git status</code>與<code>git log</code>看看結果如何<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">  Initialized empty Git repository in C:\資料夾位址</span><br><span class="line">git status</span><br><span class="line">  On branch master</span><br><span class="line">  No commits yet</span><br><span class="line">  nothing to commit (create/copy files and use &quot;git add&quot; to track)</span><br><span class="line">git log</span><br><span class="line">  fatal: your current branch &#x27;master&#x27; does not have any commits yet</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第二課－學會-git-基本指令"><a href="#第二課－學會-git-基本指令" class="headerlink" title="第二課－學會 git 基本指令"></a>第二課－學會 git 基本指令</h2><ul>
+<li>課程概要：<ol>
+<li><code>git add &#123;檔名&#125;</code>：這個指令可以<strong>追蹤</strong>檔案，將指定的檔案放入暫存區，等待被 commit</li>
+<li><code>git commit -m &#39;描述提交的內容或概要&#39;</code>：這個指令是用來<strong>提交</strong>放置在暫存區的檔案</li>
+</ol>
+</li>
+<li>作業說明：依順序送出三個 commit，第一個是新增 README.md 後提交，第二個是新增 index.html 後提交，第三個是修改 index.html 內容，並新增 about.html 和 background.html 後提交，最後輸入<code>git log</code>查看結果<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br><span class="line">  commit dfde52be3099c60e76f8de959162860c7ace0c7a (HEAD -&gt; master)</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   third commit - add two html and modify index.html</span><br><span class="line"></span><br><span class="line">   commit 13094fecdf01c8a6067197e30d525f1361ff1fb6</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   second commit - add index.html</span><br><span class="line"></span><br><span class="line">   commit cd23f6d062151ac0cd1d3de455e3ea5fdac5e69c</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   first commit - add README.md</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第三課－學會-git-版本切換"><a href="#第三課－學會-git-版本切換" class="headerlink" title="第三課－學會 git 版本切換"></a>第三課－學會 git 版本切換</h2><ul>
+<li>課程概要：<ol>
+<li><code>git checkout &#123;提交代號&#125;</code>：每次 commit 後面都會有一長串英數夾雜的提交代號，輸入<code>git checkout</code>加上代號的指令，可以<strong>回朔</strong>到該次 commit 的狀態</li>
+<li><code>git checkout master</code>：這個指令則可以回到最新狀態（還是要看你的工作階段是不是在 branch，master 只是最主要的 branch 名稱）</li>
+</ol>
+</li>
+<li>作業說明：使用<code>git checkout</code>指令切回前一個 commit 的版本，並輸入<code>git log</code>查看結果<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br><span class="line">   commit 13094fecdf01c8a6067197e30d525f1361ff1fb6 (HEAD)</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   second commit - add index.html</span><br><span class="line"></span><br><span class="line">   commit cd23f6d062151ac0cd1d3de455e3ea5fdac5e69c</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   first commit - add README.md</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第四課－學會-git-重置指令"><a href="#第四課－學會-git-重置指令" class="headerlink" title="第四課－學會 git 重置指令"></a>第四課－學會 git 重置指令</h2><ul>
+<li>課程概要：<ol>
+<li><code>git diff</code>：在將檔案 add 到暫存區<strong>之前</strong>，使用這個指令可以比對查看檔案有<strong>差異、變化</strong>的部分</li>
+<li><code>git reset &#123;檔名&#125;</code>：這個指令可以將檔案從暫存區<strong>移回草稿區</strong></li>
+<li><code>git checkout -- &#123;檔名&#125;</code>：這個指令可以將檔案的修改內容從草稿區<strong>直接取消</strong>，回到修改前的狀態</li>
+</ol>
+</li>
+<li>作業說明：這次作業有三個階段，第一是將一個檔案修改內容後 add 到暫存區，第二是使用<code>git reset</code>將檔案移出暫存區，第三是使用<code>git checkout</code>取消修改，每一個階段都輸入<code>git status</code>看看結果如何<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">git add background.html</span><br><span class="line">git status</span><br><span class="line">   On branch master</span><br><span class="line">   Changes to be committed:</span><br><span class="line">   (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)</span><br><span class="line">      modified:   background.html</span><br><span class="line"></span><br><span class="line">git reset background.html</span><br><span class="line">   Unstaged changes after reset:</span><br><span class="line">   M       background.html</span><br><span class="line">git status</span><br><span class="line">   On branch master</span><br><span class="line">   Changes not staged for commit:</span><br><span class="line">   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">   (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line">      modified:   background.html</span><br><span class="line">    no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br><span class="line"></span><br><span class="line">git checkout -- background.html</span><br><span class="line">git status</span><br><span class="line">   On branch master</span><br><span class="line">   nothing to commit, working tree clean</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第五課－學會連線-github"><a href="#第五課－學會連線-github" class="headerlink" title="第五課－學會連線 github"></a>第五課－學會連線 github</h2><ul>
+<li>課程概要：學會將存在本機端的專案上傳到 Github 的 repository<ol>
+<li>註冊 Github 帳號後，新增專案儲存庫 Create a new repository</li>
+<li>將專案命名</li>
+<li>專案類型依需求設為公開 public 或私人 private</li>
+<li>建立完成後，專案的網址會長這樣：<a target="_blank" rel="noopener" href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></li>
+<li>在本機端專案位置，使用終端機輸入以下指令，將 Git 與專案網址連結：<code>git remote add origin git@github.com:【iam-CJ】/【Example-of-Git-tutorial】.git</code>（將【】部分替換成你的帳戶名稱及專案名稱）</li>
+<li>而每次跟雲端 Git （在這裡是 Github）互動會需要驗證 SSH key，SSH key 設置方法可以參考這篇文章－<a target="_blank" rel="noopener" href="https://www.maxlist.xyz/2022/12/22/github-ssh-setting/">【Git 教學】手把手 Github SSH 連線設定教學 (Windows&#x2F;Mac)</a></li>
+<li>接著建立一個命名為 main 的分支（預設的分支命名是 main 或 master）：<code>git branch -M main</code></li>
+<li>將本機端的程式碼推送到 Github 上：<code>git push -u origin main</code></li>
+</ol>
+</li>
+<li>作業說明：將前一課的作業上傳至 Github<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－學會-git-pull"><a href="#第六課－學會-git-pull" class="headerlink" title="第六課－學會 git pull"></a>第六課－學會 git pull</h2><ul>
+<li>課程概要：<ol>
+<li>將專案<code>clone</code>至本機：有時會遇到使用其他電腦，專案不在該電腦裡，可以到專案的 Github 頁面，點<code>Code</code>按鈕，會顯示 clone 的指令<code>git@github.com:iam-CJ/Example-of-Git-tutorial.git</code>，然後在終端機輸入<code>git clone git@github.com:iam-CJ/Example-of-Git-tutorial.git</code>，就可以將專案複製到電腦中</li>
+<li><code>git pull</code>：用來將專案的<strong>最新版本</strong>抓下來，同時會將本機端已經存在的 commit 做<strong>合併</strong></li>
+</ol>
+</li>
+<li>作業說明：<code>git clone</code>專案到電腦，模擬跨裝置同步專案，(1)首先在其中一個專案資料夾新增檔案，並且 commit 後 push 到 Github，(2)再來到另一個資料夾新增檔案，並且 commit 後 push，這時會出現錯誤訊息，顯示新舊版本發生衝突，(3)因此需要使用<code>git pull</code>抓取專案在 Github 的最新版本，並自動合併剛剛的 commit，最後才能成功將 commit push 出去<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－學會處理-git-衝突"><a href="#第七課－學會處理-git-衝突" class="headerlink" title="第七課－學會處理 git 衝突"></a>第七課－學會處理 git 衝突</h2><ul>
+<li>課程概要：<ol>
+<li>同一份檔案在不同地方被修改並且 push、pull 之後，Git 可能會跳出 commit 衝突的提示，此時打開檔案會看到這樣的內容：<br>上半部（HEAD 的部分），是剛提交的 commit 部份，下半部是原本的內容，而最後一行英數夾雜的字串則是從 Github 抓下來的 commit 代號<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我的第一個網頁檔案<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content x<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content y<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content z<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">=======</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content a<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content b<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content c<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2cf01f4f63f5ea9040610495688f08032761a170</span><br></pre></td></tr></table></figure></li>
+<li>解決上述衝突的方法：而解決辦法只要決定衝突內容要刪去、保留還是合併，修改內容並刪去 Git 留下的標示後再次 commit、push 即可</li>
+</ol>
+</li>
+<li>作業說明：接續上一課模擬跨裝置同步專案的狀態，(1)在其中一個專案資料夾修改檔案，並且 commit 後 push 到 Github，(2)到另一個資料夾修改同一份檔案，並且 commit 後 push，這時會出現錯誤訊息，要你 pull 更新專案，(3)pull 後再 push 會發現仍然會有錯誤訊息，檔案的新舊內容有所衝突，打開檔案修改成需要的內容後，(4)再次 commit 並 push 即可<blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>之前有在<a target="_blank" rel="noopener" href="https://learngitbranching.js.org/?locale=zh_TW">Learn Git Branching</a>這個網站練習常見的指令及操作，因此這課的概念對我來說是熟悉的，不過我之前都是透過 <strong>Fork</strong> 這個將指令視覺化的輔助工具來操作 git 的，這次試著用終端機輸入指令練習，滿新鮮但又有點怕，雖然出現的錯誤訊息都淺顯易懂，但還是很怕自己有可能一時腦袋不清楚操作失誤 XD</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a target="_blank" rel="noopener" href="https://codelove.tw/@howtomakeaturn/course/lqOvap">Git 入門上手教材 —— 基本觀念與指令玩玩看</a></p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B9%9D%EF%BC%89/" rel="prev" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（九）">
+      <i class="fa fa-chevron-left"></i> 【用嬰兒都學得會的教材學JS】學習筆記－系列（九）
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概要
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%E5%B0%8F%E5%BB%A2%E8%A9%B1"><span class="nav-number">1.</span> <span class="nav-text">前言小廢話</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AA%B2%E7%A8%8B%E9%96%8B%E5%A7%8B"><span class="nav-number">2.</span> <span class="nav-text">課程開始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-git-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">2.1.</span> <span class="nav-text">第一課－學會 git 初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-git-%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4"><span class="nav-number">2.2.</span> <span class="nav-text">第二課－學會 git 基本指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-git-%E7%89%88%E6%9C%AC%E5%88%87%E6%8F%9B"><span class="nav-number">2.3.</span> <span class="nav-text">第三課－學會 git 版本切換</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-git-%E9%87%8D%E7%BD%AE%E6%8C%87%E4%BB%A4"><span class="nav-number">2.4.</span> <span class="nav-text">第四課－學會 git 重置指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83%E9%80%A3%E7%B7%9A-github"><span class="nav-number">2.5.</span> <span class="nav-text">第五課－學會連線 github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83-git-pull"><span class="nav-number">2.6.</span> <span class="nav-text">第六課－學會 git pull</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E8%AA%B2%EF%BC%8D%E5%AD%B8%E6%9C%83%E8%99%95%E7%90%86-git-%E8%A1%9D%E7%AA%81"><span class="nav-number">2.7.</span> <span class="nav-text">第七課－學會處理 git 衝突</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E7%B5%90"><span class="nav-number">3.</span> <span class="nav-text">小結</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%80%A3%E7%B5%90"><span class="nav-number">4.</span> <span class="nav-text">文章連結</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CJ Wu"
+      src="/images/avatar-cj.png">
+  <p class="site-author-name" itemprop="name">CJ Wu</p>
+  <div class="site-description" itemprop="description">24y / 肥宅 / 還不是前端工程師</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iam-CJ" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iam-CJ" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:a394675@gmail.com" title="E-Mail → mailto:a394675@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+      <!--顯示近期文章-->
+      
+        <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title">
+            <!-- 設定你要的fa fa icon-->
+            <i class="fa fa-history fa-" aria-hidden="true"></i>
+            近期文章
+        </div>
+        <ul class="links-of-blogroll-list">
+            
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8Git%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/" title="【用嬰兒都學得會的教材學Git】學習筆記" target="_blank">【用嬰兒都學得會的教材學Git】學習筆記</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B9%9D%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（九）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（九）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AB%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（八）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（八）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%83%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（七）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（七）</a>
+              </li>
+              
+                <hr style="width:20%; height:1px; margin:0 auto; background-image:none; background-color:lightgray;"/>
+              
+            
+              <li style="margin:5px 0;">
+                  <a href="/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/" title="【用嬰兒都學得會的教材學JS】學習筆記－系列（六）" target="_blank">【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</a>
+              </li>
+              
+            
+        </ul>
+        </div>
+      
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-star"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CJ Wu</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

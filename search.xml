@@ -205,6 +205,54 @@
       </tags>
   </entry>
   <entry>
+    <title>【作品集】嬰兒教材系列（三）作業整理</title>
+    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%AC%B0%E5%85%92%E6%95%99%E6%9D%90%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%E4%BD%9C%E6%A5%AD%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<h1 id="說明"><a href="#說明" class="headerlink" title="說明"></a>說明</h1><p>為方便於履歷呈現我過往的練習，新增一篇文章將這系列作業整理於此</p>
+<h1 id="作業"><a href="#作業" class="headerlink" title="作業"></a>作業</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><blockquote>
+<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/1pbxksv6/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/pe0y7uoq/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/1q9unksL/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><blockquote>
+<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/m1j0gb9c/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><blockquote>
+<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/f8tavnxr/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><blockquote>
+<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/cLgj104q/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><blockquote>
+<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
+</blockquote>
+<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/Lqucoy24/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+<h1 id="嬰兒教材系列（三）之筆記及心得連結"><a href="#嬰兒教材系列（三）之筆記及心得連結" class="headerlink" title="嬰兒教材系列（三）之筆記及心得連結"></a>嬰兒教材系列（三）之筆記及心得連結</h1><p>如欲詳閱我在學習過程的筆記與感想，歡迎移至 <a href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/">這裡</a> 閱讀</p>
+]]></content>
+      <categories>
+        <category>作品集</category>
+      </categories>
+      <tags>
+        <tag>作品集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【作品集】嬰兒教材系列（八）作業整理</title>
     <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%AC%B0%E5%85%92%E6%95%99%E6%9D%90%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AB%EF%BC%89%E4%BD%9C%E6%A5%AD%E6%95%B4%E7%90%86/</url>
     <content><![CDATA[<h1 id="說明"><a href="#說明" class="headerlink" title="說明"></a>說明</h1><p>為方便於履歷呈現我過往的練習，新增一篇文章將這系列作業整理於此</p>
@@ -245,54 +293,6 @@
 <iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/m30ayj8g/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 <h1 id="嬰兒教材系列（八）之筆記及心得連結"><a href="#嬰兒教材系列（八）之筆記及心得連結" class="headerlink" title="嬰兒教材系列（八）之筆記及心得連結"></a>嬰兒教材系列（八）之筆記及心得連結</h1><p>如欲詳閱我在學習過程的筆記與感想，歡迎移至 <a href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AB%EF%BC%89/">這裡</a> 閱讀</p>
-]]></content>
-      <categories>
-        <category>作品集</category>
-      </categories>
-      <tags>
-        <tag>作品集</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【作品集】嬰兒教材系列（三）作業整理</title>
-    <url>/%E3%80%90%E4%BD%9C%E5%93%81%E9%9B%86%E3%80%91%E5%AC%B0%E5%85%92%E6%95%99%E6%9D%90%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%E4%BD%9C%E6%A5%AD%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<h1 id="說明"><a href="#說明" class="headerlink" title="說明"></a>說明</h1><p>為方便於履歷呈現我過往的練習，新增一篇文章將這系列作業整理於此</p>
-<h1 id="作業"><a href="#作業" class="headerlink" title="作業"></a>作業</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><blockquote>
-<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/1pbxksv6/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><blockquote>
-<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/pe0y7uoq/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><blockquote>
-<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/1q9unksL/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><blockquote>
-<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/m1j0gb9c/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><blockquote>
-<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/f8tavnxr/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><blockquote>
-<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/cLgj104q/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><blockquote>
-<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
-</blockquote>
-<iframe width="100%" height="300" src="//jsfiddle.net/iamCJ/Lqucoy24/embedded/result/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-
-<h1 id="嬰兒教材系列（三）之筆記及心得連結"><a href="#嬰兒教材系列（三）之筆記及心得連結" class="headerlink" title="嬰兒教材系列（三）之筆記及心得連結"></a>嬰兒教材系列（三）之筆記及心得連結</h1><p>如欲詳閱我在學習過程的筆記與感想，歡迎移至 <a href="https://iam-cj.github.io/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/">這裡</a> 閱讀</p>
 ]]></content>
       <categories>
         <category>作品集</category>
@@ -423,6 +423,101 @@
       </tags>
   </entry>
   <entry>
+    <title>【用嬰兒都學得會的教材學Git】學習筆記</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8Git%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>Git 是進入職場必會的技能，要懂得使用它才能夠跟其他人合作專案，如果一個操作失誤，可是有可能讓所有人的心血全部不見、釀成無法挽回的大災難呀 Σ(°△°|||)，因此要好好學習常用的指令，用小練習讓操作熟練，就比較不容易出錯啦～<br><font style="color:grey;">p.s. 我很不會想名字、標題，想說是同一個人的教學，乾脆就沿用 JS 系列的名稱吧～ ∠( ᐛ 」∠)＿</font></p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－學會-git-初始化"><a href="#第一課－學會-git-初始化" class="headerlink" title="第一課－學會 git 初始化"></a>第一課－學會 git 初始化</h2><ul>
+<li>課程概要：<ol>
+<li><code>git init</code>：這個指令會<strong>初始化</strong>資料夾環境，讓 git 開始追蹤資料夾內所有檔案的任何變化</li>
+<li><code>git status</code>：這個指令可以查看<strong>目前的工作狀態</strong></li>
+<li><code>git log</code>：這個指令可以查看<strong>歷史編輯紀錄</strong></li>
+</ol>
+</li>
+<li>作業說明：建立新資料夾並用 git 初始化，接著分別輸入<code>git status</code>與<code>git log</code>看看結果如何<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">  Initialized empty Git repository in C:\資料夾位址</span><br><span class="line">git status</span><br><span class="line">  On branch master</span><br><span class="line">  No commits yet</span><br><span class="line">  nothing to commit (create/copy files and use &quot;git add&quot; to track)</span><br><span class="line">git log</span><br><span class="line">  fatal: your current branch &#x27;master&#x27; does not have any commits yet</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第二課－學會-git-基本指令"><a href="#第二課－學會-git-基本指令" class="headerlink" title="第二課－學會 git 基本指令"></a>第二課－學會 git 基本指令</h2><ul>
+<li>課程概要：<ol>
+<li><code>git add &#123;檔名&#125;</code>：這個指令可以<strong>追蹤</strong>檔案，將指定的檔案放入暫存區，等待被 commit</li>
+<li><code>git commit -m &#39;描述提交的內容或概要&#39;</code>：這個指令是用來<strong>提交</strong>放置在暫存區的檔案</li>
+</ol>
+</li>
+<li>作業說明：依順序送出三個 commit，第一個是新增 README.md 後提交，第二個是新增 index.html 後提交，第三個是修改 index.html 內容，並新增 about.html 和 background.html 後提交，最後輸入<code>git log</code>查看結果<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="code"><pre><span class="line">git log</span><br><span class="line">  commit dfde52be3099c60e76f8de959162860c7ace0c7a (HEAD -&gt; master)</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   third commit - add two html and modify index.html</span><br><span class="line"></span><br><span class="line">   commit 13094fecdf01c8a6067197e30d525f1361ff1fb6</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   second commit - add index.html</span><br><span class="line"></span><br><span class="line">   commit cd23f6d062151ac0cd1d3de455e3ea5fdac5e69c</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   first commit - add README.md</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第三課－學會-git-版本切換"><a href="#第三課－學會-git-版本切換" class="headerlink" title="第三課－學會 git 版本切換"></a>第三課－學會 git 版本切換</h2><ul>
+<li>課程概要：<ol>
+<li><code>git checkout &#123;提交代號&#125;</code>：每次 commit 後面都會有一長串英數夾雜的提交代號，輸入<code>git checkout</code>加上代號的指令，可以<strong>回朔</strong>到該次 commit 的狀態</li>
+<li><code>git checkout master</code>：這個指令則可以回到最新狀態（還是要看你的工作階段是不是在 branch，master 只是最主要的 branch 名稱）</li>
+</ol>
+</li>
+<li>作業說明：使用<code>git checkout</code>指令切回前一個 commit 的版本，並輸入<code>git log</code>查看結果<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="code"><pre><span class="line">git log</span><br><span class="line">   commit 13094fecdf01c8a6067197e30d525f1361ff1fb6 (HEAD)</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   second commit - add index.html</span><br><span class="line"></span><br><span class="line">   commit cd23f6d062151ac0cd1d3de455e3ea5fdac5e69c</span><br><span class="line">   Author: myname</span><br><span class="line">   Date:   commit time</span><br><span class="line">   first commit - add README.md</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第四課－學會-git-重置指令"><a href="#第四課－學會-git-重置指令" class="headerlink" title="第四課－學會 git 重置指令"></a>第四課－學會 git 重置指令</h2><ul>
+<li>課程概要：<ol>
+<li><code>git diff</code>：在將檔案 add 到暫存區<strong>之前</strong>，使用這個指令可以比對查看檔案有<strong>差異、變化</strong>的部分</li>
+<li><code>git reset &#123;檔名&#125;</code>：這個指令可以將檔案從暫存區<strong>移回草稿區</strong></li>
+<li><code>git checkout -- &#123;檔名&#125;</code>：這個指令可以將檔案的修改內容從草稿區<strong>直接取消</strong>，回到修改前的狀態</li>
+</ol>
+</li>
+<li>作業說明：這次作業有三個階段，第一是將一個檔案修改內容後 add 到暫存區，第二是使用<code>git reset</code>將檔案移出暫存區，第三是使用<code>git checkout</code>取消修改，每一個階段都輸入<code>git status</code>看看結果如何<blockquote>
+<figure class="highlight shell"><figcaption><span>在終端機輸入指令的結果</span></figcaption><table><tr><td class="code"><pre><span class="line">git add background.html</span><br><span class="line">git status</span><br><span class="line">   On branch master</span><br><span class="line">   Changes to be committed:</span><br><span class="line">   (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)</span><br><span class="line">      modified:   background.html</span><br><span class="line"></span><br><span class="line">git reset background.html</span><br><span class="line">   Unstaged changes after reset:</span><br><span class="line">   M       background.html</span><br><span class="line">git status</span><br><span class="line">   On branch master</span><br><span class="line">   Changes not staged for commit:</span><br><span class="line">   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">   (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line">      modified:   background.html</span><br><span class="line">    no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</span><br><span class="line"></span><br><span class="line">git checkout -- background.html</span><br><span class="line">git status</span><br><span class="line">   On branch master</span><br><span class="line">   nothing to commit, working tree clean</span><br></pre></td></tr></table></figure></blockquote>
+</li>
+</ul>
+<h2 id="第五課－學會連線-github"><a href="#第五課－學會連線-github" class="headerlink" title="第五課－學會連線 github"></a>第五課－學會連線 github</h2><ul>
+<li>課程概要：學會將存在本機端的專案上傳到 Github 的 repository<ol>
+<li>註冊 Github 帳號後，新增專案儲存庫 Create a new repository</li>
+<li>將專案命名</li>
+<li>專案類型依需求設為公開 public 或私人 private</li>
+<li>建立完成後，專案的網址會長這樣：<a href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></li>
+<li>在本機端專案位置，使用終端機輸入以下指令，將 Git 與專案網址連結：<code>git remote add origin git@github.com:【iam-CJ】/【Example-of-Git-tutorial】.git</code>（將【】部分替換成你的帳戶名稱及專案名稱）</li>
+<li>而每次跟雲端 Git （在這裡是 Github）互動會需要驗證 SSH key，SSH key 設置方法可以參考這篇文章－<a href="https://www.maxlist.xyz/2022/12/22/github-ssh-setting/">【Git 教學】手把手 Github SSH 連線設定教學 (Windows&#x2F;Mac)</a></li>
+<li>接著建立一個命名為 main 的分支（預設的分支命名是 main 或 master）：<code>git branch -M main</code></li>
+<li>將本機端的程式碼推送到 Github 上：<code>git push -u origin main</code></li>
+</ol>
+</li>
+<li>作業說明：將前一課的作業上傳至 Github<blockquote>
+<p><a href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－學會-git-pull"><a href="#第六課－學會-git-pull" class="headerlink" title="第六課－學會 git pull"></a>第六課－學會 git pull</h2><ul>
+<li>課程概要：<ol>
+<li>將專案<code>clone</code>至本機：有時會遇到使用其他電腦，專案不在該電腦裡，可以到專案的 Github 頁面，點<code>Code</code>按鈕，會顯示 clone 的指令<code>git@github.com:iam-CJ/Example-of-Git-tutorial.git</code>，然後在終端機輸入<code>git clone git@github.com:iam-CJ/Example-of-Git-tutorial.git</code>，就可以將專案複製到電腦中</li>
+<li><code>git pull</code>：用來將專案的<strong>最新版本</strong>抓下來，同時會將本機端已經存在的 commit 做<strong>合併</strong></li>
+</ol>
+</li>
+<li>作業說明：<code>git clone</code>專案到電腦，模擬跨裝置同步專案，(1)首先在其中一個專案資料夾新增檔案，並且 commit 後 push 到 Github，(2)再來到另一個資料夾新增檔案，並且 commit 後 push，這時會出現錯誤訊息，顯示新舊版本發生衝突，(3)因此需要使用<code>git pull</code>抓取專案在 Github 的最新版本，並自動合併剛剛的 commit，最後才能成功將 commit push 出去<blockquote>
+<p><a href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－學會處理-git-衝突"><a href="#第七課－學會處理-git-衝突" class="headerlink" title="第七課－學會處理 git 衝突"></a>第七課－學會處理 git 衝突</h2><ul>
+<li>課程概要：<ol>
+<li>同一份檔案在不同地方被修改並且 push、pull 之後，Git 可能會跳出 commit 衝突的提示，此時打開檔案會看到這樣的內容：<br>上半部（HEAD 的部分），是剛提交的 commit 部份，下半部是原本的內容，而最後一行英數夾雜的字串則是從 Github 抓下來的 commit 代號<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我的第一個網頁檔案<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content x<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content y<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content z<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">=======</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content a<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content b<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>new content c<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt; 2cf01f4f63f5ea9040610495688f08032761a170</span><br></pre></td></tr></table></figure></li>
+<li>解決上述衝突的方法：而解決辦法只要決定衝突內容要刪去、保留還是合併，修改內容並刪去 Git 留下的標示後再次 commit、push 即可</li>
+</ol>
+</li>
+<li>作業說明：接續上一課模擬跨裝置同步專案的狀態，(1)在其中一個專案資料夾修改檔案，並且 commit 後 push 到 Github，(2)到另一個資料夾修改同一份檔案，並且 commit 後 push，這時會出現錯誤訊息，要你 pull 更新專案，(3)pull 後再 push 會發現仍然會有錯誤訊息，檔案的新舊內容有所衝突，打開檔案修改成需要的內容後，(4)再次 commit 並 push 即可<blockquote>
+<p><a href="https://github.com/iam-CJ/Example-of-Git-tutorial">https://github.com/iam-CJ/Example-of-Git-tutorial</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>之前有在<a href="https://learngitbranching.js.org/?locale=zh_TW">Learn Git Branching</a>這個網站練習常見的指令及操作，因此這課的概念對我來說是熟悉的，不過我之前都是透過 <strong>Fork</strong> 這個將指令視覺化的輔助工具來操作 git 的，這次試著用終端機輸入指令練習，滿新鮮但又有點怕，雖然出現的錯誤訊息都淺顯易懂，但還是很怕自己有可能一時腦袋不清楚操作失誤 XD</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/lqOvap">Git 入門上手教材 —— 基本觀念與指令玩玩看</a></p>
+]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（一）</title>
     <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>其實我在上完職訓課程之後一直有個困擾，除了沒學到框架以外，就是我 JS 的程度停留在能夠基礎操作，好像都會但深入問就被問倒，也抓不太清楚自己還不會的範圍。<br>然而，我在苦惱之際突然靈光一閃，想到在臉書社團看過阿川大大在宣傳自己的課程，點開介紹後了解課程設計是以寫小專案的方式學 JS，而我喜歡邊做邊學，印象更深刻也比較有趣，就這樣開啟了學習的旅程 ∠( ᐛ 」∠)＿<br><font style="font-size:15px;color:grey;">p.s.本系列標題是來自站長阿川大大將這份教材取名為自學網頁の嬰兒教材</font></p>
@@ -511,6 +606,101 @@
 </ul>
 <h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>因為我本來就有些 JS 的基礎，所以這個系列的概念以及實作對我來說沒什麼問題，只是在要寫的功能越來越多時，對於切分功能、整理程式碼會有些苦惱，還有把樣式整理成能看的樣子花了好多時間 XD</p>
 <h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/l3j5xk">自學網頁の嬰兒教材：JavaScript（一）—— 幫衣服工廠做個好用表單</a></p>
+]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>用嬰兒都學得會的教材學JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。<br>不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD，網路上可以找到很多前人分享的文章、我遇過的問題也會有人遇到，並且在 Stack Overflow 提問，不怕找不到解方，只怕關鍵字下得不夠清楚。</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 alert 元件：出現此元件的狀況通常是用來公告訊息，或是在使用者做某些動作後的通知、提示</li>
+<li>關鍵字：<strong>alert ui</strong>、<strong>alert component</strong></li>
+</ol>
+</li>
+<li>作業心得：本來以為這系列的重點仍會放在 JS 的功能或語法等，但這堂課看起來比較偏向設計常見樣式，功能僅佔一點<blockquote>
+<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 toast 元件：可以想像成烤好的吐司會從烤土司機<strong>彈跳</strong>出來一樣，當使用者做某些動作後會跳出<strong>提示文字框</strong>給予反饋，這個元件通常會做成「顯示幾秒之後自動關閉」</li>
+<li>認識<code>setTimeout()</code>函式：這個函式的功能是在設定的延遲秒數到了後，執行<strong>一次</strong>括號內程式<figure class="highlight js"><figcaption><span>用法</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入要延遲執行的function</span></span><br><span class="line"><span class="built_in">setTimeout</span>(functionName, 秒數（毫秒）, 參數<span class="number">1</span>, 參數<span class="number">2.</span>..);</span><br><span class="line"><span class="comment">//或裡面塞立即函式</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
+<li>關鍵字：<strong>toast ui</strong>、<strong>toast component</strong></li>
+</ol>
+</li>
+<li>作業心得：其實經過查詢之後，覺得 alert 跟 toast 的設計長得差不多 XD，只是在顯示方面有所差異而已<blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識什麼是 modal 元件：中文是互動視窗，也有人稱為燈箱或視窗，會在瀏覽網頁時跳出會遮擋內容的視窗，有時會是登入的提示，也有時會顯示廣告；也有時會用來在同一個頁面顯示額外資訊，不需跳轉至別的網址，像是點擊商品圖片後，會跳出詳細介紹、產品規格等資訊的視窗</li>
+<li>關鍵字：<strong>popup modal ui</strong>、<strong>lightbox ui</strong>、<strong>燈箱 css</strong>、<strong>popup modal css</strong></li>
+<li>補充：modal 元件跳出時，通常會讓背景變成半透明黑色、白色，而這種半透明背景遮罩的英文術語叫 black overlay，可以搜尋 <strong>full page black overlay css</strong> 了解如何使用 CSS 實現這樣的效果</li>
+</ol>
+</li>
+<li>作業心得：寫這份作業的時間主要仍是花在寫 CSS，樣式沒問題，用 JS 寫功能就簡單了(&#96;･∀･)b<blockquote>
+<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><ul>
+<li>課程概要：<ol>
+<li>不使用 alert 跳出表單驗證提示：alert 的樣式不夠漂亮，可以參考業界是如何設計欄位驗證的樣式</li>
+<li>關鍵字：<strong>form validation ui</strong></li>
+<li>補充：作業的設計會用到有關驗證<strong>有無某字</strong>以及<strong>字串長度</strong>的功能，可以搜尋關鍵字<strong>javascript 包含字串</strong><code>.includes()</code>、<strong>javascript 字串長度</strong><code>.length</code>找方法</li>
+</ol>
+</li>
+<li>作業心得：在寫的過程中基本上沒有遇到什麼困難，只有中途 JSFiddle 的預覽一直跳 404，慢慢除錯發現是 button 的問題，經查詢原來是因為沒有設 type 屬性，加上以後預覽就順利運行了<blockquote>
+<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><ul>
+<li>課程概要：<ol>
+<li>認識 collapse 效果：是指可以將內容收折、展開的效果</li>
+<li>關鍵字：<strong>collapse item css</strong></li>
+<li>補充：收折、展開的動畫通常會是<strong>淡入淡出</strong>、<strong>滑上滑下</strong>，可以搜尋關鍵字<code>slide down css</code>、<code>slide up css</code>、<code>fade in css</code>、<code>fade out css</code>參考如何寫出這樣的效果</li>
+</ol>
+</li>
+<li>作業心得：中間一度卡在 CSS 的<code>transition</code>沒有動畫效果出現，後來把內容的<code>display:none</code>改掉，改成調整<code>height</code>的數值，以及設<code>overflow:hidden</code>把溢出的內容隱藏，動畫就能正常顯示了<blockquote>
+<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><ul>
+<li>課程概要：<ol>
+<li>認識 dropdown 元件：中文是下拉式選單，通常會運用在有多個階層的導覽列</li>
+<li>關鍵字：<strong>dropdown menu javascript</strong></li>
+</ol>
+</li>
+<li>作業心得：嗯 ⋯ 果然比起寫 CSS，寫 JS 更能讓我感到愉悅啊 XD<blockquote>
+<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><ul>
+<li>課程概要：<ol>
+<li>認識 carousel 元件：中文是輪播元件，也有人叫它<strong>幻燈片 slideshow</strong></li>
+<li>關鍵字：<strong>slideshow js</strong>、<strong>carousel javascript</strong></li>
+</ol>
+</li>
+<li>作業心得：這個練習在職訓課程有寫過，所以寫起來很快 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>可能是因為我已經有一些基礎的關係，覺得這系列的課還是不夠有挑戰性，許多元件設計及功能都有見過和寫過，所以會感覺沒有學到新東西、感到有點失望 XD，想要趕快進入下一系列的課ヽ(#&#96;Д´)ﾉ！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/gqveaW">自學網頁の嬰兒教材：JavaScript（三）—— 自己做看看實務常用 UI 元件</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
@@ -618,92 +808,62 @@
       </tags>
   </entry>
   <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（三）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>站長大大希望我們能夠有自學的能力，面對問題可以自己尋找方法、解答，因此這一個系列的課只會給予簡介以及關鍵字，其餘的資訊需要自行去搜尋、參考並思考如何做才能符合作業要求。<br>不過老實說，這樣的學習方式我已經很習慣了 ∠( ᐛ 」∠)＿當我發現職訓所教的不夠深、不夠清楚時，或是在我自己製作專案碰到問題，經過思考也找不到解決方法時，就會搜尋關鍵字去找答案，這時就會很感謝自己生在科技發達的時代 XD，網路上可以找到很多前人分享的文章、我遇過的問題也會有人遇到，並且在 Stack Overflow 提問，不怕找不到解方，只怕關鍵字下得不夠清楚。</p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－alert-示警元件"><a href="#第一課－alert-示警元件" class="headerlink" title="第一課－alert 示警元件"></a>第一課－alert 示警元件</h2><ul>
-<li>課程概要：<ol>
-<li>認識什麼是 alert 元件：出現此元件的狀況通常是用來公告訊息，或是在使用者做某些動作後的通知、提示</li>
-<li>關鍵字：<strong>alert ui</strong>、<strong>alert component</strong></li>
-</ol>
-</li>
-<li>作業心得：本來以為這系列的重點仍會放在 JS 的功能或語法等，但這堂課看起來比較偏向設計常見樣式，功能僅佔一點<blockquote>
-<p>作業說明：參考他人設計，自行製作出 alert 元件，依照使用情境對應不同顏色，並且加入可以關閉元件的按鈕<br><a href="https://jsfiddle.net/iamCJ/1pbxksv6/">https://jsfiddle.net/iamCJ/1pbxksv6/</a></p>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（九）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B9%9D%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這系列主要是學習 Vue 元件的觀念，不過由於站長大大在課內並無多敘述、教學，大都是要我們去讀官方文件，再加上我在之前就透過 Alex 大大的影片學習過相關概念、也做了筆記，所以建議想要更深入了解 Vue 元件的觀念可以參考 <a href="https://iam-cj.github.io/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/">這邊</a> ，也因此我在這篇的心得及技術就沒有多著墨了，造成不便請見諒 ∠( ᐛ 」∠)＿</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－學習-Vue-元件基本觀念"><a href="#第一課－學習-Vue-元件基本觀念" class="headerlink" title="第一課－學習 Vue 元件基本觀念"></a>第一課－學習 Vue 元件基本觀念</h2><ul>
+<li>課程概要：認識 Vue 元件的基本觀念、註冊方法以及元件的檔案格式</li>
+<li>作業說明：建立三個元件，各元件需顯示指定內容，並將三個元件匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/M8ZjAX">https://reurl.cc/M8ZjAX</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第二課－toast-吐司元件"><a href="#第二課－toast-吐司元件" class="headerlink" title="第二課－toast 吐司元件"></a>第二課－toast 吐司元件</h2><ul>
-<li>課程概要：<ol>
-<li>認識什麼是 toast 元件：可以想像成烤好的吐司會從烤土司機<strong>彈跳</strong>出來一樣，當使用者做某些動作後會跳出<strong>提示文字框</strong>給予反饋，這個元件通常會做成「顯示幾秒之後自動關閉」</li>
-<li>認識<code>setTimeout()</code>函式：這個函式的功能是在設定的延遲秒數到了後，執行<strong>一次</strong>括號內程式<figure class="highlight js"><figcaption><span>用法</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入要延遲執行的function</span></span><br><span class="line"><span class="built_in">setTimeout</span>(functionName, 秒數（毫秒）, 參數<span class="number">1</span>, 參數<span class="number">2.</span>..);</span><br><span class="line"><span class="comment">//或裡面塞立即函式</span></span><br><span class="line"><span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>)</span><br><span class="line">&#125;,<span class="number">1000</span>)</span><br></pre></td></tr></table></figure></li>
-<li>關鍵字：<strong>toast ui</strong>、<strong>toast component</strong></li>
-</ol>
-</li>
-<li>作業心得：其實經過查詢之後，覺得 alert 跟 toast 的設計長得差不多 XD，只是在顯示方面有所差異而已<blockquote>
-<p>作業說明：在點擊按鈕以後，要彈出對應的 toast 元件，並且使用<code>setTimeout</code>設定元件於 5 秒後消失<br><a href="https://jsfiddle.net/iamCJ/pe0y7uoq/">https://jsfiddle.net/iamCJ/pe0y7uoq/</a></p>
+<h2 id="第二課－學習-Vue-的-props-觀念"><a href="#第二課－學習-Vue-的-props-觀念" class="headerlink" title="第二課－學習 Vue 的 props 觀念"></a>第二課－學習 Vue 的 props 觀念</h2><ul>
+<li>課程概要：認識 Vue props 觀念</li>
+<li>作業說明：仿製 Quasar framework 中的 Badge 徽章元件，建立<code>MyBadge.vue</code>元件，並能夠透過屬性設定背景顏色、文字顏色、文字內容以及 rounded 樣式，最後匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/aV58oX">https://reurl.cc/aV58oX</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第三課－modal-互動視窗元件"><a href="#第三課－modal-互動視窗元件" class="headerlink" title="第三課－modal 互動視窗元件"></a>第三課－modal 互動視窗元件</h2><ul>
-<li>課程概要：<ol>
-<li>認識什麼是 modal 元件：中文是互動視窗，也有人稱為燈箱或視窗，會在瀏覽網頁時跳出會遮擋內容的視窗，有時會是登入的提示，也有時會顯示廣告；也有時會用來在同一個頁面顯示額外資訊，不需跳轉至別的網址，像是點擊商品圖片後，會跳出詳細介紹、產品規格等資訊的視窗</li>
-<li>關鍵字：<strong>popup modal ui</strong>、<strong>lightbox ui</strong>、<strong>燈箱 css</strong>、<strong>popup modal css</strong></li>
-<li>補充：modal 元件跳出時，通常會讓背景變成半透明黑色、白色，而這種半透明背景遮罩的英文術語叫 black overlay，可以搜尋 <strong>full page black overlay css</strong> 了解如何使用 CSS 實現這樣的效果</li>
-</ol>
-</li>
-<li>作業心得：寫這份作業的時間主要仍是花在寫 CSS，樣式沒問題，用 JS 寫功能就簡單了(&#96;･∀･)b<blockquote>
-<p>作業說明：在點擊按鈕以後，要彈出對應的 modal 元件，並且加入可以關閉元件的按鈕。（我自己額外做了點擊背景遮罩也能關閉視窗的功能）<br><a href="https://jsfiddle.net/iamCJ/1q9unksL/">https://jsfiddle.net/iamCJ/1q9unksL/</a></p>
+<h2 id="第三課－學習-Vue-的-events-觀念"><a href="#第三課－學習-Vue-的-events-觀念" class="headerlink" title="第三課－學習 Vue 的 events 觀念"></a>第三課－學習 Vue 的 events 觀念</h2><ul>
+<li>課程概要：學習在 component 內寫事件、認識<code>$emit</code></li>
+<li>作業說明：仿製 Quasar framework 中的 Button 按鈕元件，建立<code>MyButton.vue</code>元件，並能夠透過屬性設定背景顏色、文字顏色、文字內容以及 rounded 和 square 樣式，還有透過<code>$emit</code>設定點擊按鈕後的事件，最後匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/OvXnlg">https://reurl.cc/OvXnlg</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第四課－表單驗證"><a href="#第四課－表單驗證" class="headerlink" title="第四課－表單驗證"></a>第四課－表單驗證</h2><ul>
-<li>課程概要：<ol>
-<li>不使用 alert 跳出表單驗證提示：alert 的樣式不夠漂亮，可以參考業界是如何設計欄位驗證的樣式</li>
-<li>關鍵字：<strong>form validation ui</strong></li>
-<li>補充：作業的設計會用到有關驗證<strong>有無某字</strong>以及<strong>字串長度</strong>的功能，可以搜尋關鍵字<strong>javascript 包含字串</strong><code>.includes()</code>、<strong>javascript 字串長度</strong><code>.length</code>找方法</li>
-</ol>
-</li>
-<li>作業心得：在寫的過程中基本上沒有遇到什麼困難，只有中途 JSFiddle 的預覽一直跳 404，慢慢除錯發現是 button 的問題，經查詢原來是因為沒有設 type 屬性，加上以後預覽就順利運行了<blockquote>
-<p>作業說明：做一個註冊表單，每個表格需要有驗證機制，當 input 的輸入不符合條件時，要跳出文字提示使用者<br><a href="https://jsfiddle.net/iamCJ/m1j0gb9c/">https://jsfiddle.net/iamCJ/m1j0gb9c/</a></p>
+<h2 id="第四課－學習-Vue-的-v-model-觀念"><a href="#第四課－學習-Vue-的-v-model-觀念" class="headerlink" title="第四課－學習 Vue 的 v-model 觀念"></a>第四課－學習 Vue 的 v-model 觀念</h2><ul>
+<li>課程概要：認識<code>v-model</code></li>
+<li>作業說明：仿製 Quasar framework 中的 Input 元件，建立<code>MyInput.vue</code>元件，並能夠透過屬性設定欄位名稱、 filled 和 outlined 樣式，還有透過<code>v-model</code>設定值、取得值，最後匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/4oyOlY">https://reurl.cc/4oyOlY</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第五課－collapse-折疊效果"><a href="#第五課－collapse-折疊效果" class="headerlink" title="第五課－collapse 折疊效果"></a>第五課－collapse 折疊效果</h2><ul>
-<li>課程概要：<ol>
-<li>認識 collapse 效果：是指可以將內容收折、展開的效果</li>
-<li>關鍵字：<strong>collapse item css</strong></li>
-<li>補充：收折、展開的動畫通常會是<strong>淡入淡出</strong>、<strong>滑上滑下</strong>，可以搜尋關鍵字<code>slide down css</code>、<code>slide up css</code>、<code>fade in css</code>、<code>fade out css</code>參考如何寫出這樣的效果</li>
-</ol>
-</li>
-<li>作業心得：中間一度卡在 CSS 的<code>transition</code>沒有動畫效果出現，後來把內容的<code>display:none</code>改掉，改成調整<code>height</code>的數值，以及設<code>overflow:hidden</code>把溢出的內容隱藏，動畫就能正常顯示了<blockquote>
-<p>作業說明：做一個問與答的頁面，一開始不顯示回答的內容，需要點擊問題才會顯示，並且再次點擊可以收起回答<br><a href="https://jsfiddle.net/iamCJ/f8tavnxr/">https://jsfiddle.net/iamCJ/f8tavnxr/</a></p>
+<h2 id="第五課－學習-Vue-的-slots-觀念"><a href="#第五課－學習-Vue-的-slots-觀念" class="headerlink" title="第五課－學習 Vue 的 slots 觀念"></a>第五課－學習 Vue 的 slots 觀念</h2><ul>
+<li>課程概要：認識 Vue slots 觀念</li>
+<li>自己補充：子元件可以有多個 slot，在 slot 中加入<code>name</code>屬性並取名，在父元件加入<code>template</code> tag 並使用<code>v-slot:slotname</code>或縮寫成<code>#slotname</code>就可以分別指定顯示內容，這就是<strong>具名插槽</strong>，下方是實際用法<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 子元件內 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;example&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 父元件內 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">example-component</span>&gt;</span></span><br><span class="line">    default slot</span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:example</span>&gt;</span>example slot<span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">example-component</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li>作業說明：仿製 Quasar framework 中的 Banner 公告元件，建立<code>MyBanner.vue</code>元件，能夠透過屬性設定 rounded 樣式，以及使用<code>slot</code>設定顯示內容，最後匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/qLmlQN">https://reurl.cc/qLmlQN</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第六課－dropdown-下拉式選單"><a href="#第六課－dropdown-下拉式選單" class="headerlink" title="第六課－dropdown 下拉式選單"></a>第六課－dropdown 下拉式選單</h2><ul>
-<li>課程概要：<ol>
-<li>認識 dropdown 元件：中文是下拉式選單，通常會運用在有多個階層的導覽列</li>
-<li>關鍵字：<strong>dropdown menu javascript</strong></li>
-</ol>
-</li>
-<li>作業心得：嗯 ⋯ 果然比起寫 CSS，寫 JS 更能讓我感到愉悅啊 XD<blockquote>
-<p>作業說明：做一個導覽列，點擊最後一個選項可以顯示下拉式選單，並且再次點擊可以收起<br><a href="https://jsfiddle.net/iamCJ/cLgj104q/">https://jsfiddle.net/iamCJ/cLgj104q/</a></p>
+<h2 id="第六課－學習用外部狀態管理-vue-元件"><a href="#第六課－學習用外部狀態管理-vue-元件" class="headerlink" title="第六課－學習用外部狀態管理 vue 元件"></a>第六課－學習用外部狀態管理 vue 元件</h2><ul>
+<li>課程概要：學習用外部狀態管理 vue 元件</li>
+<li>作業說明：仿製 Quasar framework 中的 Dialog 視窗元件，建立<code>MyDialog.vue</code>元件，能夠透過<code>v-model</code>管理 dialog 元件是否顯示，以及使用<code>slot</code>設定顯示內容，最後匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/QX70eZ">https://reurl.cc/QX70eZ</a></p>
 </blockquote>
 </li>
 </ul>
-<h2 id="第七課－carousel-輪播元件"><a href="#第七課－carousel-輪播元件" class="headerlink" title="第七課－carousel 輪播元件"></a>第七課－carousel 輪播元件</h2><ul>
-<li>課程概要：<ol>
-<li>認識 carousel 元件：中文是輪播元件，也有人叫它<strong>幻燈片 slideshow</strong></li>
-<li>關鍵字：<strong>slideshow js</strong>、<strong>carousel javascript</strong></li>
-</ol>
-</li>
-<li>作業心得：這個練習在職訓課程有寫過，所以寫起來很快 ∠( ᐛ 」∠)＿<blockquote>
-<p>作業說明：製作一個圖片輪播區塊，並且有兩個按鈕，按下可以切換顯示前一張或後一張圖片<br><a href="https://jsfiddle.net/iamCJ/Lqucoy24/">https://jsfiddle.net/iamCJ/Lqucoy24/</a></p>
+<h2 id="第七課－學習開發狀態複雜的-vue-元件"><a href="#第七課－學習開發狀態複雜的-vue-元件" class="headerlink" title="第七課－學習開發狀態複雜的 vue 元件"></a>第七課－學習開發狀態複雜的 vue 元件</h2><ul>
+<li>課程概要：學習開發狀態複雜的 vue 元件</li>
+<li>關鍵字：<code>hex to rgb javascript</code>、<code>rgb to hex javascript</code></li>
+<li>作業說明：仿製 Quasar framework 中的 Color Picker 元件，建立<code>MyColor.vue</code>元件，使用<code>v-model</code>設定 HEX 格式色碼，並有可以拖動的捲軸選擇 RGB 比例，最後匯入<code>App.vue</code><blockquote>
+<p><a href="https://reurl.cc/WG31dO">https://reurl.cc/WG31dO</a></p>
 </blockquote>
 </li>
 </ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>可能是因為我已經有一些基礎的關係，覺得這系列的課還是不夠有挑戰性，許多元件設計及功能都有見過和寫過，所以會感覺沒有學到新東西、感到有點失望 XD，想要趕快進入下一系列的課ヽ(#&#96;Д´)ﾉ！</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/gqveaW">自學網頁の嬰兒教材：JavaScript（三）—— 自己做看看實務常用 UI 元件</a></p>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>終於！把所有系列完結了！趕快改履歷找工作囉！XD<br>不得不說上完整系列的課，讓我更加熟悉 JavaScript、框架的運用，除了了解到自己不足的地方，其實也對自己能夠獨立完成這麼多作業感到驚訝，過去我總覺得自己學得不夠、比不過其他人，所以就一直埋頭苦學、學到很茫然，直到學完這些課後，真的對自己有了一咪咪的自信心了，我要勇敢跨出第一步，邁向成為前端工程師的目標！</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/QxMYx5">自學網頁の嬰兒教材：JavaScript（九）—— 不想教你 Vue，只想讓你做酷炫元件</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
@@ -802,71 +962,6 @@
 <h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>我覺得這系列的課還在我有學過的範圍裡，只是有幾個語法沒有用過，或是更習慣使用另一種相似功能的語法，難度還不高，期待後面的課程可以更有挑戰性 ٩(｡・ω・｡)﻿و</p>
 <p>原本預期兩～三天可以完成一個系列的課程，但沒想到實作起來還是挺花時間的，要再加把勁！趕快把接下來的課學完吧！</p>
 <h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/vx8gqZ">自學網頁の嬰兒教材：JavaScript（二）—— 親手做個待辦事項小工具</a></p>
-]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>用嬰兒都學得會的教材學JS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（九）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E4%B9%9D%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這系列主要是學習 Vue 元件的觀念，不過由於站長大大在課內並無多敘述、教學，大都是要我們去讀官方文件，再加上我在之前就透過 Alex 大大的影片學習過相關概念、也做了筆記，所以建議想要更深入了解 Vue 元件的觀念可以參考 <a href="https://iam-cj.github.io/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/">這邊</a> ，也因此我在這篇的心得及技術就沒有多著墨了，造成不便請見諒 ∠( ᐛ 」∠)＿</p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－學習-Vue-元件基本觀念"><a href="#第一課－學習-Vue-元件基本觀念" class="headerlink" title="第一課－學習 Vue 元件基本觀念"></a>第一課－學習 Vue 元件基本觀念</h2><ul>
-<li>課程概要：認識 Vue 元件的基本觀念、註冊方法以及元件的檔案格式</li>
-<li>作業說明：建立三個元件，各元件需顯示指定內容，並將三個元件匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/M8ZjAX">https://reurl.cc/M8ZjAX</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第二課－學習-Vue-的-props-觀念"><a href="#第二課－學習-Vue-的-props-觀念" class="headerlink" title="第二課－學習 Vue 的 props 觀念"></a>第二課－學習 Vue 的 props 觀念</h2><ul>
-<li>課程概要：認識 Vue props 觀念</li>
-<li>作業說明：仿製 Quasar framework 中的 Badge 徽章元件，建立<code>MyBadge.vue</code>元件，並能夠透過屬性設定背景顏色、文字顏色、文字內容以及 rounded 樣式，最後匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/aV58oX">https://reurl.cc/aV58oX</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第三課－學習-Vue-的-events-觀念"><a href="#第三課－學習-Vue-的-events-觀念" class="headerlink" title="第三課－學習 Vue 的 events 觀念"></a>第三課－學習 Vue 的 events 觀念</h2><ul>
-<li>課程概要：學習在 component 內寫事件、認識<code>$emit</code></li>
-<li>作業說明：仿製 Quasar framework 中的 Button 按鈕元件，建立<code>MyButton.vue</code>元件，並能夠透過屬性設定背景顏色、文字顏色、文字內容以及 rounded 和 square 樣式，還有透過<code>$emit</code>設定點擊按鈕後的事件，最後匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/OvXnlg">https://reurl.cc/OvXnlg</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第四課－學習-Vue-的-v-model-觀念"><a href="#第四課－學習-Vue-的-v-model-觀念" class="headerlink" title="第四課－學習 Vue 的 v-model 觀念"></a>第四課－學習 Vue 的 v-model 觀念</h2><ul>
-<li>課程概要：認識<code>v-model</code></li>
-<li>作業說明：仿製 Quasar framework 中的 Input 元件，建立<code>MyInput.vue</code>元件，並能夠透過屬性設定欄位名稱、 filled 和 outlined 樣式，還有透過<code>v-model</code>設定值、取得值，最後匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/4oyOlY">https://reurl.cc/4oyOlY</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第五課－學習-Vue-的-slots-觀念"><a href="#第五課－學習-Vue-的-slots-觀念" class="headerlink" title="第五課－學習 Vue 的 slots 觀念"></a>第五課－學習 Vue 的 slots 觀念</h2><ul>
-<li>課程概要：認識 Vue slots 觀念</li>
-<li>自己補充：子元件可以有多個 slot，在 slot 中加入<code>name</code>屬性並取名，在父元件加入<code>template</code> tag 並使用<code>v-slot:slotname</code>或縮寫成<code>#slotname</code>就可以分別指定顯示內容，這就是<strong>具名插槽</strong>，下方是實際用法<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 子元件內 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;example&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 父元件內 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">example-component</span>&gt;</span></span><br><span class="line">    default slot</span><br><span class="line">    <span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:example</span>&gt;</span>example slot<span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">example-component</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
-<li>作業說明：仿製 Quasar framework 中的 Banner 公告元件，建立<code>MyBanner.vue</code>元件，能夠透過屬性設定 rounded 樣式，以及使用<code>slot</code>設定顯示內容，最後匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/qLmlQN">https://reurl.cc/qLmlQN</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第六課－學習用外部狀態管理-vue-元件"><a href="#第六課－學習用外部狀態管理-vue-元件" class="headerlink" title="第六課－學習用外部狀態管理 vue 元件"></a>第六課－學習用外部狀態管理 vue 元件</h2><ul>
-<li>課程概要：學習用外部狀態管理 vue 元件</li>
-<li>作業說明：仿製 Quasar framework 中的 Dialog 視窗元件，建立<code>MyDialog.vue</code>元件，能夠透過<code>v-model</code>管理 dialog 元件是否顯示，以及使用<code>slot</code>設定顯示內容，最後匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/QX70eZ">https://reurl.cc/QX70eZ</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第七課－學習開發狀態複雜的-vue-元件"><a href="#第七課－學習開發狀態複雜的-vue-元件" class="headerlink" title="第七課－學習開發狀態複雜的 vue 元件"></a>第七課－學習開發狀態複雜的 vue 元件</h2><ul>
-<li>課程概要：學習開發狀態複雜的 vue 元件</li>
-<li>關鍵字：<code>hex to rgb javascript</code>、<code>rgb to hex javascript</code></li>
-<li>作業說明：仿製 Quasar framework 中的 Color Picker 元件，建立<code>MyColor.vue</code>元件，使用<code>v-model</code>設定 HEX 格式色碼，並有可以拖動的捲軸選擇 RGB 比例，最後匯入<code>App.vue</code><blockquote>
-<p><a href="https://reurl.cc/WG31dO">https://reurl.cc/WG31dO</a></p>
-</blockquote>
-</li>
-</ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>終於！把所有系列完結了！趕快改履歷找工作囉！XD<br>不得不說上完整系列的課，讓我更加熟悉 JavaScript、框架的運用，除了了解到自己不足的地方，其實也對自己能夠獨立完成這麼多作業感到驚訝，過去我總覺得自己學得不夠、比不過其他人，所以就一直埋頭苦學、學到很茫然，直到學完這些課後，真的對自己有了一咪咪的自信心了，我要勇敢跨出第一步，邁向成為前端工程師的目標！</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/QxMYx5">自學網頁の嬰兒教材：JavaScript（九）—— 不想教你 Vue，只想讓你做酷炫元件</a></p>
 ]]></content>
       <categories>
         <category>JavaScript</category>
@@ -1121,100 +1216,51 @@
       </tags>
   </entry>
   <entry>
-    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</title>
-    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這個系列比較像是過去的土法煉鋼寫法與接觸新框架中間的銜接（？，站長大大選擇先用 data model 與 render function 教我們關注點分離的概念，習慣資料與畫面、功能分開管理，了解於原理後再讓我們接觸框架，而非直接進入框架的教學，比較能避免我們會出現搞不清楚某些功能到底是原生 JS 還是框架所提供的狀況。</p>
-<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-data-model-與-render-function"><a href="#第一課－認識-data-model-與-render-function" class="headerlink" title="第一課－認識 data model 與 render function"></a>第一課－認識 data model 與 render function</h2><ul>
-<li>課程概要：<ol>
-<li>認識 data model 的觀念：當你要面對的是大型專案時，不建議再使用操作 DOM 元素去更新其內容，會變得很難以維護，因此需要將程式的<strong>狀態</strong>與其他部份分開，而這個<strong>狀態</strong>通常被稱為 <strong>state</strong>、<strong>model</strong> 或 <strong>data model</strong>，在資料更動時，只需要去處理 data model，這樣在開發複雜專案時，相關函式一律只要專注於 data model 就好，不用管使用者介面<figure class="highlight js"><figcaption><span>data model 範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> product = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;冬季外套&quot;</span>,</span><br><span class="line">  <span class="attr">price</span>: <span class="number">1990</span>,</span><br><span class="line">  <span class="attr">category</span>: <span class="string">&quot;women&quot;</span>,</span><br><span class="line">  <span class="attr">remain</span>: <span class="number">5</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-<li>認識 render function 的觀念：狀態由 data model 管理，而負責更新<strong>畫面</strong>則可以使用 <strong>render function</strong> 的方法，放一個 root 元素，作為放關於使用者介面之程式碼的容器，接著寫一個 render 函式，將所設計的使用者介面做出來、塞到 root 中<br>這個 render 函式有三個注意事項：<ol>
-<li>第一行要先<strong>清空</strong>放使用者介面的容器</li>
-<li>在所有跟<strong>狀態</strong>有關操作的<strong>最後一行</strong>，都要呼叫 render 函式（為了更新畫面）</li>
-<li><strong>所有 DOM 操作</strong>一律由 render 函式處理</li>
-</ol>
+    <title>【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1</title>
+    <url>/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>最近在觀看 Alex 大的 ReVue 系列影片從頭學 Vue，但發現如果沒有做筆記的話，很快就會對學過的東西印象模糊，加上 Alex 大的教學影片都長達一兩小時，要重新找影片來回憶也是有點困難又耗費時間，因此決定要做學習筆記並上傳於此以便日後查詢，不過我還算是初學者，並且所記下來的都是我主觀覺得需要注意的點，如果內容有誤、用詞不精準，或是寫得很廢根本不需要紀錄的部分就麻煩各位看官多多見諒了(｡･ω･｡)ﾉ<br><font style="font-size:15px;color:grey;">p.s.因為我是看到第一季的最後一集才突然意識到要做筆記，因此第一篇會直接從 Day 9 開始，更之前的會找時間補，但什麼時候會補完就隨緣了 ∠( ᐛ 」∠)＿</font></p>
+<h1 id="本篇主題：基礎模組化"><a href="#本篇主題：基礎模組化" class="headerlink" title="本篇主題：基礎模組化"></a>本篇主題：基礎模組化</h1><h2 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h2><ul>
+<li><p>為什麼要模組化？<br>1. 為了重複使用<br>2. 為了分類管理，將多個功能切割後每份模組只有單一功能</p>
 </li>
-</ol>
+<li><p>component 內需要有 template<br>template 放 HTML 的架構，可用雙引號<code>&quot;</code>、單引號<code>&#39;</code>、反引號<code>`</code>包住內容（推薦用反引號<code>`</code>）</p>
 </li>
-<li>作業心得：我自己覺得這堂課的觀念有點像 Vue 框架<strong>分開管理</strong>資料以及模板（或者說 HTML 要長的樣子）的概念<blockquote>
-<p>作業說明：使用 render function 把 data model 給渲染出來<br><a href="https://jsfiddle.net/iamCJ/53r4on0a/">https://jsfiddle.net/iamCJ/53r4on0a/</a></p>
-</blockquote>
+<li><p>component 內的 data <strong>必須</strong>是 function<br>因為物件是實體，會有可能指向到同一個物件上 → 變成沒有獨立的資料<br>因此要透過 function return object 確保每個 component 有自己的資料</p>
+<figure class="highlight js"><figcaption><span>範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="title class_">Vue</span>.<span class="title function_">component</span>(<span class="string">&quot;example-component&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">data</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">name</span>: <span class="string">&quot;CJ Wu&quot;</span> &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">template</span>: <span class="string">&quot;&lt;h1&gt;Hello! My name is &#123;&#123; name &#125;&#125;&lt;/h1&gt;&quot;</span>,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h2 id="第二課－認識陣列操作"><a href="#第二課－認識陣列操作" class="headerlink" title="第二課－認識陣列操作"></a>第二課－認識陣列操作</h2><ul>
-<li>課程概要：學會使用<code>.push()</code>新增值到陣列，括號內填入想要加入陣列的字串、數字或參數等等，它會加在陣列的<strong>最後方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">push</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li>自己補充：其他常見的陣列處理方法<ol>
-<li><code>.unshift()</code>：也是新增值到陣列，但是它會加在陣列的<strong>最前方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">unshift</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;D&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.shift()</code>：<strong>移除</strong>陣列的<strong>第一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">shift</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.pop()</code>：<strong>移除</strong>陣列的<strong>最後一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">pop</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><span id="splice"><code>.splice(開始索引, 刪除數量, 要插入的值)</code>：用來<strong>切割移除或拼接</strong>某個陣列，這個方法<strong>會</strong>改變原陣列的值！</span><br>括號內第一個參數填入開始的索引值，負數則代表從後面開始算起（例如 -1 為倒數第一個）；第二個參數填入從開始索引（包含）算起<strong>總共</strong>要刪除的<strong>數量</strong>，填 0 就不會刪除；第三個參數可以填入要插入的值，會插在被切割掉的值之位置<br>而直接呼叫<code>.splice()</code>則會回傳被刪除的值<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> removed1 = array1.<span class="title function_">splice</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, removed1); <span class="comment">// 結果為 array1[&quot;A&quot;, &quot;B&quot;], removed1[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array2.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array2); <span class="comment">// 結果為 [&quot;A&quot;, &quot;B&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array3.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>, <span class="string">&quot;嗨嗨嗨&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;嗨嗨嗨&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array4.<span class="title function_">splice</span>(-<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array4); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.slice(開始索引, 結束索引)</code>：用來<strong>複製</strong>某個陣列，會回傳<strong>指定索引範圍的新陣列</strong>，這個方法<strong>不會</strong>改變原陣列的值。<br>括號內填索引範圍，前面的參數為開始的索引值，負數代表從後面開始算起；而後面的參數為結束的索引值，需要注意範圍會切在這個<strong>索引之前</strong>，<strong>不包含</strong>結束索引的值！沒有寫則預設為<code>array.length</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = array1.<span class="title function_">slice</span>(<span class="number">2</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">slice</span>(<span class="number">2</span>, <span class="number">4</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">slice</span>(-<span class="number">2</span>); <span class="comment">//結果為[&quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// 結果仍為 [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.concat()</code>：用來<strong>合併</strong>多個陣列，<strong>不會</strong>改變原先陣列的值，而是回傳一個新的、被合併的陣列。<font style="color:grey;">p.s.而當括號內不填入其他陣列時，我自己會當作是用來<strong>複製</strong>陣列</font><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">concat</span>(array2);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="comment">///括號內不填陣列時</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">concat</span>();</span><br><span class="line">array4.<span class="title function_">push</span>(<span class="string">&quot;ZZZ&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, array4); <span class="comment">// array1[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], array4[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;,&quot;ZZZ&quot;]</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.include()</code>：用來<strong>尋找</strong>陣列中是否<strong>包含某個值</strong>，結果會以布林值型態回傳<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.indexOf()</code>：用來<strong>尋找</strong>陣列中某個值的<strong>索引位置</strong>，而若搜索的值不在陣列內，則會回傳<code>-1</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">indexOf</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// 0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// -1</span></span><br></pre></td></tr></table></figure></li>
-<li><code>.join()</code>：用來將陣列中的值<strong>轉為字串</strong>，並且加入指定字元做為<strong>值與值連接的符號</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;&amp;&quot;</span>)); <span class="comment">// A&amp;B&amp;C</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;/ &quot;</span>)); <span class="comment">// A/ B/ C/</span></span><br></pre></td></tr></table></figure></li>
-</ol>
+<li><p>props 是什麼？<br>是一個將父（外）層 data 分享到內層的屬性（可以想成內層跟父層<strong>借</strong>data）<br>建議使用資料的方式是單向的，當作是跟人<strong>借用</strong>的，<strong>不可以</strong>在 component 內亂改資料，如果需要修改資料要通知父層(例如使用 listening)</p>
 </li>
-<li>作業心得：作業本身很簡單，不過自己補充的部分花了一些時間整理，但果然還是要自己實際筆記起來，才會記得更熟、把細節搞清楚呀 ∠( ᐛ 」∠)＿<blockquote>
-<p>作業說明：延續上一堂作業，加入一個 input 以及一個新增按鈕，按鈕按下後，必須先更新 data modal 再執行畫面的 render<br><a href="https://jsfiddle.net/iamCJ/L5vrodn7/">https://jsfiddle.net/iamCJ/L5vrodn7/</a></p>
-</blockquote>
+<li><p>slot 是什麼？<br>可以把它理解成插槽的意思，內層挖好一個空格讓父層放，讓父層決定內層內容</p>
+</li>
+<li><p>在 HTML 某些 tag 內使用模組需注意<br>像是<code>&lt;ol&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;select&gt;</code>內部<strong>不能</strong>放自訂的 template tag，會出錯，他們內部已有規定好要放的 tag 了（<code>&lt;li&gt;</code>、<code>&lt;tr&gt;</code>、<code>&lt;option&gt;</code>）<br>⇒ 因此要改成放原本規定好的 tag，再加上<code>is</code>屬性</p>
+<figure class="highlight html"><figcaption><span>範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span> <span class="attr">is</span>=<span class="string">&quot;example-component&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>component 用駝峰式命名須注意的地方<br>component 有兩種命名方式：駝峰式 ＆ dash 連接式(kebab-case)<br><strong>但是</strong>，駝峰式在 HTML 上<strong>無法被辨識</strong>（不認大小寫）<br>⇒ 因此要自行改成 dash 連接式，例如：<code>&quot;helloComponent&quot; → &lt;hello-compoment&gt;</code><br><font style="font-size:15px;color:grey;">p.s. 在 Vue cli 就不會有這樣的問題了</font></p>
+</li>
+<li><p>$emit 是什麼？<br>將在<em>Vue.component 內的值</em>打到父層</p>
+<figure class="highlight js"><figcaption><span>範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//此處在Component內的template</span></span><br><span class="line"><span class="attr">template</span>:<span class="string">`&lt;button @click = &quot;$emit(&#x27;functionname&#x27;,value)&quot;&gt;&lt;/button&gt;`</span></span><br><span class="line"><span class="comment">//此處在HTML的component tag上，用method來接收值，並視需要寫入或修改父層的data</span></span><br><span class="line">&lt;hello-component @functionname=<span class="string">&quot;method&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//此段程式的意思是：當使用者點擊按鈕時，會觸發@click事件，傳遞值出去</span></span><br><span class="line"><span class="comment">//父層的部分用監聽該事件去接收傳出來的值，在new Vue內的methods寫function去處理收到的值</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>內層借資料（要用到多筆時），要選 <strong>傳物件&#x2F;陣列</strong> 還是 <strong>分別傳資料</strong> ？<br>用物件傳一整包資料雖然方便，但無法確保原始資料屬性會不會被改動，這樣會違反上面提到的 ── 單向使用的原則<br>⇒ 因此建議選擇<strong>分別傳多筆資料</strong>的方式<br><font style="font-size:15px;color:grey;">但若選擇用傳物件的方式，就要特別注意別出現<code>物件.資料屬性=&quot;change&quot;</code>，這樣會無法確認是內層還是父層改的資料</font></p>
 </li>
 </ul>
-<h2 id="第三課－認識匿名函式"><a href="#第三課－認識匿名函式" class="headerlink" title="第三課－認識匿名函式"></a>第三課－認識匿名函式</h2><ul>
-<li>課程概要：<ol>
-<li>學會使用<code>.splice()</code>，根據索引刪除陣列元素：這個在上一堂我就先自己補充啦～可以點<a href="#splice">這邊</a>來看</li>
-<li>認識<code>for in</code>迴圈：參數會回傳陣列的<strong>索引</strong>，而<code>for of</code>則是回傳陣列的值<figure class="highlight js"><figcaption><span>for in</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> array) &#123;</span><br><span class="line">  <span class="keyword">const</span> item = array[index];</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(index, item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>認識匿名函式（anonymous function）：動態宣告一個函式，然後直接指派、使用，其實就只是沒有名字的函式而已。<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//有名字的函式長這樣</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//匿名函式長這樣</span></span><br><span class="line"><span class="keyword">let</span> div = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">div.<span class="property">onclick</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈哈&quot;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>作業心得：忘記畫面是根據 data 渲染的，資料變化就會自動更新，原本還想說處理完陣列內的資料，接著要處理<code>&lt;li&gt;</code>、<code>&lt;span&gt;</code>，結果點預覽畫面測試的時候才發現不需要多此一舉 ∠( ᐛ 」∠)＿<blockquote>
-<p>作業說明：加入一個刪除按鈕，按下後刪除他在陣列中的資料，並且重新 render 畫面<br><a href="https://jsfiddle.net/iamCJ/ndtpurzy/">https://jsfiddle.net/iamCJ/ndtpurzy/</a></p>
-</blockquote>
+<hr>
+<p>順便補上之前聽到的筆記</p>
+<ul>
+<li>要怎麼判斷 computed&#x2F;methods&#x2F;watch 內分別放什麼？<ul>
+<li>computed 主要管理 <strong>資料</strong>產<strong>資料</strong></li>
+<li>methods 主要管理 <strong>行為</strong></li>
+<li>watch 主要管理 <strong>資料</strong>產<strong>行為&#x2F;事件</strong></li>
+</ul>
 </li>
 </ul>
-<h2 id="第四課－熟悉-render-function"><a href="#第四課－熟悉-render-function" class="headerlink" title="第四課－熟悉 render function"></a>第四課－熟悉 render function</h2><ul>
-<li>課程概要：根據資料內容的不同，render function 內可以有各種條件判斷、巢狀結構等等較複雜的邏輯</li>
-<li>作業心得：做這個作業沒什麼特別想法，只覺得這樣的寫法真的讓思考變得輕鬆多了 XD<blockquote>
-<p>作業說明：延續上一堂作業，讓 data 加入 category 屬性來做分類，在 render function 設條件判斷，不同分類的事項要有不同顏色<br><a href="https://jsfiddle.net/iamCJ/5ba2e3x0/">https://jsfiddle.net/iamCJ/5ba2e3x0/</a></p>
+<h1 id="影片連結"><a href="#影片連結" class="headerlink" title="影片連結"></a>影片連結</h1><blockquote>
+<p><a href="https://www.youtube.com/live/KQRfZ07bfAQ?feature=share">[ 想入門，我陪你 ] Re Vue 重頭說起｜ Day 9：基礎模組化</a></p>
 </blockquote>
-</li>
-</ul>
-<h2 id="第五課－熟悉匿名函式"><a href="#第五課－熟悉匿名函式" class="headerlink" title="第五課－熟悉匿名函式"></a>第五課－熟悉匿名函式</h2><ul>
-<li>課程概要：<ol>
-<li>認識布林值：是資料型態的一種，只有<code>true</code>跟<code>false</code>兩種值</li>
-<li>認識更新陣列值的方法：只要指定陣列的索引，並賦值給它即可<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">array[index] = <span class="string">&quot;new&quot;</span>;</span><br></pre></td></tr></table></figure></li>
-</ol>
-</li>
-<li>作業心得：覺得這系列的作業跟在系列二寫的時候感覺很不一樣，系列二寫得有點卡，覺得所有功能都尬在一起，有時候看著畫面亂亂的程式碼，腦袋也變得亂亂的了 XD<blockquote>
-<p>作業說明：延續上一堂作業，讓 data 加入 isCompleted 屬性，增加標示已完成的按鈕，按下按鈕後要更新 isCompleted 的狀態，並且更新畫面，讓事項的後面有（已完成）的字樣<br><a href="https://jsfiddle.net/iamCJ/kbc96Lq3/">https://jsfiddle.net/iamCJ/kbc96Lq3/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第六課－認識-data-model-的優點"><a href="#第六課－認識-data-model-的優點" class="headerlink" title="第六課－認識 data model 的優點"></a>第六課－認識 data model 的優點</h2><ul>
-<li>課程概要：沒有教新的東西，繼續加強 data model 的練習</li>
-<li>作業心得：data model 的設計真的讓取資料變得很簡單耶！記得在系列二時，做這個作業總感覺很麻煩，code 也很不乾脆（？，取資料都要從 DOM 下手，今天就輕鬆多了(ﾉ&gt;ω&lt;)ﾉ<blockquote>
-<p>作業說明：延續上一堂作業，新增一個匯出事項的按鈕，按下按鈕後，要 alert 出所有事項，並依事項的分類（重要程度）有不同的提示（加上米字號）<br><a href="https://jsfiddle.net/iamCJ/L8dhzxs0/">https://jsfiddle.net/iamCJ/L8dhzxs0/</a></p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第七課－資料序列化"><a href="#第七課－資料序列化" class="headerlink" title="第七課－資料序列化"></a>第七課－資料序列化</h2><ul>
-<li>課程概要：<ol>
-<li>認識資料序列化（serialization）：即為將 <strong>data model 轉為字串</strong>，可以用來跟第三方程式溝通、或將資料儲存到資料庫等等</li>
-<li>認識反序列化（deserialization）：則跟序列化相反，是將<strong>序列化資料轉換回來</strong>，變成程式可用的資料</li>
-</ol>
-</li>
-<li>作業心得：再次讚嘆這個 data model 設計，之前在寫的時候不知道為什麼很容易會有煩躁感（？，現在終於知道原因了，除了是因為之前把資料跟畫面全部寫在一起的關係，另外就是跟我寫在 Vue 的時候差很多，一直很不習慣沒辦法直接取用 data，而現在這個寫法超清爽*｡٩(ˊωˋ*)و✧*｡<blockquote>
-<p>作業說明：延續上一堂作業，新增一個儲存按鈕，按下按鈕後將陣列內容存入 local storage，並且在重整網頁時判斷 local storage 有無資料，如果有則自動載入<br><a href="https://jsfiddle.net/iamCJ/huwmsf40/">https://jsfiddle.net/iamCJ/huwmsf40/</a></p>
-</blockquote>
-</li>
-</ul>
-<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列的學習速度又回來啦！覺得這一系列的寫法比較符合我的習慣，在寫作業的過程跟心情都很順暢 XD。接下來就要進入學習 Vue 的系列啦，之前有自學過，我在想應該可以很快就上手，也期待可以學到新觀念跟新技巧～</p>
-<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/2anPxn">自學網頁の嬰兒教材：JavaScript（六）—— 從前端設計心態到前端工程心態</a></p>
 ]]></content>
       <categories>
-        <category>JavaScript</category>
+        <category>Vue</category>
       </categories>
       <tags>
-        <tag>用嬰兒都學得會的教材學JS</tag>
+        <tag>跟著大大一起從頭學Vue</tag>
       </tags>
   </entry>
   <entry>
@@ -1338,51 +1384,100 @@ js 的部分，需要 new 一個 <code>chart(element,&#123;&#125;)</code>，括�
       </tags>
   </entry>
   <entry>
-    <title>【跟著大大一起從頭學Vue】Re Vue重頭說起：基礎模組化之筆記－1</title>
-    <url>/%E3%80%90%E8%B7%9F%E8%91%97%E5%A4%A7%E5%A4%A7%E4%B8%80%E8%B5%B7%E5%BE%9E%E9%A0%AD%E5%AD%B8Vue%E3%80%91Re%20Vue%E9%87%8D%E9%A0%AD%E8%AA%AA%E8%B5%B7%EF%BC%9A%E5%9F%BA%E7%A4%8E%E6%A8%A1%E7%B5%84%E5%8C%96%E4%B9%8B%E7%AD%86%E8%A8%98%EF%BC%8D1/</url>
-    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>最近在觀看 Alex 大的 ReVue 系列影片從頭學 Vue，但發現如果沒有做筆記的話，很快就會對學過的東西印象模糊，加上 Alex 大的教學影片都長達一兩小時，要重新找影片來回憶也是有點困難又耗費時間，因此決定要做學習筆記並上傳於此以便日後查詢，不過我還算是初學者，並且所記下來的都是我主觀覺得需要注意的點，如果內容有誤、用詞不精準，或是寫得很廢根本不需要紀錄的部分就麻煩各位看官多多見諒了(｡･ω･｡)ﾉ<br><font style="font-size:15px;color:grey;">p.s.因為我是看到第一季的最後一集才突然意識到要做筆記，因此第一篇會直接從 Day 9 開始，更之前的會找時間補，但什麼時候會補完就隨緣了 ∠( ᐛ 」∠)＿</font></p>
-<h1 id="本篇主題：基礎模組化"><a href="#本篇主題：基礎模組化" class="headerlink" title="本篇主題：基礎模組化"></a>本篇主題：基礎模組化</h1><h2 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h2><ul>
-<li><p>為什麼要模組化？<br>1. 為了重複使用<br>2. 為了分類管理，將多個功能切割後每份模組只有單一功能</p>
+    <title>【用嬰兒都學得會的教材學JS】學習筆記－系列（六）</title>
+    <url>/%E3%80%90%E7%94%A8%E5%AC%B0%E5%85%92%E9%83%BD%E5%AD%B8%E5%BE%97%E6%9C%83%E7%9A%84%E6%95%99%E6%9D%90%E5%AD%B8JS%E3%80%91%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%EF%BC%8D%E7%B3%BB%E5%88%97%EF%BC%88%E5%85%AD%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="前言小廢話"><a href="#前言小廢話" class="headerlink" title="前言小廢話"></a>前言小廢話</h1><p>這個系列比較像是過去的土法煉鋼寫法與接觸新框架中間的銜接（？，站長大大選擇先用 data model 與 render function 教我們關注點分離的概念，習慣資料與畫面、功能分開管理，了解於原理後再讓我們接觸框架，而非直接進入框架的教學，比較能避免我們會出現搞不清楚某些功能到底是原生 JS 還是框架所提供的狀況。</p>
+<h1 id="課程開始"><a href="#課程開始" class="headerlink" title="課程開始"></a>課程開始</h1><h2 id="第一課－認識-data-model-與-render-function"><a href="#第一課－認識-data-model-與-render-function" class="headerlink" title="第一課－認識 data model 與 render function"></a>第一課－認識 data model 與 render function</h2><ul>
+<li>課程概要：<ol>
+<li>認識 data model 的觀念：當你要面對的是大型專案時，不建議再使用操作 DOM 元素去更新其內容，會變得很難以維護，因此需要將程式的<strong>狀態</strong>與其他部份分開，而這個<strong>狀態</strong>通常被稱為 <strong>state</strong>、<strong>model</strong> 或 <strong>data model</strong>，在資料更動時，只需要去處理 data model，這樣在開發複雜專案時，相關函式一律只要專注於 data model 就好，不用管使用者介面<figure class="highlight js"><figcaption><span>data model 範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> product = &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;冬季外套&quot;</span>,</span><br><span class="line">  <span class="attr">price</span>: <span class="number">1990</span>,</span><br><span class="line">  <span class="attr">category</span>: <span class="string">&quot;women&quot;</span>,</span><br><span class="line">  <span class="attr">remain</span>: <span class="number">5</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li>認識 render function 的觀念：狀態由 data model 管理，而負責更新<strong>畫面</strong>則可以使用 <strong>render function</strong> 的方法，放一個 root 元素，作為放關於使用者介面之程式碼的容器，接著寫一個 render 函式，將所設計的使用者介面做出來、塞到 root 中<br>這個 render 函式有三個注意事項：<ol>
+<li>第一行要先<strong>清空</strong>放使用者介面的容器</li>
+<li>在所有跟<strong>狀態</strong>有關操作的<strong>最後一行</strong>，都要呼叫 render 函式（為了更新畫面）</li>
+<li><strong>所有 DOM 操作</strong>一律由 render 函式處理</li>
+</ol>
 </li>
-<li><p>component 內需要有 template<br>template 放 HTML 的架構，可用雙引號<code>&quot;</code>、單引號<code>&#39;</code>、反引號<code>`</code>包住內容（推薦用反引號<code>`</code>）</p>
+</ol>
 </li>
-<li><p>component 內的 data <strong>必須</strong>是 function<br>因為物件是實體，會有可能指向到同一個物件上 → 變成沒有獨立的資料<br>因此要透過 function return object 確保每個 component 有自己的資料</p>
-<figure class="highlight js"><figcaption><span>範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="title class_">Vue</span>.<span class="title function_">component</span>(<span class="string">&quot;example-component&quot;</span>, &#123;</span><br><span class="line">  <span class="attr">data</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">name</span>: <span class="string">&quot;CJ Wu&quot;</span> &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">template</span>: <span class="string">&quot;&lt;h1&gt;Hello! My name is &#123;&#123; name &#125;&#125;&lt;/h1&gt;&quot;</span>,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>props 是什麼？<br>是一個將父（外）層 data 分享到內層的屬性（可以想成內層跟父層<strong>借</strong>data）<br>建議使用資料的方式是單向的，當作是跟人<strong>借用</strong>的，<strong>不可以</strong>在 component 內亂改資料，如果需要修改資料要通知父層(例如使用 listening)</p>
-</li>
-<li><p>slot 是什麼？<br>可以把它理解成插槽的意思，內層挖好一個空格讓父層放，讓父層決定內層內容</p>
-</li>
-<li><p>在 HTML 某些 tag 內使用模組需注意<br>像是<code>&lt;ol&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;select&gt;</code>內部<strong>不能</strong>放自訂的 template tag，會出錯，他們內部已有規定好要放的 tag 了（<code>&lt;li&gt;</code>、<code>&lt;tr&gt;</code>、<code>&lt;option&gt;</code>）<br>⇒ 因此要改成放原本規定好的 tag，再加上<code>is</code>屬性</p>
-<figure class="highlight html"><figcaption><span>範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span> <span class="attr">is</span>=<span class="string">&quot;example-component&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>component 用駝峰式命名須注意的地方<br>component 有兩種命名方式：駝峰式 ＆ dash 連接式(kebab-case)<br><strong>但是</strong>，駝峰式在 HTML 上<strong>無法被辨識</strong>（不認大小寫）<br>⇒ 因此要自行改成 dash 連接式，例如：<code>&quot;helloComponent&quot; → &lt;hello-compoment&gt;</code><br><font style="font-size:15px;color:grey;">p.s. 在 Vue cli 就不會有這樣的問題了</font></p>
-</li>
-<li><p>$emit 是什麼？<br>將在<em>Vue.component 內的值</em>打到父層</p>
-<figure class="highlight js"><figcaption><span>範例</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">//此處在Component內的template</span></span><br><span class="line"><span class="attr">template</span>:<span class="string">`&lt;button @click = &quot;$emit(&#x27;functionname&#x27;,value)&quot;&gt;&lt;/button&gt;`</span></span><br><span class="line"><span class="comment">//此處在HTML的component tag上，用method來接收值，並視需要寫入或修改父層的data</span></span><br><span class="line">&lt;hello-component @functionname=<span class="string">&quot;method&quot;</span>&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">//此段程式的意思是：當使用者點擊按鈕時，會觸發@click事件，傳遞值出去</span></span><br><span class="line"><span class="comment">//父層的部分用監聽該事件去接收傳出來的值，在new Vue內的methods寫function去處理收到的值</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>內層借資料（要用到多筆時），要選 <strong>傳物件&#x2F;陣列</strong> 還是 <strong>分別傳資料</strong> ？<br>用物件傳一整包資料雖然方便，但無法確保原始資料屬性會不會被改動，這樣會違反上面提到的 ── 單向使用的原則<br>⇒ 因此建議選擇<strong>分別傳多筆資料</strong>的方式<br><font style="font-size:15px;color:grey;">但若選擇用傳物件的方式，就要特別注意別出現<code>物件.資料屬性=&quot;change&quot;</code>，這樣會無法確認是內層還是父層改的資料</font></p>
-</li>
-</ul>
-<hr>
-<p>順便補上之前聽到的筆記</p>
-<ul>
-<li>要怎麼判斷 computed&#x2F;methods&#x2F;watch 內分別放什麼？<ul>
-<li>computed 主要管理 <strong>資料</strong>產<strong>資料</strong></li>
-<li>methods 主要管理 <strong>行為</strong></li>
-<li>watch 主要管理 <strong>資料</strong>產<strong>行為&#x2F;事件</strong></li>
-</ul>
-</li>
-</ul>
-<h1 id="影片連結"><a href="#影片連結" class="headerlink" title="影片連結"></a>影片連結</h1><blockquote>
-<p><a href="https://www.youtube.com/live/KQRfZ07bfAQ?feature=share">[ 想入門，我陪你 ] Re Vue 重頭說起｜ Day 9：基礎模組化</a></p>
+<li>作業心得：我自己覺得這堂課的觀念有點像 Vue 框架<strong>分開管理</strong>資料以及模板（或者說 HTML 要長的樣子）的概念<blockquote>
+<p>作業說明：使用 render function 把 data model 給渲染出來<br><a href="https://jsfiddle.net/iamCJ/53r4on0a/">https://jsfiddle.net/iamCJ/53r4on0a/</a></p>
 </blockquote>
+</li>
+</ul>
+<h2 id="第二課－認識陣列操作"><a href="#第二課－認識陣列操作" class="headerlink" title="第二課－認識陣列操作"></a>第二課－認識陣列操作</h2><ul>
+<li>課程概要：學會使用<code>.push()</code>新增值到陣列，括號內填入想要加入陣列的字串、數字或參數等等，它會加在陣列的<strong>最後方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">push</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li>自己補充：其他常見的陣列處理方法<ol>
+<li><code>.unshift()</code>：也是新增值到陣列，但是它會加在陣列的<strong>最前方</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">unshift</span>(<span class="string">&quot;D&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;D&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.shift()</code>：<strong>移除</strong>陣列的<strong>第一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">shift</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;B&quot;, &quot;C&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.pop()</code>：<strong>移除</strong>陣列的<strong>最後一個值</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line">array1.<span class="title function_">pop</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// [&quot;A&quot;, &quot;B&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><span id="splice"><code>.splice(開始索引, 刪除數量, 要插入的值)</code>：用來<strong>切割移除或拼接</strong>某個陣列，這個方法<strong>會</strong>改變原陣列的值！</span><br>括號內第一個參數填入開始的索引值，負數則代表從後面開始算起（例如 -1 為倒數第一個）；第二個參數填入從開始索引（包含）算起<strong>總共</strong>要刪除的<strong>數量</strong>，填 0 就不會刪除；第三個參數可以填入要插入的值，會插在被切割掉的值之位置<br>而直接呼叫<code>.splice()</code>則會回傳被刪除的值<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> removed1 = array1.<span class="title function_">splice</span>(<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, removed1); <span class="comment">// 結果為 array1[&quot;A&quot;, &quot;B&quot;], removed1[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array2.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array2); <span class="comment">// 結果為 [&quot;A&quot;, &quot;B&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array3.<span class="title function_">splice</span>(<span class="number">2</span>, <span class="number">2</span>, <span class="string">&quot;嗨嗨嗨&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;嗨嗨嗨&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line">array4.<span class="title function_">splice</span>(-<span class="number">2</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array4); <span class="comment">// 結果為[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.slice(開始索引, 結束索引)</code>：用來<strong>複製</strong>某個陣列，會回傳<strong>指定索引範圍的新陣列</strong>，這個方法<strong>不會</strong>改變原陣列的值。<br>括號內填索引範圍，前面的參數為開始的索引值，負數代表從後面開始算起；而後面的參數為結束的索引值，需要注意範圍會切在這個<strong>索引之前</strong>，<strong>不包含</strong>結束索引的值！沒有寫則預設為<code>array.length</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>, <span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = array1.<span class="title function_">slice</span>(<span class="number">2</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">slice</span>(<span class="number">2</span>, <span class="number">4</span>); <span class="comment">//結果為[&quot;C&quot;, &quot;D&quot;]</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">slice</span>(-<span class="number">2</span>); <span class="comment">//結果為[&quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1); <span class="comment">// 結果仍為 [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.concat()</code>：用來<strong>合併</strong>多個陣列，<strong>不會</strong>改變原先陣列的值，而是回傳一個新的、被合併的陣列。<font style="color:grey;">p.s.而當括號內不填入其他陣列時，我自己會當作是用來<strong>複製</strong>陣列</font><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array2 = [<span class="string">&quot;D&quot;</span>, <span class="string">&quot;E&quot;</span>, <span class="string">&quot;F&quot;</span>];</span><br><span class="line"><span class="keyword">let</span> array3 = array1.<span class="title function_">concat</span>(array2);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array3); <span class="comment">// [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;]</span></span><br><span class="line"><span class="comment">///括號內不填陣列時</span></span><br><span class="line"><span class="keyword">let</span> array4 = array1.<span class="title function_">concat</span>();</span><br><span class="line">array4.<span class="title function_">push</span>(<span class="string">&quot;ZZZ&quot;</span>);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1, array4); <span class="comment">// array1[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], array4[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;,&quot;ZZZ&quot;]</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.include()</code>：用來<strong>尋找</strong>陣列中是否<strong>包含某個值</strong>，結果會以布林值型態回傳<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.indexOf()</code>：用來<strong>尋找</strong>陣列中某個值的<strong>索引位置</strong>，而若搜索的值不在陣列內，則會回傳<code>-1</code><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">indexOf</span>(<span class="string">&quot;A&quot;</span>)); <span class="comment">// 0</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">include</span>(<span class="string">&quot;ZZZ&quot;</span>)); <span class="comment">// -1</span></span><br></pre></td></tr></table></figure></li>
+<li><code>.join()</code>：用來將陣列中的值<strong>轉為字串</strong>，並且加入指定字元做為<strong>值與值連接的符號</strong><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> array1 = [<span class="string">&quot;A&quot;</span>, <span class="string">&quot;B&quot;</span>, <span class="string">&quot;C&quot;</span>];</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;&amp;&quot;</span>)); <span class="comment">// A&amp;B&amp;C</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(array1.<span class="title function_">join</span>(<span class="string">&quot;/ &quot;</span>)); <span class="comment">// A/ B/ C/</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：作業本身很簡單，不過自己補充的部分花了一些時間整理，但果然還是要自己實際筆記起來，才會記得更熟、把細節搞清楚呀 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：延續上一堂作業，加入一個 input 以及一個新增按鈕，按鈕按下後，必須先更新 data modal 再執行畫面的 render<br><a href="https://jsfiddle.net/iamCJ/L5vrodn7/">https://jsfiddle.net/iamCJ/L5vrodn7/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第三課－認識匿名函式"><a href="#第三課－認識匿名函式" class="headerlink" title="第三課－認識匿名函式"></a>第三課－認識匿名函式</h2><ul>
+<li>課程概要：<ol>
+<li>學會使用<code>.splice()</code>，根據索引刪除陣列元素：這個在上一堂我就先自己補充啦～可以點<a href="#splice">這邊</a>來看</li>
+<li>認識<code>for in</code>迴圈：參數會回傳陣列的<strong>索引</strong>，而<code>for of</code>則是回傳陣列的值<figure class="highlight js"><figcaption><span>for in</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> index <span class="keyword">in</span> array) &#123;</span><br><span class="line">  <span class="keyword">const</span> item = array[index];</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(index, item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>認識匿名函式（anonymous function）：動態宣告一個函式，然後直接指派、使用，其實就只是沒有名字的函式而已。<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//有名字的函式長這樣</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">example</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//匿名函式長這樣</span></span><br><span class="line"><span class="keyword">let</span> div = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;div&quot;</span>);</span><br><span class="line">div.<span class="property">onclick</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;哈哈哈哈&quot;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：忘記畫面是根據 data 渲染的，資料變化就會自動更新，原本還想說處理完陣列內的資料，接著要處理<code>&lt;li&gt;</code>、<code>&lt;span&gt;</code>，結果點預覽畫面測試的時候才發現不需要多此一舉 ∠( ᐛ 」∠)＿<blockquote>
+<p>作業說明：加入一個刪除按鈕，按下後刪除他在陣列中的資料，並且重新 render 畫面<br><a href="https://jsfiddle.net/iamCJ/ndtpurzy/">https://jsfiddle.net/iamCJ/ndtpurzy/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第四課－熟悉-render-function"><a href="#第四課－熟悉-render-function" class="headerlink" title="第四課－熟悉 render function"></a>第四課－熟悉 render function</h2><ul>
+<li>課程概要：根據資料內容的不同，render function 內可以有各種條件判斷、巢狀結構等等較複雜的邏輯</li>
+<li>作業心得：做這個作業沒什麼特別想法，只覺得這樣的寫法真的讓思考變得輕鬆多了 XD<blockquote>
+<p>作業說明：延續上一堂作業，讓 data 加入 category 屬性來做分類，在 render function 設條件判斷，不同分類的事項要有不同顏色<br><a href="https://jsfiddle.net/iamCJ/5ba2e3x0/">https://jsfiddle.net/iamCJ/5ba2e3x0/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第五課－熟悉匿名函式"><a href="#第五課－熟悉匿名函式" class="headerlink" title="第五課－熟悉匿名函式"></a>第五課－熟悉匿名函式</h2><ul>
+<li>課程概要：<ol>
+<li>認識布林值：是資料型態的一種，只有<code>true</code>跟<code>false</code>兩種值</li>
+<li>認識更新陣列值的方法：只要指定陣列的索引，並賦值給它即可<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">array[index] = <span class="string">&quot;new&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+<li>作業心得：覺得這系列的作業跟在系列二寫的時候感覺很不一樣，系列二寫得有點卡，覺得所有功能都尬在一起，有時候看著畫面亂亂的程式碼，腦袋也變得亂亂的了 XD<blockquote>
+<p>作業說明：延續上一堂作業，讓 data 加入 isCompleted 屬性，增加標示已完成的按鈕，按下按鈕後要更新 isCompleted 的狀態，並且更新畫面，讓事項的後面有（已完成）的字樣<br><a href="https://jsfiddle.net/iamCJ/kbc96Lq3/">https://jsfiddle.net/iamCJ/kbc96Lq3/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第六課－認識-data-model-的優點"><a href="#第六課－認識-data-model-的優點" class="headerlink" title="第六課－認識 data model 的優點"></a>第六課－認識 data model 的優點</h2><ul>
+<li>課程概要：沒有教新的東西，繼續加強 data model 的練習</li>
+<li>作業心得：data model 的設計真的讓取資料變得很簡單耶！記得在系列二時，做這個作業總感覺很麻煩，code 也很不乾脆（？，取資料都要從 DOM 下手，今天就輕鬆多了(ﾉ&gt;ω&lt;)ﾉ<blockquote>
+<p>作業說明：延續上一堂作業，新增一個匯出事項的按鈕，按下按鈕後，要 alert 出所有事項，並依事項的分類（重要程度）有不同的提示（加上米字號）<br><a href="https://jsfiddle.net/iamCJ/L8dhzxs0/">https://jsfiddle.net/iamCJ/L8dhzxs0/</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="第七課－資料序列化"><a href="#第七課－資料序列化" class="headerlink" title="第七課－資料序列化"></a>第七課－資料序列化</h2><ul>
+<li>課程概要：<ol>
+<li>認識資料序列化（serialization）：即為將 <strong>data model 轉為字串</strong>，可以用來跟第三方程式溝通、或將資料儲存到資料庫等等</li>
+<li>認識反序列化（deserialization）：則跟序列化相反，是將<strong>序列化資料轉換回來</strong>，變成程式可用的資料</li>
+</ol>
+</li>
+<li>作業心得：再次讚嘆這個 data model 設計，之前在寫的時候不知道為什麼很容易會有煩躁感（？，現在終於知道原因了，除了是因為之前把資料跟畫面全部寫在一起的關係，另外就是跟我寫在 Vue 的時候差很多，一直很不習慣沒辦法直接取用 data，而現在這個寫法超清爽*｡٩(ˊωˋ*)و✧*｡<blockquote>
+<p>作業說明：延續上一堂作業，新增一個儲存按鈕，按下按鈕後將陣列內容存入 local storage，並且在重整網頁時判斷 local storage 有無資料，如果有則自動載入<br><a href="https://jsfiddle.net/iamCJ/huwmsf40/">https://jsfiddle.net/iamCJ/huwmsf40/</a></p>
+</blockquote>
+</li>
+</ul>
+<h1 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h1><p>這系列的學習速度又回來啦！覺得這一系列的寫法比較符合我的習慣，在寫作業的過程跟心情都很順暢 XD。接下來就要進入學習 Vue 的系列啦，之前有自學過，我在想應該可以很快就上手，也期待可以學到新觀念跟新技巧～</p>
+<h1 id="文章連結"><a href="#文章連結" class="headerlink" title="文章連結"></a>文章連結</h1><p><a href="https://codelove.tw/@howtomakeaturn/course/2anPxn">自學網頁の嬰兒教材：JavaScript（六）—— 從前端設計心態到前端工程心態</a></p>
 ]]></content>
       <categories>
-        <category>Vue</category>
+        <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>跟著大大一起從頭學Vue</tag>
+        <tag>用嬰兒都學得會的教材學JS</tag>
       </tags>
   </entry>
 </search>
